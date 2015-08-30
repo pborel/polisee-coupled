@@ -7,5 +7,7 @@ TwitterExample::Application.routes.draw do
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]
 
-  root to: "home#show"
+  root 'home#index'
+
+  get "/*path" => "home#index"
 end

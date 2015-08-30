@@ -9,8 +9,15 @@
 //
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
-//
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require turbolinks
+//= require react
+//= require react_ujs
+//= require react_router
+//= require react_router_ujs
+//= require components
 //= require_tree .
+
+$(function(){ $(document).foundation(); });
