@@ -1,8 +1,4 @@
-// var React = require('react')
-
-// var Article = require('./Article.jsx')
-
-module.exports = React.createClass({
+var List = React.createClass({
   render: function() {
 
     var articleNodes = this.props.data.map(function(article) {

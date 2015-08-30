@@ -4895,3 +4895,1741 @@ Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 19:25:45 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 19:25:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:25:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 563ms (Views: 543.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:25:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:31:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1078ms (Views: 1067.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/components/articles/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:37 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:38 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:38 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:38 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:38 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:38 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:38 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:31:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:33:57 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 117ms (Views: 115.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/components/articles/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:58 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:33:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/components/articles/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 88ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:12 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:13 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:34:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:40:55 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 958ms
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (17:4)
+  15 |     }
+  16 | 
+> 17 |     return (
+     |     ^
+  18 |       <nav>
+  19 |         <span id="menu-link"><span></span></span>
+  20 |         <div className="nav-wrapper">
+  (in /Users/apprentice/Desktop/coupledPolisee/polisee-coupled/app/assets/javascripts/components/layout/Menu.jsx)):
+     5:     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     6:     <title>Twitter Auth Example App</title>
+     7:     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+     8:     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+     9:     <%= csrf_meta_tags %>
+    10:   </head>
+    11:   <body>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___597613024109542634_70327263172540'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (50.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:41:17 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1045ms (Views: 1043.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:41:18 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:41:18 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:41:18 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:41:18 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:41:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:44:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:45:12 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 248ms (Views: 247.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:13 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:45:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:46:07 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 949ms (Views: 948.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:08 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:46:35 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1028ms (Views: 1027.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:46:36 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 21:47:22 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 954ms (Views: 953.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 21:47:23 -0700

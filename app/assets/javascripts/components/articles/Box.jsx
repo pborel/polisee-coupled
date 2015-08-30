@@ -1,10 +1,4 @@
-// var React = require('react')
-
-// var List = require('./List.jsx')
-// var SearchFilter = require('../layout/SearchFilter.jsx')
-// var Tab = require('../layout/Tab.jsx')
-
-module.exports = React.createClass({
+var Box = React.createClass({
   getInitialState: function() {
     return {data: []};
   },
@@ -24,14 +18,14 @@ module.exports = React.createClass({
   },
 
   componentDidMount: function() {
-    this.loadArticlesFromServer();
+    // this.loadArticlesFromServer();
   },
 
   render: function() {
     return (
       <div className="debugger articles-box">
+        // <List data={this.state.data} />
         <SearchFilter />
-        <List data={this.state.data} />
         <hr />
       </div>
     )

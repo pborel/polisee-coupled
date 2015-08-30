@@ -5,7 +5,7 @@ var ArticleContainer = React.createClass({
   render: function() {
     return (
       <div className="debugger articles-container">
-        <p>fuuuukkkkk</p>
+        <Box />
       </div>
     )
   }
