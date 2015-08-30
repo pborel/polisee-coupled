@@ -1,5 +1,4 @@
-// var React = require('react');
-// var RouteHandler = require('react-router').RouteHandler;
+// var mui = require('material-ui')
 
 var Article = React.createClass({
   render: function() {

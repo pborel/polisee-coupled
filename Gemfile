@@ -4,6 +4,9 @@ gem 'rails', '4.0.2'
 
 gem 'pg'
 
+# gem 'material-ui-rails'
+# gem 'requirejs-rails', '~> 0.9.9'
+
 gem "twitter", "~> 5.3.1"
 gem "omniauth-twitter", "~> 1.0.1"
 

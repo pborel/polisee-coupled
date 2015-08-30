@@ -1,5 +1,8 @@
 var RouteHandler = ReactRouter.RouteHandler,
     Link = ReactRouter.Link;
+    // React = require('react'),
+    // mui = require('material-ui'),
+    // RaisedButton = mui.RaisedButton;
 
 var App = React.createClass({
   render: function() {
@@ -12,3 +15,4 @@ var App = React.createClass({
     );
   }
 });
+        // <RaisedButton label="hello" />
