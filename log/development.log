@@ -1517,3 +1517,21 @@ Started GET "/" for 127.0.0.1 at 2015-08-29 18:22:08 -0700
 Processing by HomeController#show as HTML
   Rendered home/show.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20131224194730)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "provider" character varying(255), "uid" character varying(255), "name" character varying(255), "oauth_token" character varying(255), "oauth_secret" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20131224194730"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLegislators (20150830014712)
+  [1m[35m (15.4ms)[0m  BEGIN
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "legislators" ("id" serial primary key, "bioguide_id" character varying(255), "birthday" date, "chamber" character varying(255), "contact_form" character varying(255), "crp_id" character varying(255), "district" character varying(255), "facebook_id" character varying(255), "fax" character varying(255), "first_name" character varying(255), "gender" character varying(255), "govtrack_id" integer, "in_office" boolean, "last_name" character varying(255), "leadership_role" character varying(255), "lis_id" character varying(255), "middle_name" character varying(255), "name_suffix" character varying(255), "nickname" character varying(255), "oc_email" character varying(255), "ocd_id" character varying(255), "office" character varying(255), "party" character varying(255), "phone" character varying(255), "state" character varying(255), "state_name" character varying(255), "state_rank" character varying(255), "term_end" date, "term_start" date, "thomas_id" integer, "title" character varying(255), "twitter_id" character varying(255), "votesmart_id" character varying(255), "website" character varying(255), "image" character varying(255), "fec_ids" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150830014712"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
