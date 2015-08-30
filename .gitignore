@@ -1,0 +1,9 @@
+/log/*.log
+
+/tmp
+
+config/secrets.yml
+
+config/initializer/secret_token.rb
+
+.ruby-version

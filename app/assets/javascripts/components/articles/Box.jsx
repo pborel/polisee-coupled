@@ -1,10 +1,4 @@
-// var React = require('react')
-
-// var List = require('./List.jsx')
-// var SearchFilter = require('../layout/SearchFilter.jsx')
-// var Tab = require('../layout/Tab.jsx')
-
-module.exports = React.createClass({
+var Box = React.createClass({
   getInitialState: function() {
     return {data: []};
   },
@@ -19,6 +13,7 @@ module.exports = React.createClass({
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
+        console.error(this.state.data);
       }.bind(this)
     });
   },
