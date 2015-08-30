@@ -26,6 +26,7 @@ var Box = React.createClass({
     return (
       <div className="debugger articles-box">
         <SearchFilter />
+        <Tabs />
         <List data={this.state.data} />
         <hr />
       </div>
