@@ -1409,3 +1409,111 @@ Started GET "/" for 127.0.0.1 at 2015-08-29 17:40:53 -0700
 Processing by HomeController#show as HTML
   Rendered home/show.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 97ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/assets/tweets.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:03 -0700
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-08-29 18:22:04 -0700
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-08-29 18:22:05 -0700
+
+
+Started GET "/auth/twitter/callback?oauth_token=nRnr3wAAAAAAhSfhAAABT3wycqg&oauth_verifier=0k6LhhgLTBmgFxx0b6waCZED83OO5Kt9" for 127.0.0.1 at 2015-08-29 18:22:06 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"nRnr3wAAAAAAhSfhAAABT3wycqg", "oauth_verifier"=>"0k6LhhgLTBmgFxx0b6waCZED83OO5Kt9", "provider"=>"twitter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'twitter' AND "users"."uid" = '1308271142' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 58ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 18:22:06 -0700
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 18:22:06 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 18:22:06 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 18:22:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:06 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 18:22:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:07 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:07 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:07 -0700
+
+
+Started GET "/assets/tweets.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 18:22:07 -0700
+
+
+Started GET "/signout" for 127.0.0.1 at 2015-08-29 18:22:08 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 18:22:08 -0700
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
