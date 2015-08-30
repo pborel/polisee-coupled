@@ -6,6 +6,7 @@
     <title>Polisee</title>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -19,9 +20,6 @@
     </div>
     <div> -->
     <%= yield %>
-    </div>
+    <!-- </div> -->
   </body>
-
-  <%= render "layouts/footer" %>
-
 </html>
