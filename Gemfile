@@ -15,6 +15,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'react-rails', '~> 1.0'
 
+gem 'rack-cors', :require => 'rack/cors'
+
 gem 'foundation-rails'
 
 gem 'httparty'

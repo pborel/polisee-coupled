@@ -5,7 +5,8 @@ var App = React.createClass({
   render: function() {
     return (
       <div>
-        <ArticleContainer />
+        <Menu />
+        <ArticleContainer url="/bills" />
       </div>
     );
   }

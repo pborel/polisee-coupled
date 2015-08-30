@@ -1,14 +1,12 @@
-// var React = require('react')
-
-// var Article = require('./Article.jsx')
-
-module.exports = React.createClass({
+var List = React.createClass({
   render: function() {
 
     var articleNodes = this.props.data.map(function(article) {
+      var link = article.last_version.urls.html
       return (
         <Article key={article.bill_id}>
-          <span> This is article number {article.bill_id} <a href="#">followButton</a> </span>
+          <a href={link}>{article.short_title}</a>
+          <span> -- <a href="#">followButton</a> </span>
         </Article>
         )
     });
@@ -20,5 +18,4 @@ module.exports = React.createClass({
       );
   }
 });
-      // var link = article.last_version.urls.html
           // <a href={link}>{article.short_title}</a>

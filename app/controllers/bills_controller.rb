@@ -10,7 +10,7 @@ class BillsController < ApplicationController
 
   def show
     sunlight_client = Congress.new
-    @bill = sunlight_client.bill(params[bill_id:])
+    @bill = sunlight_client.bill(params[:bill_id])
     render json: @bill
   end
 
