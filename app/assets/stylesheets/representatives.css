@@ -1,0 +1,67 @@
+.debugger {
+  border: 1px solid red;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+
+.tabs-list-container, .rep-profiles-container {
+  height:300px;
+}
+
+.title {
+  color: red;
+  font-size: 30px;
+}
+
+.search {
+  float: right;
+}
+
+.tabs-list {
+  height: 270px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 25px;
+
+}
+
+.tab-buttons {
+  height: 30px;
+  width: 150px;
+  text-align: center;
+}
+
+.tab-content {
+  height: 200px;
+  width: 90%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.rep-profile {
+  width: 170px;
+  display: inline-block;
+}
+
+.rep-profiles-container {
+  text-align: center;
+}
+
+.rep-image {
+  display: block;
+  margin: 25px auto;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}

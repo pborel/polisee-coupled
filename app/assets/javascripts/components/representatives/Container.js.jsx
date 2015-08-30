@@ -41,19 +41,20 @@ var RepresentativeBox = React.createClass({
 var RepresentativesList = React.createClass({
   render: function() {
     var representativeNodes = this.props.data.map(function(representative) {
+      var handle = "https://twitter.com/" + representative.twitter_id
       return (
         <Representative key={representative.id}>
           <img className="rep-image" src={representative.image} />
           <a href="#">{representative.first_name} {representative.last_name}</a>
-          <span> -- <a href="#">{representative.twitter_id}</a> </span>
+          <span> -- <a href={handle}>{representative.twitter_id}</a></span>
         </Representative>
         )
     });
 
     return (
-      <div>
-       {representativeNodes}
-      </div>
+      <span>
+        {representativeNodes}
+      </span>
     );
   }
 });
@@ -61,9 +62,9 @@ var RepresentativesList = React.createClass({
 var Representative = React.createClass({
   render: function() {
     return (
-      <div>
+      <span>
         {this.props.children}
-      </div>
+      </span>
     )
   }
 });
