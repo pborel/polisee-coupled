@@ -59,10 +59,10 @@ module Api
   end
 
   def self.query_twitter_images
-    legislator_without_image = Legislator.where(image: nil)
+    legislator_without_image = Legislator.where(image: "")
     # while legislator_without_image
         legislator_without_image.first(180).each do |legislator|
-          if legislator.twitter_id.nil?
+          if legislator.twitter_id.nil? || legislator.twitter_id == ""
             legislator.update(image: "https://lh4.ggpht.com/B2UjZIJ0iwp0LfkUnITqp_iYek9PWEXuXLOHl3XYPMR_2zEGsHPR6ruu4OeQKOfvJnJ8=w300-rw")
           else
             twitter_client = Twitter::REST::Client.new do |config|
