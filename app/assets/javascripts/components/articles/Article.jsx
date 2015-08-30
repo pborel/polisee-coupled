@@ -4,7 +4,7 @@ var Article = React.createClass({
   render: function() {
     return (
       <li>
-        <div className="collapsible-header"><a href="#">{this.props.data.short_title}</a></div>
+        <div className="collapsible-header"><a href="#"><i className="material-icons">add</i>{this.props.data.short_title}</a></div>
         <div className="collapsible-body"><p>{this.props.children}</p></div>
       </li>
     )
