@@ -14,4 +14,8 @@ class BillsController < ApplicationController
     render json: @bill
   end
 
+  def search
+
+  end
+
 end

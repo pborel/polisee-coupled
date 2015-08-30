@@ -1,6 +1,6 @@
 /log/*.log
 
-/tmp/*
+/tmp/cache/*
 
 config/secrets.yml
 

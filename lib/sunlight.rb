@@ -12,27 +12,32 @@ module Sunlight
                         query: {per_page: 50, page: page})
     end
 
-    # def local_legislators(lat, long)
-    #   self.class.get("/legislators/locate",
-    #                   headers: headers,
-    #                   query: {latitude: lat, longitude: long})
-    # end
+    def local_legislators_at(lat, lng)
+      self.class.get("/legislators/locate",
+                      headers: headers,
+                      query: {latitude: lat, longitude: lng})
+    end
 
-    def local_legislators(zip)
+    def local_legislators_in(zip)
       self.class.get("/legislators/locate",
                       headers: headers,
                       query: {zip: zip})
     end
 
-    def bills
+    def bills(page = 3, sponsor = nil)
       self.class.get("/bills",
-                      headers: headers)
+                      headers: headers,
+                      query: {per_page: 50, page: page})
     end
 
     def bill(bill_id)
       self.class.get('/bills',
                       headers: headers,
                       query: {bill_id: bill_id})
+    end
+
+    def max_results
+      {per_page: 50}
     end
 
     def headers

@@ -10,8 +10,13 @@ TwitterExample::Application.routes.draw do
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]
 
-  resources :legislators, only: [:index, :show]
   resources :bills, only: [:index, :show]
+
+  resources :legislators, only: [:index, :show] do
+    resources :bills, only: [:index, :show]
+  end
+
+
 
   get "/*path" => "home#index"
 end
