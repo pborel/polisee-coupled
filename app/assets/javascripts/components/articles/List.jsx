@@ -4,7 +4,7 @@ var List = React.createClass({
     var articleNodes = this.props.data.map(function(article) {
       var link = article.last_version.urls.html
       return (
-        <Article key={article.bill_id}>
+        <Article key={article.bill_id} data={article}>
           <a href={link}>{article.short_title}</a>
           <span> -- <a href="#">followButton</a> </span>
         </Article>
@@ -12,8 +12,10 @@ var List = React.createClass({
     });
 
     return (
-      <div className="debugger articles-list">
-       {articleNodes}
+      <div className="articles-list">
+        <ul className="collapsible" data-collapsible="accordion">
+         {articleNodes}
+        </ul>
       </div>
       );
   }

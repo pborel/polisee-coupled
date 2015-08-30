@@ -4,6 +4,9 @@ gem 'rails', '4.0.2'
 
 gem 'pg'
 
+# gem 'material-ui-rails'
+# gem 'requirejs-rails', '~> 0.9.9'
+
 gem "twitter", "~> 5.3.1"
 gem "omniauth-twitter", "~> 1.0.1"
 
@@ -20,6 +23,8 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'foundation-rails'
 
 gem 'httparty'
+
+# gem 'foundation-icons-sass-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
