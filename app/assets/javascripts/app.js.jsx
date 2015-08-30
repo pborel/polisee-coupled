@@ -7,6 +7,7 @@ var App = React.createClass({
       <div>
         <Menu />
         <ArticleContainer url="/bills" />
+        <RepresentativeContainer url="/legislators" />
       </div>
     );
   }
