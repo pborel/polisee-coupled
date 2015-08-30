@@ -14714,3 +14714,8 @@ Processing by HomeController#index as
   Rendered home/index.html.erb within layouts/application (0.5ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+  [1m[36mLegislator Load (0.3ms)[0m  [1mSELECT "legislators".* FROM "legislators"[0m
+PG::UndefinedTable: ERROR:  relation "legislators" does not exist
+LINE 1: SELECT "legislators".* FROM "legislators"
+                                    ^
+: SELECT "legislators".* FROM "legislators"
