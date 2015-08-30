@@ -1,4 +1,9 @@
 TwitterExample::Application.routes.draw do
+
+  root 'home#index'
+
+  get "/*path" => "home#index"
+
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
@@ -7,7 +12,7 @@ TwitterExample::Application.routes.draw do
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]
 
-  root 'home#index'
+  resources :legislators, only: [:index, :show]
+  resources :bills, only: [:index, :show]
 
-  get "/*path" => "home#index"
 end
