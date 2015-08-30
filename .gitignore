@@ -1,9 +1,6 @@
-/log/*.log
-
-/tmp/cache/*
-
+log/*.log
+tmp/
 config/secrets.yml
-
 config/initializer/secret_token.rb
-
 .ruby-version
+Gemfile.lock
