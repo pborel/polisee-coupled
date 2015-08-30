@@ -1,6 +1,8 @@
 TwitterExample::Application.routes.draw do
 
-  root 'legislators#index'
+  root 'home#index'
+
+  get "/*path" => "home#index"
 
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')

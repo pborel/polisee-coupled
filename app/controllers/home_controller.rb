@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
-  def show
+  def index
+    @location_path = "/#{params[:path]}"
   end
 end

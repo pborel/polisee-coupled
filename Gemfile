@@ -13,11 +13,22 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'coffee-rails', '~> 4.0.0'
 
+gem 'react-rails', '~> 1.0'
+
+gem 'foundation-rails'
+
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+
+# Use jquery as the JavaScript library
+
 gem 'jquery-rails'
 
 gem 'turbolinks'
 
 gem 'jbuilder', '~> 1.2'
+
+gem 'react-router-rails', '~>0.13.3.1'
 
 group :doc do
   gem 'sdoc', require: false
