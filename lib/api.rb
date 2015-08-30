@@ -52,7 +52,6 @@ module Api
           votesmart_id: rep["votesmart_id"],
           website: rep["website"],
           image: rep["image"],
-          fec_ids: rep["fec_ids"]
           )
         legislator.save
       end

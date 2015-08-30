@@ -56,6 +56,9 @@ GEM
     http (0.5.1)
       http_parser.rb
     http_parser.rb (0.6.0)
+    httparty (0.13.5)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -72,6 +75,7 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.11.2)
+    multi_xml (0.5.5)
     multipart-post (2.0.0)
     oauth (0.4.7)
     omniauth (1.2.2)
@@ -162,6 +166,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   foundation-rails
+  httparty
   jbuilder (~> 1.2)
   jquery-rails
   omniauth-twitter (~> 1.0.1)

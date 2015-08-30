@@ -3,13 +3,8 @@ class LegislatorsController < ApplicationController
   include Sunlight
 
   def index
-    p params
-    p cookies
-    # lat = @lat_long[0]
-    # long = @lat_long[1]
-    # p lat
-    # p long
-    @legislators = legislators_in(49441)
+    # @legislators = legislators_in(49441)
+    @legislators = Legislator.all
     render json: @legislators
   end
 

@@ -17,6 +17,8 @@ gem 'react-rails', '~> 1.0'
 
 gem 'foundation-rails'
 
+gem 'httparty'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

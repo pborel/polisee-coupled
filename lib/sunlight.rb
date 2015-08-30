@@ -6,6 +6,7 @@ module Sunlight
     base_uri 'https://congress.api.sunlightfoundation.com/'
 
     def all_legislators(page)
+      p headers
         self.class.get("/legislators",
                         headers: headers,
                         query: {per_page: 50, page: page})

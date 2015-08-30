@@ -10,6 +10,8 @@ TwitterExample::Application.configure do
   config.twitter_key = "NRrzT6PKyd2MPxN3dmeDkTma8"
   config.twitter_secret = "OXXlamLNvgUHR7SREAr8oiQxLIL3h9Ay0Cj2d13rytnnkDEb2H"
 
+   # Set Sunlight API config
+  ENV['SUNLIGHT_KEY'] = "6f32253a69584783ba98cbf86120d2d7"
     # Set environment secrets
   ENV['ORIGIN'] = 'http://localhost:8080'
   ENV['OAUTH_CALLBACK'] = 'http://127.0.0.1:3000/access_token'
