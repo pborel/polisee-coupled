@@ -9,8 +9,8 @@ a, a:focus, a:active {outline: none;}
 /* BELOW IS CSS FOR ARTICLES*/
 .debugger {border: 1px solid red;}
 .articles-container, .articles-box, .articles-list, .article {width:90%; margin: 0 auto; margin-top:20px;}
-.articles-container {height:500px;}
-.articles-box {height: 450px;}
+.articles-container {height:575px;}
+.articles-box {height: 525px;}
 .articles-list {height: 400px; overflow-y:scroll;}
 
 
