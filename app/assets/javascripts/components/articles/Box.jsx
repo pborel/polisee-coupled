@@ -13,19 +13,20 @@ var Box = React.createClass({
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
+        console.error(this.state.data);
       }.bind(this)
     });
   },
 
   componentDidMount: function() {
-    // this.loadArticlesFromServer();
+    this.loadArticlesFromServer();
   },
 
   render: function() {
     return (
       <div className="debugger articles-box">
-        // <List data={this.state.data} />
         <SearchFilter />
+        <List data={this.state.data} />
         <hr />
       </div>
     )

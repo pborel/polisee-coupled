@@ -2,9 +2,11 @@ var List = React.createClass({
   render: function() {
 
     var articleNodes = this.props.data.map(function(article) {
+      var link = article.last_version.urls.html
       return (
         <Article key={article.bill_id}>
-          <span> This is article number {article.bill_id} <a href="#">followButton</a> </span>
+          <a href={link}>{article.short_title}</a>
+          <span> -- <a href="#">followButton</a> </span>
         </Article>
         )
     });
@@ -16,5 +18,4 @@ var List = React.createClass({
       );
   }
 });
-      // var link = article.last_version.urls.html
           // <a href={link}>{article.short_title}</a>

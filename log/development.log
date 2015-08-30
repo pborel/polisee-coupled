@@ -1,0 +1,331 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 22:32:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 274ms (Views: 244.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/materialize.css?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:43 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+
+
+Started GET "/assets/materialize.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+
+
+Started GET "/font/roboto/Roboto-Regular.woff2" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+Processing by HomeController#index as 
+  Parameters: {"path"=>"font/roboto/Roboto-Regular"}
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bills?_=1440912763776" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+Processing by BillsController#index as HTML
+  Parameters: {"_"=>"1440912763776"}
+Completed 200 OK in 544ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/font/roboto/Roboto-Regular.woff" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+Processing by HomeController#index as 
+  Parameters: {"path"=>"font/roboto/Roboto-Regular"}
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/font/roboto/Roboto-Regular.ttf" for 127.0.0.1 at 2015-08-29 22:32:44 -0700
+Processing by HomeController#index as 
+  Parameters: {"path"=>"font/roboto/Roboto-Regular"}
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-29 22:33:08 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 94ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/materialize.css?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/blabs.css?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/tweets.css?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.accordion.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.alert.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.offcanvas.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.slider.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.tab.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.tooltip.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation/foundation.equalizer.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/foundation.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/materialize.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+
+
+Started GET "/font/roboto/Roboto-Regular.woff2" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+Processing by HomeController#index as 
+  Parameters: {"path"=>"font/roboto/Roboto-Regular"}
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 38ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bills?_=1440912790260" for 127.0.0.1 at 2015-08-29 22:33:10 -0700
+Processing by BillsController#index as HTML
+  Parameters: {"_"=>"1440912790260"}
+Completed 200 OK in 527ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/font/roboto/Roboto-Regular.woff" for 127.0.0.1 at 2015-08-29 22:33:11 -0700
+Processing by HomeController#index as 
+  Parameters: {"path"=>"font/roboto/Roboto-Regular"}
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/font/roboto/Roboto-Regular.ttf" for 127.0.0.1 at 2015-08-29 22:33:11 -0700
+Processing by HomeController#index as 
+  Parameters: {"path"=>"font/roboto/Roboto-Regular"}
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
