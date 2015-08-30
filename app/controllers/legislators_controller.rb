@@ -3,8 +3,7 @@ class LegislatorsController < ApplicationController
   include Sunlight
 
   def index
-    # @legislators = legislators_in(49441)
-    @legislators = Legislator.all
+    @legislators = legislators_in(49441)
     render json: @legislators
   end
 
