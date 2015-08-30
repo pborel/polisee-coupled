@@ -11,6 +11,7 @@ var App = React.createClass({
         <Menu />
         <ArticleContainer url="/bills" />
         <RepresentativeContainer url="/legislators" />
+        <FooterContainer />
       </div>
     );
   }
