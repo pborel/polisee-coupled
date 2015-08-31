@@ -21,10 +21,10 @@ var Article = React.createClass({
 
   render: function() {
     return (
-      <li>
-        <div className="collapsible-header">{this.props.data.short_title}</div>
-        <div className="collapsible-body"><p><a href="#">{this.props.children}</a></p></div>
-      </li>
+      <div className={"section" + this.props.key}>
+        <h2 className="sectionTitle">{this.props.data.short_title}</h2>
+        <p className="sectionContent">{this.props.data.official_title}</p>
+      </div>
     )
   }
 });
