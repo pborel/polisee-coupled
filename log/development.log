@@ -16463,3 +16463,299 @@ Completed 200 OK in 456ms (Views: 23.5ms | ActiveRecord: 2.3ms)
 
 
 Started GET "/assets/roboto/Roboto-Regular.woff2" for 127.0.0.1 at 2015-08-31 09:51:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 10:02:51 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1471835697449728807__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/PhilBorel/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/PhilBorel/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/PhilBorel/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFavorites (20150830215923)
+  [1m[35m (8.4ms)[0m  BEGIN
+  [1m[36m (40.0ms)[0m  [1mCREATE TABLE "favorites" ("id" serial primary key, "user_id" integer, "record_type" character varying(255), "notify_at" timestamp, "external_id" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (23.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150830215923"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 10:03:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (4.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 22ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:6:in `current_user'
+  app/controllers/home_controller.rb:4:in `index'
+
+
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 334ms (Views: 333.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/bills.css?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/representatives.css?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:38 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/articles/Content.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/footer/Container.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/footer/Content.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/footer/ContentItem.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/footer/LinkItem.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/footer/Links.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/layout/About.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/layout/Tabs.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/representatives/Container.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/representatives/FollowRepButton.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/representatives/RepBio.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/representatives/RepName.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/representatives/RepPicture.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/representatives/Representative.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/representatives/RepresentativeBox.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components/representatives/RepresentativesList.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/animation.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/velocity.min.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/hammer.min.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/jquery.hammer.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/global.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/leanModal.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/collapsible.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/materialbox.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/parallax.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/tabs.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/waves.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/toasts.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/sideNav.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/forms.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/Geolocate.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/slider.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/cards.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/pushpin.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/buttons.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/transitions.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/scrollFire.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/date_picker/picker.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/character_counter.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize/date_picker/picker.date.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/materialize-sprockets.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+
+
+Started GET "/bills?_=1441040618970" for 127.0.0.1 at 2015-08-31 10:03:39 -0700
+Processing by BillsController#index as JSON
+  Parameters: {"_"=>"1441040618970"}
+Completed 200 OK in 1192ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/legislators?_=1441040618971" for 127.0.0.1 at 2015-08-31 10:03:40 -0700
+Processing by LegislatorsController#index as JSON
+  Parameters: {"_"=>"1441040618971"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `split' for nil:NilClass):
+  app/controllers/legislators_controller.rb:10:in `index'
+
+
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /Users/PhilBorel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.0ms)
+
+
+Started GET "/assets/roboto/Roboto-Regular.woff2" for 127.0.0.1 at 2015-08-31 10:03:40 -0700
