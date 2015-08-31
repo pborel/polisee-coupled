@@ -8,7 +8,7 @@ a, a:focus, a:active {outline: none;}
 .thin {font-weight: 200;}
 
 /* BELOW IS CSS FOR ARTICLES*/
-/*.debugger {border: 1px solid red;}*/
+.debugger {border: 1px solid red;}
 .articles-container, .articles-box, .articles-list, .article {width:90%; margin: 0 auto; margin-top:20px;}
 .articles-container {height:575px;}
 .articles-box {height: 525px;}
@@ -17,14 +17,28 @@ a, a:focus, a:active {outline: none;}
 .footer-page {
   margin-top:20px;padding-top:20px;background-color:#ee6e73;padding-bottom: 20px;
 }
-/*footer {
-  margin-top: 0;
-  background-color:#ee6e73;
-  display: inline;
-  bottom: -20px;
-  height: 20px;
+.rep-card {
+	width:30%;
+	display: inline-block;
+	margin: 10px;
+}
+
+/*.rep-card-circle {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+
 }*/
 
-/*.rep-bio {
-	display: none;
+.rep-image {
+	width: ;
+	height: 314px
+}
+/*
+.rep-card-circle img {
+	margin: 0 auto;
+	padding-left: 100px;
 }*/
