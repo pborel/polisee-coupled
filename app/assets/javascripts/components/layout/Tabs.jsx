@@ -8,9 +8,9 @@ var Tabs = React.createClass({
       <div className="row debugger">
         <div className="col s12 debugger">
           <ul className="tabs pop-out z-depth-1 debugger">
-            <Tab1 />
-            <Tab1 />
-            <Tab1 />
+            <IndexTab />
+            <UpcomingTab />
+            <FollowingTab />
           </ul>
         </div>
       </div>

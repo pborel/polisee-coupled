@@ -1,4 +1,4 @@
-var Tab1 = React.createClass({
+var UpcomingTab = React.createClass({
 
     render: function(){
       return(
