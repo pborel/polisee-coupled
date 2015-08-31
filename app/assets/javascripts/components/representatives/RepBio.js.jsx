@@ -24,7 +24,7 @@ var RepBio = React.createClass({
       }
 		return (
 			<div className="card-reveal">
-			      <span className="card-title grey-text text-darken-4">{this.props.data.first_name} {this.props.data.last_name} <i className="material-icons right">close</i></span>
+			      <span className="card-title grey-text text-darken-4">{this.props.data.title}. {this.props.data.first_name} {this.props.data.last_name} <i className="material-icons right">close</i></span>
 			      <p>
 			      		Name: {this.props.data.first_name} {this.props.data.last_name} <br/>
 						Party: {party} <br/>
