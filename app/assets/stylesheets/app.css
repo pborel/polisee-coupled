@@ -24,15 +24,22 @@ a, a:focus, a:active {outline: none;}
 	margin: 10px;
 }
 
-.circle {
-/*    border-radius: 50%;*/
-    display: inline-block;
-    width: 250px;
-	height: 250px;
+/*.rep-card-circle {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+
+}*/
+
+.rep-image {
+	width: ;
+	height: 314px
 }
-.circle img {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-}
- 
+/*
+.rep-card-circle img {
+	margin: 0 auto;
+	padding-left: 100px;
+}*/
