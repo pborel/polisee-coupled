@@ -14,7 +14,6 @@ a, a:focus, a:active {outline: none;}
 .articles-box {height: 525px;}
 .articles-list {height: 400px; overflow-y:scroll;}
 
-
 .footer-page {
   margin-top:20px;padding-top:20px;background-color:#ee6e73;padding-bottom: 20px;
 }
