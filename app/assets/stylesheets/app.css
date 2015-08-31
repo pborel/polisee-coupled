@@ -17,6 +17,14 @@ a, a:focus, a:active {outline: none;}
 .footer-page {
   margin-top:20px;padding-top:20px;background-color:#ee6e73;padding-bottom: 20px;
 }
+
+.bill-content {
+
+  display:block;
+  line-height: 3rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
 /*footer {
   margin-top: 0;
   background-color:#ee6e73;

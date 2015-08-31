@@ -16,7 +16,7 @@ var Article = React.createClass({
     return (
       <li>
         <div className="collapsible-header" onClick={this.toggleContent}>
-          {this.props.data.short_title}
+          {this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title}
         </div>
         { this.state.showContent ? <Content data={this.props.data} /> : null }
       </li>
