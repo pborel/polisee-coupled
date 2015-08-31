@@ -18,6 +18,28 @@ a, a:focus, a:active {outline: none;}
 .footer-page {
   margin-top:20px;padding-top:20px;background-color:#ee6e73;padding-bottom: 20px;
 }
+
+.bill-content {
+  display:block;
+  line-height: 3rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.pop-out {
+
+}
+/*footer {
+  margin-top: 0;
+  background-color:#ee6e73;
+  display: inline;
+  bottom: -20px;
+  height: 20px;
+}*/
+
+/*.rep-bio {
+	display: none;
+}*/
 .rep-card {
 	width:30%;
 	display: inline-block;
@@ -37,5 +59,4 @@ a, a:focus, a:active {outline: none;}
 .card-action {
 	margin: 0 auto;
 }
-
 

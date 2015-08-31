@@ -22,11 +22,16 @@ var Box = React.createClass({
     this.loadArticlesFromServer();
   },
 
+  updateListView: function() {
+    this.loadArticlesFromServer();
+    setState({data})
+  },
+
   render: function() {
     return (
       <div className="debugger articles-box">
         <SearchFilter />
-        <Tabs />
+        <Tabs handleClick={this.updateListView} />
         <List data={this.state.data} />
         <hr />
       </div>

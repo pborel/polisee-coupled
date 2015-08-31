@@ -1,5 +1,5 @@
 var Article = React.createClass({
-  getInitialState: function(articleList){
+  getInitialState: function() {
     return { showContent: false }
   },
 
@@ -14,10 +14,16 @@ var Article = React.createClass({
 
   render: function() {
     return (
-      <div className={"article" + this.props.key}>
-        <p className="articleTitle" onClick={this.toggleContent}>{this.props.data.short_title}</p>
+      <li>
+        <div className="collapsible-header" onClick={this.toggleContent}>
+          {this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title}
+        </div>
         { this.state.showContent ? <Content data={this.props.data} /> : null }
-      </div>
+      </li>
     );
   }
 });
+        // <Content />
+      // <div className={"article" + this.props.key}>
+      //   <p className="articleTitle" onClick={this.toggleContent}>{this.props.data.short_title}</p>
+      // </div>
