@@ -1,0 +1,230 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-30 22:40:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 2487ms (Views: 2475.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-30 22:40:50 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-30 22:40:50 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-30 22:40:50 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/components/representatives/FollowRepButton.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:50 -0700
+
+
+Started GET "/assets/components/representatives/RepPicture.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:50 -0700
+
+
+Started GET "/assets/components/representatives/RepBio.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:50 -0700
+
+
+Started GET "/assets/components/representatives/Representative.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:50 -0700
+
+
+Started GET "/assets/components/representatives/RepName.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:50 -0700
+
+
+Started GET "/assets/components/representatives/RepresentativeBox.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/app.css?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/representatives.css?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/representatives/RepresentativesList.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/development/react.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/react_router.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/react_router_ujs.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/articles/Article.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/articles/Box.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/articles/Container.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/articles/List.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/footer/Container.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/footer/Content.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/footer/ContentItem.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/footer/LinkItem.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/footer/Links.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/layout/About.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/layout/Menu.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/layout/SearchFilter.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/layout/Tabs.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components/representatives/Container.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/animation.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/hammer.min.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/velocity.min.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/jquery.hammer.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/global.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/collapsible.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/dropdown.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/leanModal.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/materialbox.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/tabs.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/tooltip.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/parallax.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/toasts.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/waves.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/sideNav.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/forms.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/slider.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/cards.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/pushpin.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/buttons.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/transitions.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/scrollFire.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/date_picker/picker.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/date_picker/picker.date.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize/character_counter.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/materialize-sprockets.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+
+
+Started GET "/bills?_=1440999651138" for 127.0.0.1 at 2015-08-30 22:40:51 -0700
+Processing by BillsController#index as JSON
+  Parameters: {"_"=>"1440999651138"}
+Completed 200 OK in 672ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/legislators?_=1440999651139" for 127.0.0.1 at 2015-08-30 22:40:52 -0700
+Processing by LegislatorsController#index as JSON
+  Parameters: {"_"=>"1440999651139"}
+  [1m[35mLegislator Load (1.4ms)[0m  SELECT "legislators".* FROM "legislators" WHERE "legislators"."bioguide_id" IN ('P000595', 'H001058', 'S000770')
+Completed 200 OK in 495ms (Views: 31.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/roboto/Roboto-Regular.woff2" for 127.0.0.1 at 2015-08-30 22:40:52 -0700
