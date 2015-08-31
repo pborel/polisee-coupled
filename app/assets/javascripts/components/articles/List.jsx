@@ -1,6 +1,6 @@
 var List = React.createClass({
   getInitialState: function(articleList){
-    return { openArticleIndex: -1 }
+    return { }
   },
 
   buildArticles: function(articleList){
@@ -9,18 +9,17 @@ var List = React.createClass({
   },
 
   buildArticle: function(article, index){
-    var openStatus = (index === this.state.openArticleIndex);
-    return <Article key={index} data={article} toggleOne={this.toggleOne} open={openStatus} />
+    // var openStatus = (index === this.state.openArticleIndex);
+    return <Article key={index} data={article} toggleOne={this.toggleOne} />
   },
-
 
   // toggleOne: function(id) {
   //   if(this.state.openArticleIndex === id) {
   //     console.log("closing")
-  //     this.setState({openArticleIndex: -1});
+  //     this.setState({val: this.state.val + 1});
   //   } else {
   //     console.log("opening")
-  //     this.setState({openArticleIndex: id});
+  //     this.setState({val: this.state.val + 2});
   //   }
   // },
 
