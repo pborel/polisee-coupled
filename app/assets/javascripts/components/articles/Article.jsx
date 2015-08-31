@@ -1,30 +1,23 @@
 var Article = React.createClass({
-  handleClick: function(){
-    if(this.state.open) {
-      this.setState({
-        open: false,
-        class: "section"
-      });
-    }else{
-      this.setState({
-        open: true,
-        class: "section open"
-      });
-    }
+  toggleContent: function() {
+    this.props.toggleOne(this.props.key)
   },
-  getInitialState: function(){
-     return {
-       open: false,
-       class: "section"
-     }
+
+  getHeight: function() {
+    if(this.props.open) {
+      return "30px"
+    } else {
+      return "0"
+    }
   },
 
   render: function() {
+    var style = { height: this.getHeight() }
     return (
-      <div className={"section" + this.props.key}>
-        <h2 className="sectionTitle">{this.props.data.short_title}</h2>
-        <p className="sectionContent">{this.props.data.official_title}</p>
+      <div className={"article" + this.props.key}>
+        <p className="articleTitle" onClick={this.toggleContent} >{this.props.data.short_title}</p>
+        <p className="articleContent" style={style} >asadfasdfadsfasdf</p>
       </div>
-    )
+    );
   }
 });
