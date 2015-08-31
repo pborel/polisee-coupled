@@ -1,22 +1,35 @@
 var List = React.createClass({
+  getInitialState: function(articleList){
+    return { openArticleIndex: -1 }
+  },
+
+  buildArticles: function(articleList){
+    var articleNodes = articleList.map(this.buildArticle)
+    return articleNodes;
+  },
+
+  buildArticle: function(article, index){
+    var openStatus = (index === this.state.openArticleIndex);
+    return <Article key={index} data={article} toggleOne={this.toggleOne} open={openStatus} />
+  },
+
+  toggleOne: function(id) {
+    if(this.state.openArticleIndex === id) {
+      this.setState({openArticleIndex: -1});
+    } else {
+      this.setState({openArticleIndex: id});
+    }
+  },
+
   render: function() {
-
-    var articleNodes = this.props.data.map(function(article) {
-      var link = article.last_version.urls.html
-      return (
-        <Article key={article.bill_id} data={article}>
-          <a href={link}>{article.short_title}</a>
-          <span> -- <a href="#">followButton</a> </span>
-        </Article>
-        )
-    });
-
+    var articleNodes = this.buildArticles(this.props.data)
     return (
-      <div className="articles-list">
-        <ul className="collapsible" data-collapsible="accordion">
+      <div className="container articles-list">
           {articleNodes}
-        </ul>
       </div>
     );
   }
 });
+    // var link = article.last_version.urls.html
+// <a href="#">{article.short_title}</a>
+//         <span> -- <a href="#">followButton</a> </span>
