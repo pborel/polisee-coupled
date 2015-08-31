@@ -1,6 +1,7 @@
 var Tabs = React.createClass({
 
-  componentDidMount: function() {
+  handleClick: function() {
+    console.log("updating view")
   },
 
   render: function() {
@@ -8,9 +9,9 @@ var Tabs = React.createClass({
       <div className="row debugger">
         <div className="col s12 debugger">
           <ul className="tabs pop-out z-depth-1 debugger">
-            <IndexTab />
-            <UpcomingTab />
-            <FollowingTab />
+            <IndexTab onClick={this.handleClick} />
+            <UpcomingTab onClick={this.handleClick} />
+            <FollowingTab onClick={this.handleClick} />
           </ul>
         </div>
       </div>

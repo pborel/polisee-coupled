@@ -23,8 +23,8 @@ var Box = React.createClass({
   },
 
   updateListView: function() {
+    console.log("updating list view")
     this.loadArticlesFromServer();
-    setState({data})
   },
 
   render: function() {
