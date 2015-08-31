@@ -14,10 +14,9 @@ var List = React.createClass({
     return (
       <div className="articles-list">
         <ul className="collapsible" data-collapsible="accordion">
-         {articleNodes}
+          {articleNodes}
         </ul>
       </div>
-      );
+    );
   }
 });
-          // <a href={link}>{article.short_title}</a>
