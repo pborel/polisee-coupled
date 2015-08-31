@@ -9,18 +9,18 @@
 
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  git 
+  
   </head>
   <body>
-<!--     <div>
-      <%# if current_user %>
-        Signed in as <strong><%#= current_user.name %></strong>!
-        <%#= link_to "Sign out", signout_path, id: "sign_out" %>
-      <%# else %>
-        <%#= link_to "Sign in with Twitter", "/auth/twitter", id: "sign_in" %>
-      <%# end %>
+<div>
+      <% if current_user %>
+        Signed in as <strong><%= current_user.name %></strong>!
+        <%= link_to "Sign out", signout_path, id: "sign_out" %>
+      <% else %>
+        <%= link_to "Sign in with Twitter", "/auth/twitter", id: "sign_in" %>
+      <% end %>
     </div>
-    <div> -->
+    <div>
     <%= yield %>
     <!-- </div> -->
   </body>
