@@ -1,7 +1,7 @@
 var Content = React.createClass({
   render: function() {
     return (
-        <div className="bill-content">
+        <div className="bill-content container">
           <h5>Official Title:</h5> {this.props.data.official_title}<br/>
           <h5>Sponsor:</h5> {this.props.data.sponsor.title ? this.props.data.sponsor.title : null} {this.props.data.sponsor.first_name} {this.props.data.sponsor.last_name}<br/>
           <h5>Introduced on:</h5> {this.props.data.introduced_on ? this.props.data.introduced_on : null}
@@ -15,7 +15,7 @@ var Content = React.createClass({
           <h5>Number of Withdrawals: </h5> { this.props.data.withdrawn_cosponsors_count }
 
           <hr/>
-          <a href="#">More info.</a>
+          <a href={this.props.data.urls.opencongress}>More info.</a>
         </div>
     );
   }

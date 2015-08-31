@@ -19,11 +19,14 @@ a, a:focus, a:active {outline: none;}
 }
 
 .bill-content {
-
   display:block;
   line-height: 3rem;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+}
+
+.pop-out {
+
 }
 /*footer {
   margin-top: 0;
