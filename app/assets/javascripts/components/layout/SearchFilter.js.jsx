@@ -1,4 +1,5 @@
 var SearchFilter = React.createClass({
+
   render: function(){
     return (
       <form>
