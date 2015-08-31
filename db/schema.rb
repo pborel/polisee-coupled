@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 20150830215923) do
     t.string   "name"
     t.string   "oauth_token"
     t.string   "oauth_secret"
+    t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
