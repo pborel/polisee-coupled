@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.2'
 
+gem 'react-rails', '~> 1.0'
+gem 'react-router-rails', '~>0.13.3.1'
+
 gem 'pg'
 
 # gem 'material-ui-rails'
@@ -10,13 +13,14 @@ gem 'pg'
 gem "twitter", "~> 5.3.1"
 gem "omniauth-twitter", "~> 1.0.1"
 
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
+# gem 'scss_lint', require: false
+gem 'materialize-sass'
 
 gem 'uglifier', '>= 1.3.0'
 
-gem 'coffee-rails', '~> 4.0.0'
+# gem 'coffee-rails', '~> 4.0.0'
 
-gem 'react-rails', '~> 1.0'
 
 gem 'rack-cors', :require => 'rack/cors'
 
@@ -36,8 +40,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'jbuilder', '~> 1.2'
-
-gem 'react-router-rails', '~>0.13.3.1'
 
 group :doc do
   gem 'sdoc', require: false
