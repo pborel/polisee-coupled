@@ -14,10 +14,10 @@ var Article = React.createClass({
   render: function() {
     var style = { height: this.getHeight() }
     return (
-      <div className={"article" + this.props.key}>
-        <p className="articleTitle" onClick={this.toggleContent} >{this.props.data.short_title}</p>
-        <p className="articleContent" style={style} >asadfasdfadsfasdf</p>
-      </div>
+      <li>
+         <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      </li>
     );
   }
 });

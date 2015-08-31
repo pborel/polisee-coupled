@@ -13,20 +13,23 @@ var List = React.createClass({
     return <Article key={index} data={article} toggleOne={this.toggleOne} open={openStatus} />
   },
 
-  toggleOne: function(id) {
-    if(this.state.openArticleIndex === id) {
-      this.setState({openArticleIndex: -1});
-    } else {
-      this.setState({openArticleIndex: id});
-    }
-  },
+
+  // toggleOne: function(id) {
+  //   if(this.state.openArticleIndex === id) {
+  //     console.log("closing")
+  //     this.setState({openArticleIndex: -1});
+  //   } else {
+  //     console.log("opening")
+  //     this.setState({openArticleIndex: id});
+  //   }
+  // },
 
   render: function() {
     var articleNodes = this.buildArticles(this.props.data)
     return (
-      <div className="container articles-list">
+      <ul class="collapsible" data-collapsible="accordion">
           {articleNodes}
-      </div>
+      </ul>
     );
   }
 });
