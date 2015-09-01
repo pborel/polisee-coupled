@@ -1,8 +1,9 @@
 var IndexTab = React.createClass({
   handleClick: function(event) {
+    var link = '/bills'
     // console.log("hitting IndexTab")
     // console.log(this.props.tab)
-    this.props.parentElement.handleClick(this.props.tab)
+    this.props.parentElement.handleClick(this.props.tab, link)
   },
 
   render: function() {

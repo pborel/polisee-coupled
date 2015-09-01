@@ -6,10 +6,10 @@ var ArticleBox = React.createClass({
     };
   },
 
-  loadArticlesFromServer: function(tab) {
+  loadArticlesFromServer: function(tab, link) {
     $.ajax({
       data: { tabName: tab },
-      url: this.props.url,
+      url: link,
       dataType: 'json',
       cache: false,
       success: function(data) {
@@ -24,13 +24,14 @@ var ArticleBox = React.createClass({
 
   componentDidMount: function() {
     var tab = "index"
-    this.loadArticlesFromServer(tab);
+    var link = this.props.url
+    this.loadArticlesFromServer(tab, link);
   },
 
-  updateListView: function(tab) {
+  updateListView: function(tab, link) {
     // console.log("hitting Box")
     this.setState({ currentTab: tab })
-    this.loadArticlesFromServer(tab);
+    this.loadArticlesFromServer(tab, link);
   },
 
   render: function() {

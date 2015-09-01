@@ -96,10 +96,10 @@ TwitterExample::Application.configure do
   ENV['ORIGIN'] = 'http://localhost:8080'
   ENV['OAUTH_CALLBACK'] = 'http://127.0.0.1:3000/access_token'
   secret_key_base = "493f5c5a69827e7508a85069e7b0f15d0e856d5ca4faab444b8a97520b559ee316a89419ecd5f0cdca9d6e41f86ee89b040b24e6dcfa2b416ba5895bd86eaff0"
-  twitter_key = "gCo5L3RMyftUepC70zPPt9j2d"
-  twitter_secret = "urq8nx4QlRkdi1zBbvlrNFr2e2CSflvLwqOHQjWEyAd3F6ix8R"
+  twitter_key = "AZG7oAw868o26emGcQPpfMdr0"
+  twitter_secret = "U1ZCVQw3WwEDoaith3pjfOawJIWdIyRrNqviHZuS5vknwRWI7I"
   ENV['SECRET_KEY_BASE'] = '493f5c5a69827e7508a85069e7b0f15d0e856d5ca4faab444b8a97520b559ee316a89419ecd5f0cdca9d6e41f86ee89b040b24e6dcfa2b416ba5895bd86eaff0'
-  ENV['TWITTER_CONSUMER_KEY'] = 'gCo5L3RMyftUepC70zPPt9j2d'
-  ENV['TWITTER_CONSUMER_SECRET'] = 'urq8nx4QlRkdi1zBbvlrNFr2e2CSflvLwqOHQjWEyAd3F6ix8R'
+  ENV['TWITTER_CONSUMER_KEY'] = 'AZG7oAw868o26emGcQPpfMdr0'
+  ENV['TWITTER_CONSUMER_SECRET'] = 'U1ZCVQw3WwEDoaith3pjfOawJIWdIyRrNqviHZuS5vknwRWI7I'
 
 end
