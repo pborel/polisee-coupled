@@ -3,7 +3,9 @@ class LegislatorsController < ApplicationController
   include Sunlight
 
   def index
+    p params
     if params[:zip]
+      
       location_data = {zip: params[:zip]}
       @legislators = legislators_at(location_data)
     else
