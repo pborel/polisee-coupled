@@ -28,24 +28,28 @@ var ZipContainer = React.createClass({
   submitZipToServer: function (event) {
   	debugger
   	event.preventDefault()
+  	var zipCode = React.findDOMNode(this.refs.zipcode).value
+  		$.ajax({
+  	    data: { zip: zipCode },
+  	    url: "http://localhost:3000/legislators",
+  	    dataType: 'json',
+  	    cache: false,
+  	    success: function(data) {
 
-  
+  	    	// pass data to menu here
+  	    	this.props.handleSubmit(data)
+
+
+  	    }.bind(this),
+  	    error: function(xhr, status, err) {
+  	      console.error(this.props.url, status, err.toString());
+  	      console.error(this.state.data);
+  	    }.bind(this)
+  	  });
   },
 
 
-  	// $.ajax({
-   //    data: { zip: zip },
-   //    url: "http://localhost:3000/legislators",
-   //    dataType: 'json',
-   //    cache: false,
-   //    success: function(data) {
-   //      this.setState({data: data});
-   //    }.bind(this),
-   //    error: function(xhr, status, err) {
-   //      console.error(this.props.url, status, err.toString());
-   //      console.error(this.state.data);
-   //    }.bind(this)
-   //  });
+  	
 
 
 

@@ -3,6 +3,13 @@ var Menu = React.createClass({
   //   this.props.parentComponent.checkSignedIn()
   // },
 
+
+  handleZipTransaction: function(zipCode) {
+
+    // call 
+
+  },
+
   render: function() {
     if (this.props.signedIn) {
       var signingLink = <li><span id={this.props.signedIn}><a href={'/signout'}>Sign Out</a></span></li>;
@@ -19,7 +26,7 @@ var Menu = React.createClass({
             </ul>
             <ul className="right hide-on-med-and-down">
 
-            <ZipContainer parentComponent={this.props.parentComponent}/>
+            <ZipContainer parentComponent={this.props.parentComponent} handleSubmit={this.handleZipTransaction}/>
 
             </ul>
         </div>
