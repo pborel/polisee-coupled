@@ -36,12 +36,8 @@ var RepBio = React.createClass({
 				Term End: {this.props.data.term_end} <br/>
 				{this.props.data.district ? "District: " + this.props.data.district : null}
   		  </p>
-        <TweetForm handle={this.props.data.twitter_id} />
+        <TweetForm subject={"@" + this.props.data.twitter_id}/>
       </div>
     )
   }
 })
-          // url: tweets_path, method: :post do |f| %>
-          //   <%= f.text_field :message %>
-          //   <%= f.submit "Send Tweet" %>
-

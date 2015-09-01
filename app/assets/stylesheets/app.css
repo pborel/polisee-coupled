@@ -30,9 +30,8 @@ a, a:focus, a:active {outline: none;}
 
 /*==-----stuff added in bills-card-v2=-----*/
 .article-head {
-  border: 1px solid red;
-  width: 70%;
-  max-width: 80%;
+  max-width: 95%;
+  width: 90%;
   display:inline-block;
 }
 
