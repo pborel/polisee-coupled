@@ -29,7 +29,7 @@ var Box = React.createClass({
 
   updateListView: function(tab) {
     // console.log("hitting Box")
-    this.setState({currentTab: tab})
+    this.setState({ currentTab: tab })
     this.loadArticlesFromServer(tab);
   },
 
