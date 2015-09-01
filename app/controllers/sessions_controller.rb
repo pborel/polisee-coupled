@@ -12,4 +12,9 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to root_path
   end
+
+  def show
+    @logged_in = !!current_user
+    render json: @logged_in
+  end
 end

@@ -1,28 +1,35 @@
 var Menu = React.createClass({
-  handleSignOutLink: function() {
-    location = '/';
+  componentDidMount: function() {
+    console.log("sheeet")
+    this.props.parentComponent.checkSignedIn()
   },
 
   render: function() {
     if (this.props.signedIn) {
-      var signingLink = <li><span onClick={this.handleSignOutLink}>Sign Out</span></li>;
+      var signingLink = <li><span id={this.props.signedIn}><a href={'/signout'}>Sign Out</a></span></li>;
     } else {
-      var signingLink = <li><a href={this.props.origin + '/request_token'}>Sign In</a></li>;
+      console.log(this.props.parentComponent);
+      var signingLink = <li><span id={this.props.signedIn}><a href={'/auth/twitter'}>Sign In</a></span></li>
     }
-
     return (
       <nav>
-        <span id="menu-link"><span></span></span>
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo">Polisee</a>
-          <ul id="nav" className="right hide-on-med-and-down">
-            <li>Home</li>
-            <li>About</li>
-            {signingLink}
-          </ul>
+
+          <a href="#!" className="brand-logo center">Polisee</a>
+            <ul className="left hide-on-med-and-down">
+              <li>{signingLink}</li>
+            </ul> 
+            <ul className="right hide-on-med-and-down">
+              <form>
+                <div className="input-field">
+                  <input id="search" type="search" placeholder = "zipjawn"/>
+                  <label for="search"><i className="material-icons">search</i></label>
+                </div>
+              </form>
+            </ul>
         </div>
       </nav>
     );
   }
 });
-// auth/twitter/callback
+

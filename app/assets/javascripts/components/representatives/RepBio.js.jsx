@@ -7,11 +7,14 @@ var RepBio = React.createClass({
 
     //js logic for incomplete information
 		var party
+		var partyImage
 			if (this.props.data.party == "D"){
 				party = "Democrat"
+				partyImage = "https://upload.wikimedia.org/wikipedia/en/e/ee/Democratslogo.svg"
 			}
 			else if (this.props.data.party == "R") {
 				party = "Republican"
+				partImage = "https://upload.wikimedia.org/wikipedia/commons/9/9b/Republicanlogo.svg"
 			} else {
 				party = "Unaffiliated"
 			}
