@@ -16,9 +16,9 @@ TwitterExample::Application.routes.draw do
 
   resources :bills, only: [:index, :show]
 
-  resources :users, only: [:update, :destroy, :show] do
-    resources :favorites, only: [:create, :index, :destroy]
-  end
+  resources :users, only: [:update, :destroy, :show]
+
+  resources :favorites, only: [:create, :index, :destroy]
 
   resources :legislators, only: [:index, :show] do
     # resources :bills, only: [:index, :show]

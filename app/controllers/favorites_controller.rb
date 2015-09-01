@@ -1,8 +1,6 @@
 class FavoritesController < ApplicationController
   def index
-    redirect_to root_path unless @current_user
-    @favorites = @current_user.favorites
-    render json: @favorites
+    p "FAVORITESSSSSSSSSSSSSS"
   end
 
   def create
@@ -20,3 +18,6 @@ class FavoritesController < ApplicationController
     render json: @favorite.external_id
   end
 end
+
+
+"http://pbs.twimg.com/profile_images/464147946934517760/EZ8huLG8_normal.png"
