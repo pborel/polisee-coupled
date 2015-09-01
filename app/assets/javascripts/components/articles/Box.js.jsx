@@ -7,6 +7,7 @@ var Box = React.createClass({
   },
 
   loadArticlesFromServer: function(tab) {
+    // console.log(tab)
     $.ajax({
       tabName: tab,
       url: this.props.url,
@@ -28,9 +29,8 @@ var Box = React.createClass({
   },
 
   updateListView: function(tab) {
-    console.log("hitting Box")
+    // console.log("hitting Box")
     this.setState({currentTab: tab})
-    console.log(this.state.currentTab)
     this.loadArticlesFromServer(tab);
   },
 
