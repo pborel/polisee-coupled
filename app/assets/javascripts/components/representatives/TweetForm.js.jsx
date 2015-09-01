@@ -7,8 +7,8 @@ var TweetForm = React.createClass({
           <div className="row">
             <div className="input-field col s12">
               <input id="tweet" type="text" length="144" />
-              <label forHtml="tweet">Message</label>
-              <button className="btn waves-effect waves-light" type="submit" name="action">Tweet
+              <label forHtml="tweet">tweet</label>
+              <button className="btn waves-effect waves-light" type="submit" name="action"><i className="fi-social-twitter"></i>
               </button>
             </div>
           </div>
