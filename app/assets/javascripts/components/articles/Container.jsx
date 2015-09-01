@@ -1,5 +1,5 @@
-var RouteHandler = ReactRouter.RouteHandler,
-    Link = ReactRouter.Link;
+// var RouteHandler = ReactRouter.RouteHandler,
+    // Link = ReactRouter.Link;
 
 var ArticleContainer = React.createClass({
   render: function() {
