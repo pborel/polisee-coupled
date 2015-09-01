@@ -1,3 +1,5 @@
+Team.create(name: "Phil Borel", email: "philborel21@gmail.com", linkedin_url: "https://www.linkedin.com/in/philborel", github_url: "https://github.com/pborel", website_url: "http://www.philborel.me/", twitter_url: "https://twitter.com/PhilBorel", bio: "Autonomous, passionate full-stack software engineer with demonstrated expertise in web application development, OOP design and best-practices, and relational database systems with a focus on code reusability and efficient architecture design. Two years experience managing agile, cross-functional teams.", image_url: "http://s14.postimg.org/6q1139of5/philborel.jpg")
+
 FULL_DATA = [
 {id: 1220,
 bioguide_id: "V000127",

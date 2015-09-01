@@ -70,8 +70,10 @@ ActiveRecord::Schema.define(version: 20150901094345) do
     t.string   "email"
     t.string   "linkedin_url"
     t.string   "github_url"
+    t.string   "twitter_url"
     t.string   "website_url"
     t.string   "image_url"
+    t.text     "bio"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

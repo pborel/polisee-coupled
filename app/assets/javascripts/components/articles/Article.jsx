@@ -75,7 +75,7 @@ var Article = React.createClass({
           { this.state.favorite ? <Favorited parentComponent={this} /> : <NotFavorited parentComponent={this} /> }
         </div>
 
-        { this.state.showContent ? <Content data={this.props.data} /> : null }
+        { this.state.showContent ? <ArticleContent data={this.props.data} /> : null }
       </li>
     );
   }

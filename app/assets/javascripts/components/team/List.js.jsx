@@ -1,4 +1,4 @@
-var List = React.createClass({
+var TeamList = React.createClass({
   buildMembers: function(memberList) {
     var memberNodes = memberList.map(this.buildMember)
     return memberNodes;
