@@ -52,9 +52,12 @@ html {
 }
 
 .rep-image {
-  margin: 25px auto;
-  padding: 0;
-  width: 200px;
-  height: 200px;
+  width:20%;
+}
+
+.elephant-pic, .donkey-pic {
+  height: 45px;
+  width: 45px;
   border-radius: 100px;
+  border:3px solid #212121;
 }
