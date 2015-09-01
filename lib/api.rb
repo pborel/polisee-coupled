@@ -2,58 +2,13 @@ module Api
   include Sunlight
   include Twitter
 
-## Next refactoring is to implement one method to refresh data
-
- #  def refresh_legislator_data
- #    self.query_sunlight_data
- #    self.query_twitter_images
- #  end
-
- # private
-
   def self.query_sunlight_data
     sunlight_client = Congress.new
     (1..11).each do |page_number|
-      reps_search = sunlight_client.all_legislators(page_number)
-      @local_legislators = JSON.parse(reps_search.body)
-      @local_legislators["results"].each do |rep|
-        legislator = Legislator.new(
-          bioguide_id: rep["bioguide_id"],
-          birthday: rep["birthday"],
-          chamber: rep["chamber"],
-          contact_form: rep["contact_form"],
-          crp_id: rep["crp_id"],
-          district: rep["district"],
-          facebook_id: rep["facebook_id"],
-          fax: rep["fax"],
-          first_name: rep["first_name"],
-          gender: rep["gender"],
-          govtrack_id: rep["govtrack_id"],
-          in_office: rep["in_office"],
-          last_name: rep["last_name"],
-          leadership_role: rep["leadership_role"],
-          lis_id: rep["lis_id"],
-          middle_name: rep["middle_name"],
-          name_suffix: rep["name_suffix"],
-          nickname: rep["nickname"],
-          oc_email: rep["oc_email"],
-          ocd_id: rep["ocd_id"],
-          office: rep["office"],
-          party: rep["party"],
-          phone: rep["phone"],
-          state: rep["state"],
-          state_name: rep["state_name"],
-          state_rank: rep["state_rank"],
-          term_end: rep["term_end"],
-          term_start: rep["term_start"],
-          thomas_id: rep["thomas_id"],
-          title: rep["title"],
-          twitter_id: rep["twitter_id"],
-          votesmart_id: rep["votesmart_id"],
-          website: rep["website"],
-          image: rep["image"],
-          )
-        legislator.save
+      response_data = sunlight_client.all_legislators(page_number)
+      legislators = JSON.parse(response_data.body)
+      legislators["results"].each do |rep|
+        self.create(rep)
       end
     end
   end
@@ -102,6 +57,7 @@ module Api
     end
   end
 
+private
   def self.add_bio_fields_to_legislator(legislator, data)
     if data["metadata"]["bio"] && data["metadata"]["bio_url"]
       legislator.update(bio: data["metadata"]["bio"],
@@ -119,7 +75,45 @@ module Api
       end
   end
 
-
+  def self.create(rep)
+    legislator = Legislator.new(
+      bioguide_id: rep["bioguide_id"],
+      birthday: rep["birthday"],
+      chamber: rep["chamber"],
+      contact_form: rep["contact_form"],
+      crp_id: rep["crp_id"],
+      district: rep["district"],
+      facebook_id: rep["facebook_id"],
+      fax: rep["fax"],
+      first_name: rep["first_name"],
+      gender: rep["gender"],
+      govtrack_id: rep["govtrack_id"],
+      in_office: rep["in_office"],
+      last_name: rep["last_name"],
+      leadership_role: rep["leadership_role"],
+      lis_id: rep["lis_id"],
+      middle_name: rep["middle_name"],
+      name_suffix: rep["name_suffix"],
+      nickname: rep["nickname"],
+      oc_email: rep["oc_email"],
+      ocd_id: rep["ocd_id"],
+      office: rep["office"],
+      party: rep["party"],
+      phone: rep["phone"],
+      state: rep["state"],
+      state_name: rep["state_name"],
+      state_rank: rep["state_rank"],
+      term_end: rep["term_end"],
+      term_start: rep["term_start"],
+      thomas_id: rep["thomas_id"],
+      title: rep["title"],
+      twitter_id: rep["twitter_id"],
+      votesmart_id: rep["votesmart_id"],
+      website: rep["website"],
+      image: rep["image"]
+      )
+    legislator.save
+  end
 
 
 end
