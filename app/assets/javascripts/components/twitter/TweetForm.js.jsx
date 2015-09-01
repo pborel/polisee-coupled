@@ -40,16 +40,20 @@ var TweetForm = React.createClass({
       }.bind(this),
       error: function(xhr, status, err) {
         this.clearForm()
-        // add modal here
-        console.log("FAILURE");
+        this.toast()
         console.error('/tweets', status, err.toString());
-        console.error(this.state.tweet);
+        console.error(this.state.message);
       }.bind(this)
       // done: function(data) {
+        // this.toast()
         // this.clearForm()
         // add modal here
       // }.bind(this)
     });
+  },
+
+  toast: function() {
+    Materialize.toast('<span>Tweet Sent!</span>', 3500)
   },
 
   clearForm: function() {
