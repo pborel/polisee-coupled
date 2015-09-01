@@ -27,7 +27,6 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'foundation-rails'
 
 gem 'httparty'
-
 # gem 'foundation-icons-sass-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -40,6 +39,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'jbuilder', '~> 1.2'
+
+group :development, :test do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
 
 group :doc do
   gem 'sdoc', require: false
