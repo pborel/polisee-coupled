@@ -8,7 +8,7 @@ var ArticleContent = React.createClass({
               <span className="card-title"><h5> Official Title: </h5></span>
                 <p>
                   <h6>{this.props.data.official_title}</h6>
-                <h5>Sponsor:</h5> {this.props.data.sponsor.title ? this.props.data.sponsor.title : null} {this.props.data.sponsor.first_name} {this.props.data.sponsor.last_name}<br/>
+                  <h5>Sponsor:</h5> {this.props.data.sponsor.title ? this.props.data.sponsor.title : null} {this.props.data.sponsor.first_name} {this.props.data.sponsor.last_name}<br/>
                   <h5>Introduced on:</h5> {this.props.data.introduced_on ? this.props.data.introduced_on : null}
                   <h5>Last Action: </h5> {this.props.data.last_version.version_name} on {this.props.data.last_version.issued_on}
                   <h5>Status:</h5> Active: {this.props.data.history.active ? "True" : "False"}<br/>
@@ -21,7 +21,7 @@ var ArticleContent = React.createClass({
                 </p>
             </div>
             <div className="card-action">
-              <a href="#">Tweet</a>
+              <TweetForm subject={""} />
               <a href={this.props.data.urls.opencongress}>More info</a>
             </div>
           </div>

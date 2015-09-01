@@ -14,7 +14,6 @@ var Home = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        debugger
         this.setState({representatives: data});
       }.bind(this),
       error: function(xhr, status, err) {

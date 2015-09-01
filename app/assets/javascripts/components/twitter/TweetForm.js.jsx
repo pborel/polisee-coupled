@@ -1,27 +1,10 @@
 var TweetForm = React.createClass({
   getInitialState: function() {
-    return({ message: "@" + this.props.handle + " #polisee.io " })
+    console.log(this.props.subject)
+    return({ message: this.props.subject + "#polisee.io " })
   },
-  // postTweet: function() {
-  //   $.ajax({
-  //     url: "/tweets",
-  //     method: "POST",
-  //     data: { message:  },
-  //     dataType: 'json',
-  //     cache: false,
-  //     success: function(data) {
-  //       console.log("SUCCESS")
-  //       console.log(data)
-  //     }.bind(this),
-  //     error: function(xhr, status, err) {
-  //       console.log("FAILURE")
-  //       console.error(this.props.favoritesUrl, status, err.toString());
-  //       console.error(this.state.data);
-  //     }.bind(this)
-  //   });
-  // },
 
-  submit: function (e) {
+  submit: function(e) {
     e.preventDefault()
 
     var tweet = {
