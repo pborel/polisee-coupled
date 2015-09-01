@@ -8,7 +8,8 @@ TwitterExample::Application.routes.draw do
   get 'signout', to: 'sessions#destroy', as: 'signout'
   # get 'bills/search', to: 'bills#search'
 
-  resources :tweets, only: [:new, :create]
+  resources :tweets, only: [:create]
+
   resources :sessions, only: [:create]
   get 'check', to: 'sessions#show'
 
