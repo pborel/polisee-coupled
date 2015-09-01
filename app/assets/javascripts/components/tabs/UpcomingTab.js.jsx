@@ -1,8 +1,9 @@
 var UpcomingTab = React.createClass({
     handleClick: function() {
-        // console.log("hitting UpcomingTab")
-        // console.log(this.props.tab)
-        this.props.parentElement.handleClick(this.props.tab)
+      var link = '/bills'
+      // console.log("hitting UpcomingTab")
+      // console.log(this.props.tab)
+      this.props.parentElement.handleClick(this.props.tab, link)
     },
 
     render: function() {
