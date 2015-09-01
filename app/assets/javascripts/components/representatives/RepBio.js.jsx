@@ -36,7 +36,7 @@ var RepBio = React.createClass({
 				Term End: {this.props.data.term_end} <br/>
 				{this.props.data.district ? "District: " + this.props.data.district : null}
   		  </p>
-        <TweetForm subject={"@" + this.props.data.twitter_id}/>
+        <TweetForm subject={"@" + this.props.data.twitter_id + " "}/>
       </div>
     )
   }
