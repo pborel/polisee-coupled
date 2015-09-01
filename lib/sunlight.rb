@@ -59,6 +59,12 @@ module Sunlight
                               page: page})
     end
 
+    def upcoming_bills(page = 1)
+      self.class.get('/upcoming_bills',
+                      headers: headers,
+                      query: {per_page: 50, page: page})
+    end
+
   end
 
 
