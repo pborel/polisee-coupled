@@ -4,8 +4,8 @@ var Route = ReactRouter.Route,
 this.AppRoutes = (
   <Route name='app' handler={App}>
     <Route name='home' handler={Home} path='/' />
-    <Route name='about' handler={About} path='/about' />
     <Route name='team' handler={TeamContainer} path='/team' />
+    <Route name='about' handler={About} path='/about' />
     <DefaultRoute handler={Home} />
   </Route>
 );

@@ -1,4 +1,4 @@
-var Box = React.createClass({
+var TeamBox = React.createClass({
   getInitialState: function() {
     return {
       data: []
@@ -27,7 +27,7 @@ var Box = React.createClass({
   render: function() {
     return (
       <div className="team-box">
-        <List data={this.state.data} />
+        <TeamList data={this.state.data} />
       </div>
     )
   }

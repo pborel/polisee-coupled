@@ -1,4 +1,4 @@
-var List = React.createClass({
+var ArticleList = React.createClass({
   buildArticles: function(articleList) {
     var articleNodes = articleList.map(this.buildArticle)
     return articleNodes;

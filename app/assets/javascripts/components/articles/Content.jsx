@@ -1,4 +1,4 @@
-var Content = React.createClass({
+var ArticleContent = React.createClass({
   render: function() {
     return (
       <div className="row debugger">

@@ -13,7 +13,7 @@ var Menu = React.createClass({
     return (
       <nav>
         <div className="nav-wrapper">
-          <a href="#!" className="brand-logo center">Polisee</a>
+          <a href="/" className="brand-logo center">Polisee</a>
             <ul className="left hide-on-med-and-down">
               <li>{signingLink}</li>
             </ul>
