@@ -7,7 +7,7 @@ var Tabs = React.createClass({
 
   render: function() {
     return (
-      <div className="row debugger">
+      <div className="row tabs debugger">
         <div className="col s12 debugger">
           <ul className="tabs pop-out z-depth-1 debugger">
             <IndexTab parentElement={this} tab={"index"} onClick={this.handleClick} />
@@ -24,4 +24,3 @@ var Tabs = React.createClass({
             // <li className="tab col s3"><a href="#test4">Hello</a></li>
             // <Tab2 />
             // <Tab3 />
-
