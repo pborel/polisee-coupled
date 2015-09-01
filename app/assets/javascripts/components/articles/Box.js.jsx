@@ -7,7 +7,7 @@ var Box = React.createClass({
   },
 
   loadArticlesFromServer: function(tab) {
-    // console.log(tab)
+    console.log(tab)
     $.ajax({
       tabName: tab,
       url: this.props.url,
