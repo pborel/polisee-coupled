@@ -6,10 +6,6 @@ var App = React.createClass({
     return { signedIn: false }
   },
 
-  // handleSigningLink: function() {
-    // signedIn = !signedIn;
-  // },
-
   checkSignedIn: function() {
     console.log("checking signed in");
 
