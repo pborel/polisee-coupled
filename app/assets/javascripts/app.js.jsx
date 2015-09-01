@@ -25,10 +25,11 @@ var App = React.createClass({
     return (
       <div>
         <Menu signedIn={this.state.signedIn} parentComponent={this} />
-        <ArticleContainer url="/bills" favoritesUrl="/favorites" />
-        <RepresentativeContainer url="/legislators" />
+        <RouteHandler />
         <FooterContainer />
       </div>
     );
   }
 });
+        // <ArticleContainer url="/bills" favoritesUrl="/favorites" />
+        // <RepresentativeContainer url="/legislators" />

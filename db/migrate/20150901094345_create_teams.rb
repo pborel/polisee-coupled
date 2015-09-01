@@ -6,6 +6,7 @@ class CreateTeams < ActiveRecord::Migration
       t.string :linkedin_url
       t.string :github_url
       t.string :website_url
+      t.string :image_url
 
       t.timestamps
     end
