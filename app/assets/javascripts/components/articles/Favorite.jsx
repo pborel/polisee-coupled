@@ -1,9 +1,14 @@
-var Favorite = React.createClass({
+var Favorited = React.createClass({
+  // handleClick: function() {
+    // console.log("scary")
+  // },
+
   render: function() {
     return (
-
-        <i className="tiny material-icons fav-icon debugger right">grade</i>
-
+      <span onClick={this.props.handleClick}>
+        <i className="tiny material-icons fav-icon right">grade</i>
+      </span>
     )
   }
 })
+// + {this.props.isFavorite}
