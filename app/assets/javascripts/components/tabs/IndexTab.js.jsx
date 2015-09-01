@@ -1,5 +1,7 @@
 var IndexTab = React.createClass({
-  handleClick: function() {
+  handleClick: function(event) {
+    event.preventDefault()
+    debugger
     // console.log("hitting IndexTab")
     // console.log(this.props.tab)
     this.props.parentElement.handleClick(this.props.tab)
