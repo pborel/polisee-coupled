@@ -2,7 +2,7 @@ class BillsController < ApplicationController
   include Sunlight
 
   def index
-    current_user
+    current_user if current_user
     path = params["tabName"]
     if path == "index" || path.nil?
       sunlight_client = Congress.new
