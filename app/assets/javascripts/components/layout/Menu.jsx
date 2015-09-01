@@ -1,6 +1,5 @@
 var Menu = React.createClass({
   componentDidMount: function() {
-    console.log("sheeet")
     this.props.parentComponent.checkSignedIn()
   },
 
@@ -18,12 +17,12 @@ var Menu = React.createClass({
           <a href="#!" className="brand-logo center">Polisee</a>
             <ul className="left hide-on-med-and-down">
               <li>{signingLink}</li>
-            </ul> 
+            </ul>
             <ul className="right hide-on-med-and-down">
               <form>
                 <div className="input-field">
                   <input id="search" type="search" placeholder = "zipjawn"/>
-                  <label for="search"><i className="material-icons">search</i></label>
+                  <label htmlFor="search"><i className="material-icons">search</i></label>
                 </div>
               </form>
             </ul>
