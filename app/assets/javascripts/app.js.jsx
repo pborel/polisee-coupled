@@ -4,7 +4,7 @@ var RouteHandler = ReactRouter.RouteHandler,
 var App = React.createClass({
   getInitialState: function() {
     return { signedIn: false,
-             zipCode: null }
+             representatives: null }
   },
 
   // handleSigningLink: function() {
@@ -18,9 +18,9 @@ var App = React.createClass({
       dataType: 'json',
       cache: false,
       data: {zip: zipCode},
-      success: function(zip) {
+      success: function(reps) {
         console.log("Zip: " + zipCode)
-        this.setState({zipCode: zipCode});
+        this.setState({representatives: reps});
       }.bind(this),
       error: function(xhr, status, err) {
         console.log("Zip: ERROR")
@@ -28,7 +28,7 @@ var App = React.createClass({
         console.error(this.state.zip);
       }.bind(this)
     });
-  
+
 
   },
 
