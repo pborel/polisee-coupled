@@ -13,15 +13,14 @@ var Menu = React.createClass({
     return (
       <nav>
         <div className="nav-wrapper">
-
-          <a href="#!" className="brand-logo center">Polisee</a>
+          <a href="/" className="brand-logo center">Polisee</a>
             <ul className="left hide-on-med-and-down">
               <li>{signingLink}</li>
             </ul>
             <ul className="right hide-on-med-and-down">
               <form>
                 <div className="input-field">
-                  <input id="search" type="search" placeholder = "zipjawn"/>
+                  <input id="search" type="search" placeholder = "zipcode"/>
                   <label htmlFor="search"><i className="material-icons">search</i></label>
                 </div>
               </form>
