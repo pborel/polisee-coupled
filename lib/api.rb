@@ -78,4 +78,48 @@ module Api
       # end
   end
 
+  def self.query_for_transparancy_id
+    sunlight_client = Transparancy.new
+    legislators =  Legislator.where(transparancy_id: [nil,""])
+    legislators.each do |legislator|
+      response = (sunlight_client.transparancy_id(legislator.bioguide_id)).response.body
+      parsed_response = JSON.parse(response)
+      if parsed_response.length > 0
+        id = parsed_response[0]["id"]
+        legislator.update(transparancy_id: id)
+      end
+    end
+  end
+
+  def self.query_for_entity_overview
+    sunlight_client = Transparancy.new
+    legislators = Legislator.where.not(transparancy_id: [nil,""])
+    legislators.each do |legislator|
+      response = (sunlight_client.entity_overview(legislator)).response.body
+      data = JSON.parse(response)
+      self.add_bio_fields_to_legislator(legislator, data)
+      self.add_cycle_details(legislator, data)
+    end
+  end
+
+  def self.add_bio_fields_to_legislator(legislator, data)
+    if data["metadata"]["bio"] && data["metadata"]["bio_url"]
+      legislator.update(bio: data["metadata"]["bio"],
+                        bio_URL: data["metadata"]["bio_url"])
+    end
+  end
+
+  def self.add_cycle_details(legislator, data)
+      cycles = data["totals"].keys.delete_if{|value| value == "-1"}
+      cycles.each do |year|
+        cycleDetails = data["totals"][year]
+        legislator.cycle_amounts.create(year: year,
+                                        count: cycleDetails["recipient_count"],
+                                        amount: cycleDetails["recipient_amount"])
+      end
+  end
+
+
+
+
 end

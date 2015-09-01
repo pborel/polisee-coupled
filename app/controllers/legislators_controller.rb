@@ -1,6 +1,7 @@
 class LegislatorsController < ApplicationController
 
   include Sunlight
+  # Dont need this when refactored
 
   def index
     p params
@@ -16,8 +17,11 @@ class LegislatorsController < ApplicationController
   end
 
   def show
-    @legislator = Legislator.find_by(bioguide_id: params[:id])
-    render json: @legislator
+    p params
+    @legislator = Legislator.where(id: params[:id]).first
+    data = {info: @legislator,
+            cycle_details: @legislator.cycle_amounts}
+    render json: data
   end
 
 private
@@ -53,6 +57,7 @@ private
   def create_sunlight_connection
     Congress.new
   end
+
 
 end
 
