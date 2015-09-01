@@ -71,8 +71,7 @@ module Api
             end
             twitter_profile = twitter_client.user(legislator.twitter_id)
             small_image_url = twitter_profile.profile_image_url.to_s
-            original_size_url = small_image_url.sub("_normal.jpeg",".jpeg")
-            original_size_url = original_size_url.sub("_normal.jpg", ".jpg")
+            original_size_url = small_image_url.sub("_normal.",".")
             legislator.update(image: original_size_url)
           end
         end

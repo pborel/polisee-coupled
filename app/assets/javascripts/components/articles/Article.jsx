@@ -7,28 +7,45 @@ var Article = React.createClass({
   },
 
   toggleContent: function() {
-    this.setState({ showContent: !this.state.showContent })
+    this.setState({ showContent: !this.state.showContent });
   },
 
   toggleFavorite: function() {
     this.setState({ favorite: !this.state.favorite })
+    { !this.state.favorite ? this.addToFavorites() : this.removeFromFavorites() }
   },
 
-  // addToFavorites: function() {
-  //   $.ajax({
-  //     url: this.props.favoritesUrl + "/create",
-  //     data: { external_id: this.props.data.bill_id },
-  //     dataType: 'json',
-  //     cache: false,
-  //     success: function(data) {
-  //       this.setState({favorites: data});
-  //     }.bind(this),
-  //     error: function(xhr, status, err) {
-  //       console.error(this.props.favoritesUrl, status, err.toString());
-  //       console.error(this.state.data);
-  //     }.bind(this)
-  //   });
-  // },
+  addToFavorites: function() {
+    $.ajax({
+      url: this.props.favoritesUrl + "/create",
+      data: { external_id: this.props.data.bill_id },
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        console.log(data)
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.favoritesUrl, status, err.toString());
+        console.error(this.state.data);
+      }.bind(this)
+    });
+  },
+
+  removeFromFavorites: function() {
+    $.ajax({
+      url: this.props.favoritesUrl + "/destroy",
+      data: { external_id: this.props.data.bill_id },
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        console.log(data)
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.favoritesUrl, status, err.toString());
+        console.error(this.state.data);
+      }.bind(this)
+    });
+  },
 
   // loadFavoritesFromServer: function() {
   //   $.ajax({

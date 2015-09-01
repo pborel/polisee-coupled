@@ -1,10 +1,20 @@
 class FavoritesController < ApplicationController
+
+  include Sunlight
+
   def index
-    p "FAVORITESSSSSSSSSSSSSS"
+    current_user
+    .favorites
+    sunlight_client = Congress.new
+    following_ids = @current_user.favorites.pluck(:external_id)
+    p following_ids
+    @bills = following_ids.map do |ids|
+      sunlight_client.bill(ids)
+    end
+    render json: @bills
   end
 
   def create
-    redirect_to root_path unless @current_user
     @favorite = @current_user.favorites.create(
         external_id: params[:bill_id],
         notify_at: Time.now + 1000,
@@ -13,11 +23,10 @@ class FavoritesController < ApplicationController
   end
 
   def destroy
-    @favorite = @current_user.favorites.where(external_id: "FILL IN")
+    @favorite = @current_user.favorites.where(external_id: params[:external_id])
     @favorite.destroy
     render json: @favorite.external_id
   end
 end
 
 
-"http://pbs.twimg.com/profile_images/464147946934517760/EZ8huLG8_normal.png"
