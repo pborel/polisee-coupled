@@ -10,13 +10,24 @@ a, a:focus, a:active {outline: none;}
 /* BELOW IS CSS FOR ARTICLES*/
 /*.debugger {border: 1px solid red;}*/
 .articles-container, .articles-box, .articles-list, .article {width:90%; margin: 0 auto; margin-top:20px;}
-.articles-container {height:575px;}
-.articles-box {height: 525px;}
-.articles-list {height: 400px; overflow-y:scroll;}
+.articles-container {height:auto;}
+.articles-box {height: auto;}
+.articles-list {min-height: 400px; max-height: 600px; overflow-y:scroll;}
 
 
 .footer-page {
   margin-top:20px;padding-top:20px;background-color:#ee6e73;padding-bottom: 20px;
+}
+
+.bill-content {
+  display:block;
+  line-height: 3rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.pop-out {
+
 }
 /*footer {
   margin-top: 0;
@@ -29,3 +40,23 @@ a, a:focus, a:active {outline: none;}
 /*.rep-bio {
 	display: none;
 }*/
+.rep-card {
+	width:30%;
+	display: inline-block;
+	margin: 10px;
+}
+
+
+.rep-image {
+	width: 418px;
+	height: 314px;
+}
+
+.rep-follow-button {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.card-action {
+	margin: 0 auto;
+}
+

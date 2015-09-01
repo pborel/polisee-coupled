@@ -14,4 +14,11 @@ class BillsController < ApplicationController
     render json: @bill
   end
 
+  def search
+    query = "Medicare"
+    sunlight_client = Congress.new
+    @bills = sunlight_client.search_bills(query)
+    render json: @bills
+  end
+
 end
