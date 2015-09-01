@@ -3,7 +3,30 @@ var RouteHandler = ReactRouter.RouteHandler,
 
 var App = React.createClass({
   getInitialState: function() {
-    return { signedIn: false }
+    return { signedIn: false,
+             zipCode: null }
+  },
+
+  // handleSigningLink: function() {
+    // signedIn = !signedIn;
+  // },
+
+  setZipCode: function(zipCode) {
+    $.ajax({
+      url: "/legislators",
+      dataType: 'json',
+      cache: false,
+      data: {zip: zipCode},
+      success: function(zip) {
+        console.log("Zip: " + zipCode)
+        this.setState({zipCode: zipCode});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.log("Zip: ERROR")
+        console.error('/check', status, err.toString());
+        console.error(this.state.zip);
+      }.bind(this)
+    });
   },
 
   checkSignedIn: function() {
