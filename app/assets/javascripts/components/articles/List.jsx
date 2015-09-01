@@ -5,7 +5,7 @@ var List = React.createClass({
   },
 
   buildArticle: function(article) {
-    return <Article data={article} />
+    return <Article data={article} favoritesUrl={this.props.favoritesUrl} />
   },
 
   render: function() {
