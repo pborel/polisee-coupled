@@ -9,4 +9,3 @@ var Twitter = React.createClass({
     )
   }
 });
-        // { this.state.showContent ? <TweetForm /> : null }

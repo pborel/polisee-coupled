@@ -41,7 +41,7 @@ var TweetForm = React.createClass({
 
   clearForm: function() {
     this.setState({
-      message: "@" + this.props.handle + " #polisee.io "
+      message: this.props.subject + "#polisee.io "
     });
   },
 
