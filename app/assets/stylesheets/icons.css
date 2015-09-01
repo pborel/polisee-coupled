@@ -1,0 +1,15 @@
+.github {
+  color: black
+}
+
+.linkedin {
+  color: #1683BB
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.twitter:hover {
+  color: #0084b4;
+}

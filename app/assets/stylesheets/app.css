@@ -20,15 +20,25 @@ a, a:focus, a:active {outline: none;}
 }
 
 .bill-content {
-  display:block;
-  line-height: 3rem;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
 }
 
 .pop-out {
 
 }
+
+.favorite {
+  float: right;
+}
+
+.favorited {
+  color: rgba(247,244,48,1);
+}
+
+.not-favorited {
+  color: rgba(122,122,122,0.7);
+}
+
 /*footer {
   margin-top: 0;
   background-color:#ee6e73;
@@ -59,4 +69,3 @@ a, a:focus, a:active {outline: none;}
 .card-action {
 	margin: 0 auto;
 }
-

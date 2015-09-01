@@ -1,5 +1,4 @@
 TwitterExample::Application.routes.draw do
-
   get "favorites/index"
   get "favorites/create"
   get "favorites/destroy"
@@ -25,6 +24,8 @@ TwitterExample::Application.routes.draw do
   resources :legislators, only: [:index, :show] do
     # resources :bills, only: [:index, :show]
   end
+
+  resources :teams, only: [:index, :show]
 
   get "/*path" => "home#index"
 end
