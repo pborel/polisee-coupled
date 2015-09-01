@@ -9,10 +9,3 @@ var ButtonSpace = React.createClass({
 		)
 	}
 })
-				// <i className="material-icons right"></i>tweet</a>
-			// <span> -- <a href={this.props.tweet_link}>{this.props.twitter_handle}</a></span>
-
-
-
-
-
