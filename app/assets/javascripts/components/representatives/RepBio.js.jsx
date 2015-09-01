@@ -29,13 +29,12 @@ var RepBio = React.createClass({
 			<div className="card-reveal">
 			      <span className="card-title grey-text text-darken-4">{this.props.data.title}. {this.props.data.first_name} {this.props.data.last_name} <i className="material-icons right">close</i></span>
 			      <p>
-			      		Name: {this.props.data.first_name} {this.props.data.last_name} <br/>
 						Party: {party} <br/>
 						State: {this.props.data.state_name} <br/>
 						Chamber: {this.props.data.chamber.capitalizeFirstLetter()} <br/>
 						Term Start: {this.props.data.term_start} <br/>
 						Term End: {this.props.data.term_end} <br/>
-						District: {this.props.data.district}
+						{this.props.data.district ? "District: " + this.props.data.district : null}
 				  </p>
 			 </div>
 		)
