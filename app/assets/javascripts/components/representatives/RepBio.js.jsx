@@ -27,17 +27,21 @@ var RepBio = React.createClass({
       }
 		return (
 			<div className="card-reveal">
-			      <span className="card-title grey-text text-darken-4">{this.props.data.title}. {this.props.data.first_name} {this.props.data.last_name} <i className="material-icons right">close</i></span>
-			      <p>
-						Party: {party} <br/>
-						State: {this.props.data.state_name} <br/>
-						Chamber: {this.props.data.chamber.capitalizeFirstLetter()} <br/>
-						Term Start: {this.props.data.term_start} <br/>
-						Term End: {this.props.data.term_end} <br/>
-						{this.props.data.district ? "District: " + this.props.data.district : null}
-				  </p>
-			 </div>
-		)
-	}
+	      <span className="card-title grey-text text-darken-4">{this.props.data.title}. {this.props.data.first_name} {this.props.data.last_name} <i className="material-icons right">close</i></span>
+	      <p>
+				Party: {party} <br/>
+				State: {this.props.data.state_name} <br/>
+				Chamber: {this.props.data.chamber.capitalizeFirstLetter()} <br/>
+				Term Start: {this.props.data.term_start} <br/>
+				Term End: {this.props.data.term_end} <br/>
+				{this.props.data.district ? "District: " + this.props.data.district : null}
+  		  </p>
+        <TweetForm />
+      </div>
+    )
+  }
 })
+          // url: tweets_path, method: :post do |f| %>
+          //   <%= f.text_field :message %>
+          //   <%= f.submit "Send Tweet" %>
 
