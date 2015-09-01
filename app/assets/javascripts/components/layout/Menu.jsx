@@ -20,7 +20,7 @@ var Menu = React.createClass({
               <li>{signingLink}</li>
             </ul> 
             <ul className="right hide-on-med-and-down">
-
+            <ZipContainer parentComponent={this.props.parentComponent}/>
             </ul>
         </div>
       </nav>
