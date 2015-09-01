@@ -9,10 +9,10 @@ var Menu = React.createClass({
 
   render: function() {
     if (this.props.signedIn) {
-      var signingLink = <li><span id={this.props.signedIn}><a href={'/signout'}>Sign Out</a></span></li>;
+      var signingLink = <li><span id={this.props.signedIn}><a href={'/signout'}><i className="material-icons">input</i></a></span></li>;
     } else {
       console.log(this.props.parentComponent);
-      var signingLink = <li><span id={this.props.signedIn}><a href={'/auth/twitter'}>Sign In</a></span></li>
+      var signingLink = <li><span id={this.props.signedIn}><a href={'/auth/twitter'}><i className="material-icons">perm_identity</i></a></span></li>
     }
     return (
       <nav>

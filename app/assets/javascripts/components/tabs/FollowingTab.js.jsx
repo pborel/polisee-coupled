@@ -9,7 +9,7 @@ var FollowingTab = React.createClass({
     render: function(){
       return(
         <li className="tab col s4">
-          <a href="#" onClick={this.handleClick} className="waves-effect waves-red btn-flat btn">Following</a>
+          <a href="#" onClick={this.handleClick} className="waves-effect waves-red btn-flat ">Following</a>
         </li>
       );
     }
