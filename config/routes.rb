@@ -2,7 +2,6 @@ TwitterExample::Application.routes.draw do
   get "favorites/index"
   get "favorites/create"
   get "favorites/destroy"
-  root 'home#index'
 
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
@@ -27,5 +26,7 @@ TwitterExample::Application.routes.draw do
 
   resources :teams, only: [:index, :show]
 
-  get "/*path" => "home#index"
+  root 'home#index'
+
+  # get "/*path" => "home#index"
 end

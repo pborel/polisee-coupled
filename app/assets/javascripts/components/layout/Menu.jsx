@@ -1,4 +1,8 @@
 var Menu = React.createClass({
+  componentDidMount: function() {
+    this.props.parentComponent.checkSignedIn()
+  },
+
   handleZipTransaction: function(zipCode) {
     this.props.parentComponent.setZipCode(zipCode)
   },
@@ -28,4 +32,4 @@ var Menu = React.createClass({
   }
 });
 
-       
+
