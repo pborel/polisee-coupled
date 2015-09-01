@@ -1,5 +1,7 @@
 TwitterExample::Application.routes.draw do
 
+  resources :teams
+
   get "favorites/index"
   get "favorites/create"
   get "favorites/destroy"
