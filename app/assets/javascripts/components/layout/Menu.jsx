@@ -20,12 +20,7 @@ var Menu = React.createClass({
               <li>{signingLink}</li>
             </ul> 
             <ul className="right hide-on-med-and-down">
-              <form>
-                <div className="input-field">
-                  <input id="search" type="search" placeholder = "zipjawn"/>
-                  <label for="search"><i className="material-icons">search</i></label>
-                </div>
-              </form>
+
             </ul>
         </div>
       </nav>
@@ -33,3 +28,4 @@ var Menu = React.createClass({
   }
 });
 
+       
