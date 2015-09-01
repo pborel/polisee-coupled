@@ -7,8 +7,8 @@ var FooterContainer = React.createClass({
     <div className ='footer-page'>
       <div className="container">
         <div className="row">
-          < FooterContent />
-          < FooterLinks />
+          <FooterContent />
+          <FooterLinks />
         </div>
       </div>
     </div>

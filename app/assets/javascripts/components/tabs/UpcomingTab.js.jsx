@@ -13,17 +13,3 @@ var UpcomingTab = React.createClass({
       );
     }
 });
-    // getInitialState: function(){
-    //   return { disableButton: false }
-    // },
-
-    // toggleDisable: function(){
-    //   console.log("do shit")
-    //   if(this.state.disableButton != true) {
-    //     this.setState({ disableButton: true })
-    //     var
-    //   } else {
-    //     this.setState({ disableButton: false })
-    //   }
-
-    // },
