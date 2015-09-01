@@ -4,7 +4,7 @@ var RouteHandler = ReactRouter.RouteHandler,
 var RepresentativeContainer = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="debugger rep-container">
         <RepresentativeBox url={this.props.url} />
       </div>
     )

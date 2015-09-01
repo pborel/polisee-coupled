@@ -4,7 +4,6 @@ var Article = React.createClass({
   },
 
   toggleContent: function() {
-    console.log("showing content")
     if(this.state.showContent != true) {
       this.setState({ showContent: true })
     } else {
