@@ -3,7 +3,7 @@ var RouteHandler = ReactRouter.RouteHandler,
 
 var ZipContainer = React.createClass({
   getInitialState: function() {
-  	debugger
+
     return {
       data: []
     };
@@ -25,9 +25,14 @@ var ZipContainer = React.createClass({
   //   });
   // },
 
-  submitZipToServer: function (zip) {
+  submitZipToServer: function (event) {
+  	debugger
   	event.preventDefault()
-  	console.log('helloasdfasdfasdfas')
+
+  
+  },
+
+
   	// $.ajax({
    //    data: { zip: zip },
    //    url: "http://localhost:3000/legislators",
@@ -41,9 +46,6 @@ var ZipContainer = React.createClass({
    //      console.error(this.state.data);
    //    }.bind(this)
    //  });
-  },
-
-
 
 
 
@@ -55,9 +57,9 @@ var ZipContainer = React.createClass({
 
 
     return (
-		<form>
-    		<div className="input-field">
-      			<input id="search" type="search" placeholder = "zipjawn" />
+		<form onSubmit={this.submitZipToServer}>
+    		<div className="input-field" >
+      			<input id="search" type="search" placeholder = "zipjawn" ref="zipcode"/>
       			<label for="search"><i className="material-icons">search</i></label>
     		</div>
   		</form>

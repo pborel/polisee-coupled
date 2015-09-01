@@ -1,7 +1,7 @@
 var Menu = React.createClass({
-  componentDidMount: function() {
-    this.props.parentComponent.checkSignedIn()
-  },
+  // componentDidMount: function() {
+  //   this.props.parentComponent.checkSignedIn()
+  // },
 
   render: function() {
     if (this.props.signedIn) {
