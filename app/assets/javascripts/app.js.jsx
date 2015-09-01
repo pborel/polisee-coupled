@@ -12,7 +12,6 @@ var App = React.createClass({
   // },
 
   setZipCode: function(zipCode) {
-
     $.ajax({
       url: "/legislators",
       dataType: 'json',
@@ -28,8 +27,6 @@ var App = React.createClass({
         console.error(this.state.zip);
       }.bind(this)
     });
-  
-
   },
 
   checkSignedIn: function() {
