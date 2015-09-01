@@ -1,7 +1,8 @@
 var Tabs = React.createClass({
 
-  handleClick: function() {
-    console.log("updating view")
+  handleClick: function(tab) {
+    // console.log("hitting tabs")
+    this.props.parentElement.updateListView(tab)
   },
 
   render: function() {
@@ -9,9 +10,9 @@ var Tabs = React.createClass({
       <div className="row debugger">
         <div className="col s12 debugger">
           <ul className="tabs pop-out z-depth-1 debugger">
-            <IndexTab onClick={this.handleClick} />
-            <UpcomingTab onClick={this.handleClick} />
-            <FollowingTab onClick={this.handleClick} />
+            <IndexTab parentElement={this} tab={"index"} onClick={this.handleClick} />
+            <UpcomingTab parentElement={this} tab={"upcoming"} onClick={this.handleClick} />
+            <FollowingTab parentElement={this} tab={"following"} onClick={this.handleClick} />
           </ul>
         </div>
       </div>
@@ -23,3 +24,4 @@ var Tabs = React.createClass({
             // <li className="tab col s3"><a href="#test4">Hello</a></li>
             // <Tab2 />
             // <Tab3 />
+

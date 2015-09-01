@@ -1,10 +1,14 @@
 var Box = React.createClass({
   getInitialState: function() {
-    return {data: []};
+    return {
+      currentTab: "index",
+      data: []
+    };
   },
 
-  loadArticlesFromServer: function() {
+  loadArticlesFromServer: function(tab) {
     $.ajax({
+      tabName: tab,
       url: this.props.url,
       dataType: 'json',
       cache: false,
@@ -19,22 +23,26 @@ var Box = React.createClass({
   },
 
   componentDidMount: function() {
-    this.loadArticlesFromServer();
+    var tab = "index"
+    this.loadArticlesFromServer(tab);
   },
 
-  updateListView: function() {
-    console.log("updating list view")
-    this.loadArticlesFromServer();
+  updateListView: function(tab) {
+    console.log("hitting Box")
+    this.setState({currentTab: tab})
+    console.log(this.state.currentTab)
+    this.loadArticlesFromServer(tab);
   },
 
   render: function() {
     return (
       <div className="debugger articles-box">
         <SearchFilter />
-        <Tabs handleClick={this.updateListView} />
+        <Tabs parentElement={this} handleClick={this.updateListView} />
         <List data={this.state.data} />
         <hr />
       </div>
     )
   }
 });
+// .bind(this, tab)
