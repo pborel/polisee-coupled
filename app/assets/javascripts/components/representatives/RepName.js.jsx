@@ -17,20 +17,12 @@ var RepName = React.createClass({
 				{this.props.title}. {this.props.first_name} {this.props.last_name} 
 				<img src={partyImage} className="party-pic" / >
 				<i className="material-icons right">more_vert</i>
-				< TagsList / >
 			</span>
 		</div>
 		)
 	}
 })
-			// <p><a className="waves-effect waves-light btn"><i className="material-icons right"></i>tweet</a></p>
 
-			// <a href={this.props.url} >{this.props.first_name} {this.props.last_name}</a>
-
-
-				
-
-				// https://upload.wikimedia.org/wikipedia/en/e/ee/Democratslogo.svg
 			
 
 
