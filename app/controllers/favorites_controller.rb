@@ -1,5 +1,6 @@
 class FavoritesController < ApplicationController
   def index
+    redirect_to root_path unless @current_user
     @favorites = @current_user.favorites
     render json: @favorites
   end

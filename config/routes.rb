@@ -11,7 +11,7 @@ TwitterExample::Application.routes.draw do
   # get 'bills/search', to: 'bills#search'
 
   resources :tweets, only: [:new, :create]
-  resources :sessions, only: [:create, :destroy]
+  resources :sessions, only: [:create]
   resource :home, only: [:show]
 
   resources :bills, only: [:index, :show]
