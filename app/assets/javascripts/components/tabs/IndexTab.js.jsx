@@ -1,5 +1,5 @@
 var IndexTab = React.createClass({
-  handleClick: function() {
+  handleClick: function(event) {
     // console.log("hitting IndexTab")
     // console.log(this.props.tab)
     this.props.parentElement.handleClick(this.props.tab)
@@ -13,17 +13,3 @@ var IndexTab = React.createClass({
     );
   }
 });
-    // getInitialState: function(){
-    //   return { disableButton: false }
-    // },
-
-    // toggleDisable: function(){
-    //   console.log("do shit")
-    //   if(this.state.disableButton != true) {
-    //     this.setState({ disableButton: true })
-    //     var
-    //   } else {
-    //     this.setState({ disableButton: false })
-    //   }
-
-    // },

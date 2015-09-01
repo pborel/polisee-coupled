@@ -1,27 +1,34 @@
 var Menu = React.createClass({
   componentDidMount: function() {
-    console.log("sheeet")
     this.props.parentComponent.checkSignedIn()
   },
 
   render: function() {
     if (this.props.signedIn) {
-      var signingLink = <li><span id={this.props.signedIn}><a href={'/logout'}>Sign Out</a></span></li>;
+      var signingLink = <li><span id={this.props.signedIn}><a href={'/signout'}>Sign Out</a></span></li>;
     } else {
       console.log(this.props.parentComponent);
       var signingLink = <li><span id={this.props.signedIn}><a href={'/auth/twitter'}>Sign In</a></span></li>
     }
     return (
       <nav>
-        <span id="menu-link"><span></span></span>
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo">Polisee</a>
-          <ul id="nav" className="right hide-on-med-and-down">
-            <li>About</li>
-            {signingLink}
-          </ul>
+
+          <a href="#!" className="brand-logo center">Polisee</a>
+            <ul className="left hide-on-med-and-down">
+              <li>{signingLink}</li>
+            </ul>
+            <ul className="right hide-on-med-and-down">
+              <form>
+                <div className="input-field">
+                  <input id="search" type="search" placeholder = "zipjawn"/>
+                  <label htmlFor="search"><i className="material-icons">search</i></label>
+                </div>
+              </form>
+            </ul>
         </div>
       </nav>
     );
   }
 });
+

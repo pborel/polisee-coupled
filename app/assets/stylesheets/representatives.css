@@ -42,6 +42,11 @@ html {
   overflow-y: scroll;
 }
 
+.rep-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .rep-profile {
   width: 170px;
   display: inline-block;
@@ -55,9 +60,25 @@ html {
   width:20%;
 }
 
-.elephant-pic, .donkey-pic {
+.party-pic {
   height: 45px;
   width: 45px;
-  border-radius: 100px;
-  border:3px solid #212121;
+  margin-bottom: -5px;
+  margin-left: 10px;
+/*  border-radius: 100px;*/
+/*  border:3px solid #212121;*/
 }
+
+.tag {
+    display: block;
+    padding-left: .6em;
+    padding-right: .6em;
+    line-height: inherit;
+    font-size: .9375em;
+    font-weight: normal;
+    color: #778187;
+    background: #f2f2f3;
+}
+
+.zip-input
+
