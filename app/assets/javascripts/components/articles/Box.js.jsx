@@ -9,7 +9,7 @@ var Box = React.createClass({
   loadArticlesFromServer: function(tab) {
     console.log(tab)
     $.ajax({
-      tabName: tab,
+      data: { tabName: tab },
       url: this.props.url,
       dataType: 'json',
       cache: false,
