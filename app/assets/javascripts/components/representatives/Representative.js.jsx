@@ -7,7 +7,7 @@ var Representative = React.createClass({
       <span>
         <div className="card rep-card">
         	< RepPicture url={this.props.data.image} />
-        	< RepName url={this.props.data.website} title={this.props.data.title} first_name={this.props.data.first_name} last_name={this.props.data.last_name}  />
+        	< RepName url={this.props.data.website} title={this.props.data.title} first_name={this.props.data.first_name} last_name={this.props.data.last_name} party={this.props.data.party} />
         	< ButtonSpace tweet_link={handle} twitter_handle={this.props.data.twitter_id}
              data = {this.props.data} facebook_link={facebook} />
           < RepBio  data={this.props.data}/>
