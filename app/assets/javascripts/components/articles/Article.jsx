@@ -7,11 +7,11 @@ var Article = React.createClass({
   },
 
   toggleContent: function() {
-    if(this.state.showContent != true) {
-      this.setState({ showContent: true })
-    } else {
-      this.setState({ showContent: false })
-    }
+    this.setState({ showContent: !this.state.showContent })
+  },
+
+  toggleFavorite: function() {
+    this.setState({ favorite: !this.state.favorite })
   },
 
   // addToFavorites: function() {
@@ -54,7 +54,8 @@ var Article = React.createClass({
       <li>
         <div className="collapsible-header" onClick={this.toggleContent}>
           {this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title}
-          <Favorited handleClick={this.updateFavorites} />
+
+          { this.state.favorite ? <Favorited parentComponent={this} /> : <NotFavorited parentComponent={this} /> }
         </div>
 
         { this.state.showContent ? <Content data={this.props.data} /> : null }

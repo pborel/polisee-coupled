@@ -29,7 +29,14 @@ a, a:focus, a:active {outline: none;}
 
 .favorite {
   float: right;
+}
 
+.favorited {
+  color: rgba(247,244,48,1);
+}
+
+.not-favorited {
+  color: rgba(122,122,122,0.7);
 }
 
 /*footer {

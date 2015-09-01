@@ -1,4 +1,4 @@
-var Favorited = React.createClass({
+var NotFavorited = React.createClass({
   // handleClick: function() {
     // console.log("scary")
   // },
@@ -6,7 +6,7 @@ var Favorited = React.createClass({
   render: function() {
     return (
       <span onClick={this.props.parentComponent.toggleFavorite}>
-        <i className="tiny material-icons fav-icon right favorited">grade</i>
+        <i className="tiny material-icons fav-icon right not-favorited">grade</i>
       </span>
     )
   }
