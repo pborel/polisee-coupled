@@ -22,9 +22,11 @@ var Article = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
+        console.log("SUCCESS")
         console.log(data)
       }.bind(this),
       error: function(xhr, status, err) {
+        console.log("FAILURE")
         console.error(this.props.favoritesUrl, status, err.toString());
         console.error(this.state.data);
       }.bind(this)
@@ -69,13 +71,15 @@ var Article = React.createClass({
   render: function() {
     return (
       <li>
-        <div className="collapsible-header" onClick={this.toggleContent}>
-          {this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title}
-
-          { this.state.favorite ? <Favorited parentComponent={this} /> : <NotFavorited parentComponent={this} /> }
-        </div>
-
-        { this.state.showContent ? <ArticleContent data={this.props.data} /> : null }
+        <div className="collapsible-header article-head-container debugger">
+          <div className="article-head debugger" onClick={this.toggleContent}>
+            {this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title}
+          </div>
+          <div className="favorite">
+            { this.state.favorite ? <Favorited parentComponent={this} /> : <NotFavorited parentComponent={this} /> }
+          </div>
+          </div>
+          { this.state.showContent ? <ArticleContent data={this.props.data} /> : null }
       </li>
     );
   }
