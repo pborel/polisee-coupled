@@ -15,6 +15,7 @@ a, a:focus, a:active {outline: none;}
 .articles-list {min-height: 400px; max-height: 600px; overflow-y:scroll;}
 
 
+
 .footer-page {
   margin-top:20px;padding-top:20px;background-color:#ee6e73;padding-bottom: 20px;
 }
@@ -27,9 +28,26 @@ a, a:focus, a:active {outline: none;}
 
 }
 
-.favorite {
-  float: right;
+/*==-----stuff added in bills-card-v2=-----*/
+.article-head {
+  max-width: 90%;
+  display:inline-block;
 }
+
+.article-head-container {
+  overflow: hidden;
+}
+
+.favorited, .not-favorited {
+}
+
+.favorite {
+  display:inline-block;
+  float: right;
+  clear: both;
+}
+
+/*---------*/
 
 .favorited {
   color: rgba(247,244,48,1);
