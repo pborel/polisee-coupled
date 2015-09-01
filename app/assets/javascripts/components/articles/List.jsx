@@ -11,8 +11,8 @@ var List = React.createClass({
   render: function() {
     var articleNodes = this.buildArticles(this.props.data)
     return (
-      <div className="articles-list">
-        <ul className="collapsible">
+      <div className="articles-list debugger">
+        <ul className="collapsible debugger">
            {articleNodes}
         </ul>
       </div>
