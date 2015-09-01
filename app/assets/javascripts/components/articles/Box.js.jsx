@@ -29,7 +29,7 @@ var Box = React.createClass({
 
   updateListView: function(tab) {
     // console.log("hitting Box")
-    this.setState({currentTab: tab})
+    this.setState({ currentTab: tab })
     this.loadArticlesFromServer(tab);
   },
 
@@ -38,7 +38,7 @@ var Box = React.createClass({
       <div className="debugger articles-box">
         <SearchFilter />
         <Tabs parentElement={this} handleClick={this.updateListView} />
-        <List data={this.state.data} />
+        <List data={this.state.data} favoritesUrl={this.props.favoritesUrl} />
         <hr />
       </div>
     )

@@ -25,7 +25,7 @@ var App = React.createClass({
     return (
       <div>
         <Menu signedIn={this.state.signedIn} parentComponent={this} />
-        <ArticleContainer url="/bills" />
+        <ArticleContainer url="/bills" favoritesUrl="/favorites" />
         <RepresentativeContainer url="/legislators" />
         <FooterContainer />
       </div>
