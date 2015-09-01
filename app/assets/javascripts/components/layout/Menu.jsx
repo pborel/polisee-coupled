@@ -1,13 +1,6 @@
 var Menu = React.createClass({
-  // componentDidMount: function() {
-  //   this.props.parentComponent.checkSignedIn()
-  // },
-
-
   handleZipTransaction: function(zipCode) {
-
-    // call 
-
+    this.props.parentComponent.setZipCode(zipCode)
   },
 
   render: function() {

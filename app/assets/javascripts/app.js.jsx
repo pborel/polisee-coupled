@@ -11,24 +11,26 @@ var App = React.createClass({
     // signedIn = !signedIn;
   // },
 
-  // setZipCode: function() {
-  //   $.ajax({
-  //     url: "// url here,",
-  //     dataType: 'json',
-  //     cache: false,
-  //     success: function(zip) {
-  //       console.log("Zip: " + zip)
-  //       this.setState({zipCode: zip});
-  //     }.bind(this),
-  //     error: function(xhr, status, err) {
-  //       console.log("Zip: ERROR")
-  //       console.error('/check', status, err.toString());
-  //       console.error(this.state.zip);
-  //     }.bind(this)
-  //   });
+  setZipCode: function(zipCode) {
+
+    $.ajax({
+      url: "/legislators",
+      dataType: 'json',
+      cache: false,
+      data: {zip: zipCode},
+      success: function(zip) {
+        console.log("Zip: " + zipCode)
+        this.setState({zipCode: zipCode});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.log("Zip: ERROR")
+        console.error('/check', status, err.toString());
+        console.error(this.state.zip);
+      }.bind(this)
+    });
   
 
-  // },
+  },
 
   checkSignedIn: function() {
     $.ajax({
