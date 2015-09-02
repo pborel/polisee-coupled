@@ -20,7 +20,7 @@ class LegislatorsController < ApplicationController
   end
 
   def donors
-    legislator = Legislator.find_by_id(params[:id])
+    legislator = Legislator.find_by_id(params[:legislator_id])
     client = transparancy_api
     donor_data = (client.top_donors(legislator, "2014")).body
     sector_data = (client.top_sectors(legislator, "2014")).body
