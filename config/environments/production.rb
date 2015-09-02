@@ -1,4 +1,4 @@
-# TwitterExample::Application.configure do
+# Polisee::Application.configure do
 #   # Settings specified here will take precedence over those in config/application.rb.
 
 #   # Code is not reloaded between requests.
@@ -78,7 +78,7 @@
 #   # Use default logging formatter so that PID and timestamp are not suppressed.
 #   config.log_formatter = ::Logger::Formatter.new
 # end
-TwitterExample::Application.configure do
+Polisee::Application.configure do
   config.cache_classes = false
   config.eager_load = false
   config.consider_all_requests_local       = false
