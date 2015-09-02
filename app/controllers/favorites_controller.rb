@@ -14,10 +14,7 @@ class FavoritesController < ApplicationController
   end
 
   def create
-    #add a method to include notify at as a strech goal
-    @favorite = current_user.favorites.find_or_create_by(
-        external_id: params[:external_id],
-        record_type: "bill")
+    @favorite = current_user.favorites.find_or_create_by(external_id: params[:external_id])
     render json: @favorite.external_id
   end
 
