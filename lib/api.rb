@@ -11,6 +11,7 @@ module Api
   def self.populate_secondary_info
     self.query_for_transparancy_id
     self.query_for_entity_overview
+    self.remove_p_tags
   end
 
 # private
@@ -73,8 +74,16 @@ module Api
 
   def self.add_bio_fields_to_legislator(legislator, data)
     if data["metadata"]["bio"] && data["metadata"]["bio_url"]
-      legislator.update(bio: data["metadata"]["bio"],
+      legislator.update(bio: self.unmarked_up(data["metadata"]["bio"]),
                         bio_URL: data["metadata"]["bio_url"])
+    end
+  end
+
+  def self.remove_p_tags
+    legislators = Legislator.where.not(bio: nil)
+    legislators.each do |legislator|
+      new_bio = legislator.bio.gsub("<p>", '').gsub('</p>','')
+      legislator.update(bio: new_bio)
     end
   end
 
