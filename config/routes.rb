@@ -23,6 +23,7 @@ TwitterExample::Application.routes.draw do
 
   resources :legislators, only: [:index, :show] do
     # resources :bills, only: [:index, :show]
+    resources :donors, only: :index, to: 'legislators#donors'
   end
 
   resources :teams, only: [:index, :show]

@@ -71,21 +71,36 @@ module Sunlight
     base_uri 'http://transparencydata.org/api/1.0'
 
     def transparancy_id(bioguide_id)
-        self.class.get("/entities/id_lookup.json",
-                        query: {apikey: token,
+        self.class.get( "/entities/id_lookup.json",
+                        query:  {apikey: token,
                                 bioguide_id: bioguide_id})
     end
 
-    def top_donors(transparancy_id)
-
+    def top_donors(legislator, year)
+      url = "/aggregates/pol/#{legislator.transparancy_id}/contributors.json"
+      p url
+      self.class.get( url,
+                      query:  {apikey: token,
+                              cycle: year,
+                              limit: 10})
     end
+
+    def top_sectors(legislator, year)
+      url = "/aggregates/pol/#{legislator.transparancy_id}/contributors/sectors.json"
+      self.class.get( url,
+                      query:  {apikey: token,
+                              cycle: year,
+                              limit: 15})
+    end
+
+
 
     def entity_overview(legislator)
-      url = "/entities/#{legislator.transparancy_id}.json?"
+      url = "/entities/#{legislator.transparancy_id}.json"
       self.class.get(url,
                     query: {apikey: token})
-
     end
+
 
   end
 
