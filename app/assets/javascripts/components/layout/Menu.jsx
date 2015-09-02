@@ -9,9 +9,15 @@ var Menu = React.createClass({
 
   render: function() {
     if (this.props.signedIn) {
-      var signingLink = <li><span id={this.props.signedIn}><a href={'/signout'}><i className="material-icons">input</i>Sign Out</a></span></li>;
+      var signingLink =
+        <span id={this.props.signedIn}>
+            <a className=" valign-wrapper debugger1" vhref={'/signout'}><i className="debugger1 material-icons valign">input</i><span className="sign-in-out-margin-left">Sign Out</span></a>
+        </span>;
     } else {
-      var signingLink = <li><span id={this.props.signedIn}><a href={'/auth/twitter'}><i className="material-icons">perm_identity</i>Sign In</a></span></li>
+      var signingLink =
+        <span id={this.props.signedIn}>
+            <a className="debugger1 valign-wrapper" href={'/auth/twitter'}><i className="material-icons valign debugger1">perm_identity</i><span className="sign-in-out-margin-left">Sign In</span></a>
+        </span>
     }
     return (
       <nav className="cyan darken-1">
@@ -23,17 +29,16 @@ var Menu = React.createClass({
                </div>
              </div>
            </div>
-            <ul className="left hide-on-med-and-down">
-              <li>{signingLink}</li>
+            <ul className="debugger1 left hide-on-med-and-down">
+              <li className="debugger1">{signingLink}</li>
             </ul>
-            <ul className="right hide-on-med-and-down">
 
-            <ZipContainer parentComponent={this.props.parentComponent} handleSubmit={this.handleZipTransaction}/>
-            </ul>
+            <div className="right hide-on-med-and-down">
+                <ZipContainer parentComponent={this.props.parentComponent} handleSubmit={this.handleZipTransaction}/>
+            </div>
+
         </div>
       </nav>
     );
   }
 });
-
-

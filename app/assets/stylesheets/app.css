@@ -8,7 +8,7 @@ a, a:focus, a:active {outline: none;}
 .thin {font-weight: 200;}
 
 /* BELOW IS CSS FOR ARTICLES*/
-/*.debugger {border: 1px solid red;}*/
+/*.debugger1 {border: 1px solid red;}*/
 /*.articles-container, .articles-box, .articles-list, .article {width:90%; margin: 0 auto; margin-top:20px;}*/
 .articles-container {height:auto; width:80%; margin: 0 auto; margin-top:20px;}
 .articles-box {height: auto; width:100%; margin: 0 auto; margin-top:20px;}
@@ -134,4 +134,15 @@ a, a:focus, a:active {outline: none;}
 .container-spacer {
   padding-bottom: 50px;
 }
+/*----header-icons----*/
+.materialized-height-line {
+  line-height: 5.5em;
+}
 
+.sign-in-out-margin-left {
+  margin-left: .5em;
+}
+
+.zip-icon-push-right {
+  margin-left: 1.3em;
+}
