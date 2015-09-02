@@ -14,12 +14,12 @@ var ArticleBox = React.createClass({
 
     for (var index in bills) {
       if (bills[index].short_title === null) {
-        if (bills[index].official_title.match(regExp)) {
+        if (bills[index].official_title.toLowerCase().match(regExp)) {
           newData.push(bills[index])
         }
       }
       else {
-        if (bills[index].short_title.match(regExp)) {
+        if (bills[index].short_title.toLowerCase().match(regExp)) {
           newData.push(bills[index])
         }
       }

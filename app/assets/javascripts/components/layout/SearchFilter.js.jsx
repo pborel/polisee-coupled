@@ -2,7 +2,7 @@ var SearchFilter = React.createClass({
 
   submitChange: function (event) {
     event.preventDefault()
-    var searchInput = React.findDOMNode(this.refs.search).value
+    var searchInput = React.findDOMNode(this.refs.search).value.toLowerCase()
     this.props.handleQueryChange(searchInput)
   },
 
