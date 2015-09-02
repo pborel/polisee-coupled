@@ -1,26 +1,26 @@
 var Representative = React.createClass({
-  // getInitialState: function() { return ({ latestFundingInfo: "" }) },
+  getInitialState: function() { return ({ latestFundingInfo: "" }) },
 
-  // getDonorInfo: function() {
-  //   var repDonorsUrl = "/legislators/" + this.props.data.id + "/donors"
+  getDonorInfo: function() {
+    var repDonorsUrl = "/legislators/" + this.props.data.id + "/donors"
 
-  //   $.ajax({
-  //     url: repDonorsUrl,
-  //     // data: { external_id: this.props.data.bill_id },
-  //     dataType: 'json',
-  //     cache: false,
-  //     success: function(data) {
-  //       this.setState({ latestFundingInfo: data })
-  //     }.bind(this),
-  //     error: function(xhr, status, err) {
-  //       console.error(repDonorsUrl, status, err.toString());
-  //     }.bind(this)
-  //   });
-  // },
+    $.ajax({
+      url: repDonorsUrl,
+      // data: { external_id: this.props.data.bill_id },
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        this.setState({ latestFundingInfo: data })
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(repDonorsUrl, status, err.toString());
+      }.bind(this)
+    });
+  },
 
-  // componentDidMount: function() {
-  //   this.getDonorInfo()
-  // },
+  componentDidMount: function() {
+    this.getDonorInfo()
+  },
 
   render: function() {
     var handle = "https://twitter.com/" + this.props.data.twitter_id
@@ -30,7 +30,7 @@ var Representative = React.createClass({
       	<RepPicture url={this.props.data.image} />
       	<RepName url={this.props.data.website} title={this.props.data.title} first_name={this.props.data.first_name} last_name={this.props.data.last_name} party={this.props.data.party} />
       	<ButtonSpace tweet_link={handle} twitter_handle={this.props.data.twitter_id} data={this.props.data} facebook_link={facebook} />
-        <RepBio data={this.props.data} />
+        <RepBio data={this.props.data} latestFundingInfo={this.state.latestFundingInfo} />
       </div>
     )
   }

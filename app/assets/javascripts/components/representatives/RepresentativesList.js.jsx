@@ -3,9 +3,7 @@ var RepresentativesList = React.createClass({
     var representativeNodes = this.props.reps.map(function(representative) {
       var handle = "https://twitter.com/" + representative.twitter_id
       return (
-        <Representative data={representative} key={representative.id}>
-
-        </Representative>
+        <Representative data={representative} key={representative.id} />
         )
     });
 
