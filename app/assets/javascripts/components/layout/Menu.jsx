@@ -14,7 +14,7 @@ var Menu = React.createClass({
       var signingLink = <li><span id={this.props.signedIn}><a href={'/auth/twitter'}><i className="material-icons">perm_identity</i>Sign In</a></span></li>
     }
     return (
-      <nav>
+      <nav className="cyan darken-1">
         <div className="inner-menu-container">
             <div className="debugger">
              <div className="row margin-padding debugger ">

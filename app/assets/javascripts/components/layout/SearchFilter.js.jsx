@@ -14,12 +14,18 @@ var SearchFilter = React.createClass({
 
   render: function() {
     return (
-      <form onSubmit={this.submitQuery}>
-          <div className="input-field">
-            <input id="search" type="search" placeholder="Search" ref="search" onChange={this.submitChange} />
-            <label forName="search"><i className="material-icons">search</i></label>
-          </div>
-      </form>
+      <nav className="cyan lighten-2">
+        <div className="nav-wrapper search-bar tab-search">
+          <form onSubmit={this.submitQuery}>
+              <div className="input-field">
+                <input id="search" type="search" placeholder="Search" ref="search" onChange={this.submitChange} required/>
+                <label forHTML="search"><i className="material-icons">search</i></label>
+                <i className="material-icons">close</i>
+              </div>
+          </form>
+        </div>
+      </nav>
     )
   }
 });
+ // color="e3f2fd"

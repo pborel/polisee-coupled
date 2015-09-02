@@ -83,7 +83,6 @@ var ArticleBox = React.createClass({
         <SearchFilter handleQueryChange={this.handleQueryChangeSubmit} handleSearch={this.handleSearchSubmit}/>
         <Tabs parentElement={this} handleClick={this.updateListView} />
         <ArticleList data={this.state.data} favoritesUrl={this.props.favoritesUrl} />
-        <hr />
       </div>
     )
   }
