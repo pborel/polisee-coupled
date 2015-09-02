@@ -2,36 +2,18 @@ module Api
   include Sunlight
   include Twitter
 
-  def self.query_sunlight_data
-    sunlight_client = Congress.new
-    (1..11).each do |page_number|
-      response_data = sunlight_client.all_legislators(page_number)
-      legislators = JSON.parse(response_data.body)
-      legislators["results"].each do |rep|
-        self.create(rep)
-      end
-    end
+
+  def self.create_legislators
+     self.query_sunlight_data
+     self.query_twitter_images
   end
 
-  def self.query_twitter_images
-    legislator_without_image = Legislator.where(image: "")
-    # while legislator_without_image
-        legislator_without_image.first(180).each do |legislator|
-          if legislator.twitter_id.nil? || legislator.twitter_id == ""
-            legislator.update(image: "https://lh4.ggpht.com/B2UjZIJ0iwp0LfkUnITqp_iYek9PWEXuXLOHl3XYPMR_2zEGsHPR6ruu4OeQKOfvJnJ8=w300-rw")
-          else
-            twitter_client = Twitter::REST::Client.new do |config|
-              config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
-              config.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
-            end
-            twitter_profile = twitter_client.user(legislator.twitter_id)
-            small_image_url = twitter_profile.profile_image_url.to_s
-            original_size_url = small_image_url.sub("_normal.",".")
-            legislator.update(image: original_size_url)
-          end
-        end
-      # end
+  def self.populate_secondary_info
+    self.query_for_transparancy_id
+    self.query_for_entity_overview
   end
+
+# private
 
   def self.query_for_transparancy_id
     sunlight_client = Transparancy.new
@@ -57,7 +39,38 @@ module Api
     end
   end
 
-private
+
+  def self.query_sunlight_data
+    sunlight_client = Congress.new
+    (1..11).each do |page_number|
+      response_data = sunlight_client.all_legislators(page_number)
+      legislators = JSON.parse(response_data.body)
+      legislators["results"].each do |rep|
+        self.create(rep)
+      end
+    end
+  end
+
+  def self.query_twitter_images
+    legislator_without_image = Legislator.where(image: ["", nil])
+    # while legislator_without_image
+        legislator_without_image.first(180).each do |legislator|
+          if legislator.twitter_id.nil? || legislator.twitter_id == ""
+            legislator.update(image: "https://lh4.ggpht.com/B2UjZIJ0iwp0LfkUnITqp_iYek9PWEXuXLOHl3XYPMR_2zEGsHPR6ruu4OeQKOfvJnJ8=w300-rw")
+          else
+            twitter_client = Twitter::REST::Client.new do |config|
+              config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
+              config.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
+            end
+            twitter_profile = twitter_client.user(legislator.twitter_id)
+            small_image_url = twitter_profile.profile_image_url.to_s
+            original_size_url = small_image_url.sub("_normal.",".")
+            legislator.update(image: original_size_url)
+          end
+        end
+      # end
+  end
+
   def self.add_bio_fields_to_legislator(legislator, data)
     if data["metadata"]["bio"] && data["metadata"]["bio_url"]
       legislator.update(bio: data["metadata"]["bio"],

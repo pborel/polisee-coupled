@@ -3,6 +3,7 @@ class FavoritesController < ApplicationController
   include Sunlight
 
   def index
+    render json: {message: "You are not logged in"} if guest_user
     sunlight_client = Congress.new
     following_ids = current_user.favorites.pluck(:external_id)
     @bills = []
@@ -29,6 +30,10 @@ class FavoritesController < ApplicationController
     @favorite.destroy
     render json: @favorite.external_id
   end
+
+  private
+
+
 end
 
 
