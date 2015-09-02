@@ -39,9 +39,9 @@ var RepBio = React.createClass({
   				<b>Chamber:</b> {this.props.data.chamber.capitalizeFirstLetter()} <br/><br/>
   				<b>Term Start:</b> {this.props.data.term_start} <br/><br/>
   				<b>Term End:</b> {this.props.data.term_end} <br/><br/>
-          {this.props.latestFundingInfo}<br/>
-          <hr/>
+          {this.props.data.bio}<br/>
   		  </p>
+
         <TweetForm subject={"@" + this.props.data.twitter_id + " "}/>
       </div>
     )
