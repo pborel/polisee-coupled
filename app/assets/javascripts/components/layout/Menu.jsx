@@ -19,7 +19,7 @@ var Menu = React.createClass({
             <div className="debugger">
              <div className="row margin-padding debugger ">
                <div className="col margin-padding debugger">
-                 <a href="/"><img className="brand-logo center logo debugger" src="https://slack-files.com/files-tmb/T09P4E2TZ-F0A0TB8L9-65253eb432/polisee_moniker_720.png"></img></a>
+                 <a href="/"><img className="brand-logo center logo debugger" src="https://slack-files.com/files-tmb/T09P4E2TZ-F0A2BFHMZ-ddfafbc0f1/drawing__3__1024.png"></img></a>
                </div>
              </div>
            </div>
