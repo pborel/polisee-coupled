@@ -68,5 +68,3 @@ var App = React.createClass({
     );
   }
 });
-        // <ArticleContainer url="/bills" favoritesUrl="/favorites" />
-        // <RepresentativeContainer url="/legislators" />
