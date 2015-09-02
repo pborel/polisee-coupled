@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Polisee::Application.load_tasks
+TwitterExample::Application.load_tasks
