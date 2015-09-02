@@ -2,14 +2,20 @@ var ArticleBox = React.createClass({
   getInitialState: function() {
     return {
       currentTab: "index",
-      data: []
+      data: [],
+      originalList: []
     };
+  },
+  getInitialProps: function() {
+    return {
+      data: this.state.data
+    }
   },
 
   handleSearchSubmit: function(query) {
     // var queryString = "(" + query + ")"
     var regExp = new RegExp(query)
-    var bills = this.state.data
+    var bills = this.state.originalList
     var newData = []
     
     for (var index in bills) {
@@ -28,6 +34,7 @@ var ArticleBox = React.createClass({
     }
 
     if (newData.length > 0) {
+      
       this.setState({data: newData})
     }
   },
@@ -43,7 +50,7 @@ var ArticleBox = React.createClass({
       cache: false,
       success: function(data) {
         debugger
-        this.setState({data: data});
+        this.setState({data: data, originalList: data});
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
