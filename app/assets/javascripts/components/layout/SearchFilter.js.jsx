@@ -19,8 +19,6 @@ var SearchFilter = React.createClass({
           <form onSubmit={this.submitQuery}>
               <div className="input-field">
                 <input id="search" type="search" placeholder="Search" ref="search" onChange={this.submitChange} required/>
-                <label forHTML="search"><i className="material-icons">search</i></label>
-                <i className="material-icons">close</i>
               </div>
           </form>
         </div>
