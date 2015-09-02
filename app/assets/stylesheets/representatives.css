@@ -79,11 +79,13 @@ html {
 }
 
 .rep-card {
-
   max-width: 420px;
 }
 
-'.button-container'{
+.button-container {
   height 90px;
 }
 
+.card-info {
+  text-align: left;
+}
