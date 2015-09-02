@@ -135,7 +135,11 @@ a, a:focus, a:active {outline: none;}
   padding-bottom: 79px;
 }
 
-.list-shadow{
+/*.list-shadow{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.full-list-shadow{
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+*/

@@ -11,8 +11,8 @@ var ArticleList = React.createClass({
   render: function() {
     var articleNodes = this.buildArticles(this.props.data)
     return (
-      <div className="articles-list list-shadow" >
-        <ul className= "collapsible hoverable collection">
+      <div className="articles-list full-list-shadow" >
+        <ul className= "collapsible hoverable collection list-shadow">
            {articleNodes}
         </ul>
       </div>
