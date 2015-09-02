@@ -3,8 +3,7 @@ String.prototype.capitalizeFirstLetter = function() {
 }
 
 var RepBio = React.createClass({
-	render: function(){
-
+	render: function() {
     //js logic for incomplete information
 		var party
 		var partyImage
@@ -28,6 +27,7 @@ var RepBio = React.createClass({
 		return (
 			<div className="card-reveal">
 	      <span className="card-title grey-text text-darken-4">{this.props.data.title}. {this.props.data.first_name} {this.props.data.last_name} <i className="material-icons right">close</i></span>
+        <hr/>
 	      <p className="card-info">
   				<b>Party:</b> {party} <br/><br/>
   				<b>State:</b> {this.props.data.state_name} <br/><br/>
