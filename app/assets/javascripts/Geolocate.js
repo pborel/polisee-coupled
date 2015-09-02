@@ -9,7 +9,6 @@ function getLocation() {
 
 function showPosition(position) {
    var coords = position.coords
-      console.log(coords)
       return coords
 }
 
