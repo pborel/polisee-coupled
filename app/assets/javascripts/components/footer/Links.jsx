@@ -5,8 +5,8 @@ var FooterLinks = React.createClass({
         <h5 className="white-text">Links</h5>
           <ul>
             <TeamLink />
-            <a className="grey-text text-lighten-3" href="https://github.com/pborel/polisee-coupled">Github</a> <br/>
-            <a className="grey-text text-lighten-3" href="/tour">Take the Tour</a>
+            <a className="white-text text-lighten-3" href="https://github.com/pborel/polisee-coupled">Github</a> <br/>
+            <a className="white-text text-lighten-3" href="/tour">Take the Tour</a>
           </ul>
       </div>
     )

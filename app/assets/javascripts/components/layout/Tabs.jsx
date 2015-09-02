@@ -7,10 +7,7 @@ var Tabs = React.createClass({
   render: function() {
     return (
       <div className="row tabs">
-          <ul className="tabs z-depth-1 #e3f2fd blue lighten-5
-
-
-" >
+          <ul className="tabs z-depth-1 cyan lighten-5" >
             <IndexTab parentElement={this} tab={"index"} onClick={this.handleClick} />
             <UpcomingTab parentElement={this} tab={"upcoming"} onClick={this.handleClick} />
             <FollowingTab parentElement={this} tab={"following"} onClick={this.handleClick} />

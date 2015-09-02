@@ -14,13 +14,13 @@ var SearchFilter = React.createClass({
 
   render: function() {
     return (
-      <nav>
-        <div class="nav-wrapper">
+      <nav className="cyan lighten-2">
+        <div className="nav-wrapper search-bar tab-search">
           <form onSubmit={this.submitQuery}>
               <div className="input-field">
                 <input id="search" type="search" placeholder="Search" ref="search" onChange={this.submitChange} required/>
                 <label forHTML="search"><i className="material-icons">search</i></label>
-                <i class="material-icons">close</i>
+                <i className="material-icons">close</i>
               </div>
           </form>
         </div>
@@ -28,3 +28,4 @@ var SearchFilter = React.createClass({
     )
   }
 });
+ // color="e3f2fd"
