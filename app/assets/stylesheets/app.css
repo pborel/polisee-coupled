@@ -87,8 +87,6 @@ a, a:focus, a:active {outline: none;}
 	margin: 0 auto;
 }
 
-
-
 .btn-new {
     border: none;
     border-radius: 2px;
@@ -107,15 +105,20 @@ a, a:focus, a:active {outline: none;}
     transition: 0.2s ease-out;
 }
 
-.tab:hover {
+/*.tab:hover {
     background-color: #e3f2fd ;
     border-radius: 9px;
     width: 120%;
     height: 120%;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/
+
+.tab-search {
+    /*background-color: #e3f2fd ;*/
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.logo{
+.logo {
     width: 14em;
     height: 7em;
     margin: 0px;
@@ -123,8 +126,12 @@ a, a:focus, a:active {outline: none;}
     top: -2.4em;
 }
 
-.margin-padding{
+.margin-padding {
     margin: 0px;
     padding: 0px;
+}
+
+.container-spacer {
+  padding-bottom: 50px;
 }
 
