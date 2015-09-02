@@ -6,14 +6,15 @@ var Tabs = React.createClass({
 
   render: function() {
     return (
-      <div className="row tabs debugger">
-        <div className="col s12 debugger">
-          <ul className="tabs pop-out z-depth-1 debugger">
+      <div className="row tabs">
+          <ul className="tabs z-depth-1 #e3f2fd blue lighten-5
+
+
+" >
             <IndexTab parentElement={this} tab={"index"} onClick={this.handleClick} />
             <UpcomingTab parentElement={this} tab={"upcoming"} onClick={this.handleClick} />
             <FollowingTab parentElement={this} tab={"following"} onClick={this.handleClick} />
           </ul>
-        </div>
       </div>
     )
   }
