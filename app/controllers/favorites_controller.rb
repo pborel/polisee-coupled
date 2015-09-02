@@ -15,6 +15,7 @@ class FavoritesController < ApplicationController
 
   def create
     @favorite = current_user.favorites.find_or_create_by(external_id: params[:external_id])
+    send_twilio_text(params[:external_id])
     render json: @favorite.external_id
   end
 
@@ -25,14 +26,30 @@ class FavoritesController < ApplicationController
   end
 
   private
+
+  def send_twilio_text(bill_id)
+    client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
+    message = client.messages.create from: '4846853929', to: current_user.phone, body: "You are following: #{get_bill_title(bill_id)}"
+  end
+  def get_bill_title(bill_id)
+    bill_data = get_bill_data(bill_id)
+    return bill_data['short_title'] if bill_data['short_title']
+    bill_data['official_title']
+  end
+
+  def get_bill_data(id)
+    response = JSON.parse(Congress.new.bill(id).body)
+    bill_data = response["results"][0]
+  end
+
+
   def get_favorites(favorite_ids)
-    sunlight_client = Congress.new
     favorite_ids.each do |id|
-      response = sunlight_client.bill(id)
-      bill_data = response["results"][0]
+      bill_data = get_bill_data(id)
       @bills.push(bill_data)
     end
   end
+
 end
 
 

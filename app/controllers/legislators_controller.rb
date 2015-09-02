@@ -22,10 +22,10 @@ class LegislatorsController < ApplicationController
   def donors
     legislator = Legislator.find_by_id(params[:legislator_id])
     client = transparancy_api
-    donor_data = (client.top_donors(legislator, "2014")).body
-    sector_data = (client.top_sectors(legislator, "2014")).body
+    donor_data = JSON.parse((client.top_donors(legislator, "2014")).body)
+    sector_data = JSON.parse((client.top_sectors(legislator, "2014")).body)
 
-    render json: [donor_data, sector_data]
+    render json: {donor_data: donor_data, sector_data: sector_data}
   end
 
 private

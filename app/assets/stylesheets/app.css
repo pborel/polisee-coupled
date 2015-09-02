@@ -1,14 +1,9 @@
-/*body {background: #F5F8FA; color: #777;}*/
-/*#app {position: relative; padding-left: 0; cursor: default;}*/
-/*#content {max-width: 800px; margin: 4em auto; padding: 0 2em; line-height: 1.5em;}*/
-/*.pure-form input[type=text], button.pure-button {padding-top: 0.6em; padding-bottom: 0.5em}*/
-/*button.pure-button {border: 1px solid #0078E7; border-radius: 4px; margin-left: 5px;}*/
-/*ul {list-style: none; margin: 0; padding: 0;}*/
-/*a, a:focus, a:active {outline: none;}*/
+ul {list-style: none; margin: 0; padding: 0;}
+a, a:focus, a:active {outline: none;}
 .thin {font-weight: 200;}
 
 /* BELOW IS CSS FOR ARTICLES*/
-/*.debugger {border: 1px solid red;}*/
+/*.debugger1 {border: 1px solid red;}*/
 /*.articles-container, .articles-box, .articles-list, .article {width:90%; margin: 0 auto; margin-top:20px;}*/
 .articles-container {height:auto; width:80%; margin: 0 auto; margin-top:20px;}
 .articles-box {height: auto; width:100%; margin: 0 auto; margin-top:20px;}
@@ -70,7 +65,6 @@
 	margin: 15px;
 }
 
-
 .rep-image {
 	width: 418px;
 	height: 314px;
@@ -80,6 +74,7 @@
 	margin-left: 5%;
 	margin-right: 5%;
 }
+
 .card-action {
 	margin: 0 auto;
 }
@@ -126,12 +121,28 @@
     margin: 0px;
     padding: 0px;
 }
-
 .container-spacer {
-  padding-bottom: 79px;
+  padding-ottom: 79px;
 }
 
-.list-shadow{
+/*.list-shadow{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*----header-icons----*/
+.materialized-height-line {
+  line-height: 5.5em;
+}
+
+.sign-in-out-margin-left {
+  margin-left: .5em;
+}
+
+
+.full-list-shadow{
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.zip-icon-push-right {
+  margin-left: 1.3em;
 }
 
