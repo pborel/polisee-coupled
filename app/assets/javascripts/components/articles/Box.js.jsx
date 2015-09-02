@@ -6,40 +6,47 @@ var ArticleBox = React.createClass({
       originalList: []
     };
   },
-  getInitialProps: function() {
-    return {
-      data: this.state.data
-    }
-  },
 
-  handleSearchSubmit: function(query) {
-    // var queryString = "(" + query + ")"
+  handleQueryChangeSubmit: function(query) {
     var regExp = new RegExp(query)
     var bills = this.state.originalList
     var newData = []
     
     for (var index in bills) {
       if (bills[index].short_title === null) {
-        
         if (bills[index].official_title.match(regExp)) {
           newData.push(bills[index])
         }
       }
       else {
         if (bills[index].short_title.match(regExp)) {
-          
           newData.push(bills[index])
         }
       }
     }
 
     if (newData.length > 0) {
-      
       this.setState({data: newData})
     }
   },
 
-
+  handleSearchSubmit: function(query) {
+    
+    $.ajax({
+      url: '/bills/search',
+      dataType: 'json',
+      data: {query: query},
+      cache: false,
+      success: function(data) {
+        debugger
+        this.setState({data: data.results});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error('/check', status, err.toString());
+        console.error(this.state.data);
+      }.bind(this)
+    });
+  },
 
   loadArticlesFromServer: function(tab, link) {
 
@@ -49,7 +56,7 @@ var ArticleBox = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        debugger
+        
         this.setState({data: data, originalList: data});
       }.bind(this),
       error: function(xhr, status, err) {
@@ -74,7 +81,7 @@ var ArticleBox = React.createClass({
   render: function() {
     return (
       <div className="debugger articles-box">
-        <SearchFilter handleSearch={this.handleSearchSubmit}/>
+        <SearchFilter handleQueryChange={this.handleQueryChangeSubmit} handleSearch={this.handleSearchSubmit}/>
         <Tabs parentElement={this} handleClick={this.updateListView} />
         <ArticleList data={this.state.data} favoritesUrl={this.props.favoritesUrl} />
         <hr />
