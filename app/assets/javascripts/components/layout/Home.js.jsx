@@ -3,7 +3,7 @@ var Home = React.createClass({
     return (
       <div id="home-view">
         <ArticleContainer url="/bills" favoritesUrl="/favorites" />
-        <RepresentativeContainer url="/legislators" />
+        <RepresentativeContainer url="/legislators" reps={this.props.reps} />
       </div>
     );
   }

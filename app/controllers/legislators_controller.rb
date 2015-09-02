@@ -3,15 +3,19 @@ class LegislatorsController < ApplicationController
   include Sunlight
 
   def index
+    p params
     if params[:zip]
       location_data = {zip: params[:zip]}
       @legislators = legislators_at(location_data)
-    else
+      render json: @legislators
+    elsif cookies[:lat_lng]
       @lat_lng = cookies[:lat_lng].split("|")
       location_data = {lat: @lat_lng[0], lng: @lat_lng[1]}
       @legislators = legislators_at(location_data)
+      render json: @legislators
+    else
+      render json: {error: "You must have a zip or location enabled"}
     end
-    render json: @legislators
   end
 
   def show
