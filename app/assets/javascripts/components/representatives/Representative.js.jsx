@@ -2,7 +2,6 @@ var Representative = React.createClass({
   render: function() {
     var handle = "https://twitter.com/" + this.props.data.twitter_id
     var facebook = "https://facebook.com/" + this.props.data.facebook_id
-    console.log(this.props.data)
     return (
       <div className="card rep-card hoverable">
       	<RepPicture url={this.props.data.image} />
