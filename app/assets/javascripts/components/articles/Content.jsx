@@ -1,7 +1,7 @@
 var ArticleContent = React.createClass({
   render: function() {
     return (
-      <div className="row">
+      <div className="collection-item">
         <div className="col s12 offset-l1 l10">
           <div className="card white">
             <div className="card-content">
