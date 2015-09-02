@@ -38,7 +38,7 @@ var ArticleBox = React.createClass({
       data: {query: query},
       cache: false,
       success: function(data) {
-        debugger
+      
         this.setState({data: data.results});
       }.bind(this),
       error: function(xhr, status, err) {
