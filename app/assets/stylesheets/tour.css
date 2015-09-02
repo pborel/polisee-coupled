@@ -1,4 +1,26 @@
-.tour-image {
+/*.tour-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
   background-color: transparent;
+  padding: 0;
+  margin: 0;
+}*/
+
+.slide-show {
+  /*background-color: gray;*/
+  padding: 0 20%;
+  width: 100%;
+  height: 100%;
 }
 
+.slides li img .tour-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}

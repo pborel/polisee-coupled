@@ -1,6 +1,7 @@
 var TourContainer = React.createClass({
   render: function() {
     return (
+      <div className="fullscreen">
         <ul className="slides">
           <li>
             <img className="tour-image" src="http://lorempixel.com/1920/1080/nature/2" />
@@ -10,6 +11,7 @@ var TourContainer = React.createClass({
             </div>
           </li>
         </ul>
+      </div>
     )
   }
 });
