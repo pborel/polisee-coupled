@@ -3,23 +3,26 @@ class FavoritesController < ApplicationController
   include Sunlight
 
   def index
-    render json: {message: "You are not logged in"} if guest_user
-    sunlight_client = Congress.new
-    following_ids = current_user.favorites.pluck(:external_id)
-    @bills = []
-    if following_ids.length > 0
-      following_ids.each do |id|
-        response = sunlight_client.bill(id)
-        what_I_want = response["results"][0]
-        @bills.push(what_I_want)
+    if guest_user
+      render json: {message: "You are not logged in"}
+    else
+      sunlight_client = Congress.new
+      following_ids = current_user.favorites.pluck(:external_id)
+      @bills = []
+      if following_ids.length > 0
+        following_ids.each do |id|
+          response = sunlight_client.bill(id)
+          what_I_want = response["results"][0]
+          @bills.push(what_I_want)
+        end
       end
+      render json: @bills
     end
-    render json: @bills
   end
 
   def create
     #add a method to include notify at as a strech goal
-    @favorite = current_user.favorites.create(
+    @favorite = current_user.favorites.find_or_create_by(
         external_id: params[:external_id],
         record_type: "bill")
     render json: @favorite.external_id
