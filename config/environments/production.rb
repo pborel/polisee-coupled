@@ -78,7 +78,7 @@
 #   # Use default logging formatter so that PID and timestamp are not suppressed.
 #   config.log_formatter = ::Logger::Formatter.new
 # end
-Polisee::Application.configure do
+TwitterExample::Application.configure do
   config.cache_classes = false
   config.eager_load = false
   config.consider_all_requests_local       = false
