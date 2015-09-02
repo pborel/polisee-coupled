@@ -1,5 +1,4 @@
-var RouteHandler = ReactRouter.RouteHandler,
-  Link = ReactRouter.Link;
+var RouteHandler = ReactRouter.RouteHandler;
 
 var App = React.createClass({
   getInitialState: function() {
@@ -63,7 +62,7 @@ var App = React.createClass({
     return (
       <div>
         <Menu signedIn={this.state.signedIn} parentComponent={this} />
-        <RouteHandler reps={this.state.representatives} />
+        <RouteHandler reps={this.state.representatives} {...this.props} />
         <FooterContainer />
       </div>
     );
