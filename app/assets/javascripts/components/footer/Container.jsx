@@ -4,7 +4,7 @@ var RouteHandler = ReactRouter.RouteHandler,
 var FooterContainer = React.createClass({
   render: function(){
     return (
-    <div className ='footer-page'>
+    <div className='footer-page cyan darken-1'>
       <div className="container">
         <div className="row">
           <FooterContent />
