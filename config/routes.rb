@@ -6,7 +6,7 @@ TwitterExample::Application.routes.draw do
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
-  # get 'bills/search', to: 'bills#search'
+  get 'bills/search', to: 'bills#search'
 
   resources :tweets, only: [:create]
 
@@ -30,5 +30,5 @@ TwitterExample::Application.routes.draw do
 
   root 'home#index'
 
-  # get "/*path" => "home#index"
+  get "/*path" => "home#index"
 end
