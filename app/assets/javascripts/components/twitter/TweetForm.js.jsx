@@ -1,6 +1,5 @@
 var TweetForm = React.createClass({
   getInitialState: function() {
-    console.log(this.props.subject)
     return({ message: this.props.subject + "#polisee.io " })
   },
 
@@ -18,8 +17,6 @@ var TweetForm = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        console.log("SUCCESS");
-        console.log(data);
       }.bind(this),
       error: function(xhr, status, err) {
         this.clearForm()
