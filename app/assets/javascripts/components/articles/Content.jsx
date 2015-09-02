@@ -8,7 +8,7 @@ var ArticleContent = React.createClass({
               <p>
                 <h5>Description:</h5>
                 <b>Official Title: </b>{this.props.data.official_title}<br/>
-                <b>Sponsor:</b> {this.props.data.sponsor.title ? this.props.data.sponsor.title : null} {this.props.data.sponsor.first_name} {this.props.data.sponsor.last_name}<br/>
+                <b>Sponsor:</b> {this.props.data.sponsor.title ? this.props.data.sponsor.title : null}. {this.props.data.sponsor.first_name} {this.props.data.sponsor.last_name}<br/>
                 <b>Cosponsors:</b> { this.props.data.cosponsors_count }<br/>
                 <b>Withdrawals:</b> { this.props.data.withdrawn_cosponsors_count }<br/>
                 <hr/>
