@@ -31,6 +31,7 @@ var RepBio = React.createClass({
 
 		return (
 			<div className="card-reveal">
+        <hr/>
 	      <span className="card-title grey-text text-darken-4">{this.props.data.title}. {this.props.data.first_name} {this.props.data.last_name} <i className="material-icons right">close</i></span>
         <hr/>
 	      <p className="card-info">
@@ -38,13 +39,16 @@ var RepBio = React.createClass({
   				<b>State:</b> {this.props.data.state_name} <br/><br/>
   				<b>Chamber:</b> {this.props.data.chamber.capitalizeFirstLetter()} <br/><br/>
   				<b>Term Start:</b> {this.props.data.term_start} <br/><br/>
-  				<b>Term End:</b> {this.props.data.term_end} <br/><br/>
-          {this.props.latestFundingInfo}<br/>
-          <hr/>
-  		  </p>
-        <TweetForm subject={"@" + this.props.data.twitter_id + " "}/>
+          <b>Term End:</b> {this.props.data.term_end} <br/><br/>
+  				<b>Donor Funding (2014):</b> {this.props.data.term_end} <br/><br/>
+          {this.props.data.bio}<br/>
+        </p>
+
+        <TweetForm subject={"@" + this.props.data.twitter_id + " "} />
       </div>
     )
   }
 })
+        // <SponsorList latestFundingInfo={this.props.latestFundingInfo} />
+
 // {this.props.data.district ? "District: " + this.props.data.district : null}
