@@ -6,16 +6,9 @@ class FavoritesController < ApplicationController
     if guest_user
       render json: {message: "You are not logged in"}
     else
-      sunlight_client = Congress.new
-      following_ids = current_user.favorites.pluck(:external_id)
       @bills = []
-      if following_ids.length > 0
-        following_ids.each do |id|
-          response = sunlight_client.bill(id)
-          what_I_want = response["results"][0]
-          @bills.push(what_I_want)
-        end
-      end
+      favorite_ids = current_user.favorites.pluck(:external_id)
+      get_favorites(favorite_ids) unless favorite_ids.empty?
       render json: @bills
     end
   end
@@ -35,8 +28,14 @@ class FavoritesController < ApplicationController
   end
 
   private
-
-
+  def get_favorites(favorite_ids)
+    sunlight_client = Congress.new
+    favorite_ids.each do |id|
+      response = sunlight_client.bill(id)
+      bill_data = response["results"][0]
+      @bills.push(bill_data)
+    end
+  end
 end
 
 
