@@ -28,16 +28,17 @@ var RepBio = React.createClass({
 		return (
 			<div className="card-reveal">
 	      <span className="card-title grey-text text-darken-4">{this.props.data.title}. {this.props.data.first_name} {this.props.data.last_name} <i className="material-icons right">close</i></span>
-	      <p>
-				Party: {party} <br/>
-				State: {this.props.data.state_name} <br/>
-				Chamber: {this.props.data.chamber.capitalizeFirstLetter()} <br/>
-				Term Start: {this.props.data.term_start} <br/>
-				Term End: {this.props.data.term_end} <br/>
-				{this.props.data.district ? "District: " + this.props.data.district : null}
+	      <p className="card-info">
+  				<b>Party:</b> {party} <br/><br/>
+  				<b>State:</b> {this.props.data.state_name} <br/><br/>
+  				<b>Chamber:</b> {this.props.data.chamber.capitalizeFirstLetter()} <br/><br/>
+  				<b>Term Start:</b> {this.props.data.term_start} <br/><br/>
+  				<b>Term End:</b> {this.props.data.term_end} <br/><br/>
+          {this.props.data.bio}
   		  </p>
         <TweetForm subject={"@" + this.props.data.twitter_id + " "}/>
       </div>
     )
   }
 })
+// {this.props.data.district ? "District: " + this.props.data.district : null}
