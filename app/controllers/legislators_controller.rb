@@ -3,7 +3,6 @@ class LegislatorsController < ApplicationController
   include Sunlight
 
   def index
-    p params
     if params[:zip]
       location_data = {zip: params[:zip]}
       @legislators = legislators_at(location_data)
@@ -19,8 +18,21 @@ class LegislatorsController < ApplicationController
   end
 
   def show
-    @legislator = Legislator.find_by(bioguide_id: params[:id])
-    render json: @legislator
+    p params
+    @legislator = Legislator.where(id: params[:id]).first
+    legislator_data = {info: @legislator,
+            cycle_details: @legislator.cycle_amounts}
+    render json: legislator_data
+  end
+
+  def donors
+    p "I AM IN THE DONORS"
+    legislator = Legislator.find_by_id(823)
+    client = transparancy_api
+    donor_data = (client.top_donors(legislator, "2012")).body
+    sector_data = (client.top_sectors(legislator, "2012")).body
+
+    render json: [donor_data, sector_data]
   end
 
 private
@@ -40,7 +52,7 @@ private
   end
 
   def sunlight_api_query_at(location_data)
-    client = create_sunlight_connection
+    client = congress_api
     if location_data[:zip]
       local_reps_raw_data = client.local_legislators_in(location_data[:zip])
     else
@@ -53,9 +65,14 @@ private
     ids = parsed_data['results'].map{|rep| rep['bioguide_id']}
   end
 
-  def create_sunlight_connection
+  def congress_api
     Congress.new
   end
+
+  def transparancy_api
+    Transparancy.new
+  end
+
 
 end
 
