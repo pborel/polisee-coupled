@@ -31,7 +31,6 @@ var Menu = React.createClass({
             <ul className="right hide-on-med-and-down">
 
             <ZipContainer parentComponent={this.props.parentComponent} handleSubmit={this.handleZipTransaction}/>
-
             </ul>
         </div>
       </nav>
