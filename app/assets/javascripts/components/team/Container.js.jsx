@@ -5,6 +5,8 @@ var TeamContainer = React.createClass({
         <TeamDescription />
         <hr/>
         <TeamBox url="/teams" />
+        <hr/>
+        <TourContainer />
       </div>
     )
   }
