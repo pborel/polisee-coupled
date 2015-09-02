@@ -1,3 +1,4 @@
+
 var Menu = React.createClass({
   componentDidMount: function() {
     this.props.parentComponent.checkSignedIn()
@@ -17,7 +18,13 @@ var Menu = React.createClass({
     return (
       <nav>
         <div className="nav-wrapper">
-          <a href="/" className="brand-logo center">Polisee</a>
+            <div className="container margin-padding debugger">
+             <div className="row margin-padding debugger ">
+               <div className="col margin-padding debugger">
+                 <img className="brand-logo center logo debugger" src="https://slack-files.com/files-tmb/T09P4E2TZ-F0A0TB8L9-65253eb432/polisee_moniker_720.png"></img>
+               </div>
+             </div>
+           </div>
             <ul className="left hide-on-med-and-down">
               <li>{signingLink}</li>
             </ul>

@@ -1,5 +1,4 @@
-var RouteHandler = ReactRouter.RouteHandler,
-  Link = ReactRouter.Link;
+var RouteHandler = ReactRouter.RouteHandler;
 
 var App = React.createClass({
   getInitialState: function() {

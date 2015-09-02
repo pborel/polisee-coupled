@@ -6,7 +6,7 @@ TwitterExample::Application.routes.draw do
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
-  # get 'bills/search', to: 'bills#search'
+  get 'bills/search', to: 'bills#search'
 
   resources :tweets, only: [:create]
 
@@ -23,6 +23,7 @@ TwitterExample::Application.routes.draw do
 
   resources :legislators, only: [:index, :show] do
     # resources :bills, only: [:index, :show]
+    resources :donors, only: :index, to: 'legislators#donors'
   end
 
   resources :teams, only: [:index, :show]
