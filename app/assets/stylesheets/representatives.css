@@ -80,7 +80,8 @@ html {
 }
 
 .rep-card {
-  max-width: 420px;
+  width: 420px;
+  max-width: 80%;
 }
 
 .button-container {

@@ -4,13 +4,17 @@ module Api
 
 
   def self.create_legislators
-     self.query_sunlight_data
-     self.query_twitter_images
+    self.query_sunlight_data
+    3.times do
+      self.query_twitter_images
+      sleep(16.minutes)
+    end
   end
 
   def self.populate_secondary_info
     self.query_for_transparancy_id
     self.query_for_entity_overview
+    self.remove_p_tags
   end
 
 # private
@@ -75,6 +79,14 @@ module Api
     if data["metadata"]["bio"] && data["metadata"]["bio_url"]
       legislator.update(bio: data["metadata"]["bio"],
                         bio_URL: data["metadata"]["bio_url"])
+    end
+  end
+
+  def self.remove_p_tags
+    legislators = Legislator.where.not(bio: nil)
+    legislators.each do |legislator|
+      new_bio = legislator.bio.gsub("<p>", '').gsub('</p>','')
+      legislator.update(bio: new_bio)
     end
   end
 
