@@ -1,6 +1,5 @@
 var TweetForm = React.createClass({
   getInitialState: function() {
-    console.log(this.props.subject)
     return({ message: this.props.subject + "#polisee.io " })
   },
 

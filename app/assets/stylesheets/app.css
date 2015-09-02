@@ -130,12 +130,11 @@ a, a:focus, a:active {outline: none;}
     margin: 0px;
     padding: 0px;
 }
-
 .container-spacer {
-  padding-bottom: 79px;
+  padding-ottom: 79px;
 }
 
-.list-shadow{
+/*.list-shadow{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*----header-icons----*/
@@ -147,6 +146,12 @@ a, a:focus, a:active {outline: none;}
   margin-left: .5em;
 }
 
+
+.full-list-shadow{
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .zip-icon-push-right {
   margin-left: 1.3em;
 }
+
