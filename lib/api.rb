@@ -74,7 +74,7 @@ module Api
 
   def self.add_bio_fields_to_legislator(legislator, data)
     if data["metadata"]["bio"] && data["metadata"]["bio_url"]
-      legislator.update(bio: self.unmarked_up(data["metadata"]["bio"]),
+      legislator.update(bio: data["metadata"]["bio"],
                         bio_URL: data["metadata"]["bio_url"])
     end
   end
