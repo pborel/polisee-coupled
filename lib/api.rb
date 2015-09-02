@@ -4,8 +4,11 @@ module Api
 
 
   def self.create_legislators
-     self.query_sunlight_data
-     self.query_twitter_images
+    self.query_sunlight_data
+    3.times do
+      self.query_twitter_images
+      sleep(16.minutes)
+    end
   end
 
   def self.populate_secondary_info
