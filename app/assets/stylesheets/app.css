@@ -9,12 +9,10 @@ a, a:focus, a:active {outline: none;}
 
 /* BELOW IS CSS FOR ARTICLES*/
 /*.debugger {border: 1px solid red;}*/
-.articles-container, .articles-box, .articles-list, .article {width:90%; margin: 0 auto; margin-top:20px;}
-.articles-container {height:auto;}
-.articles-box {height: auto;}
-.articles-list {min-height: 400px; max-height: 600px; overflow-y:scroll;}
-
-
+/*.articles-container, .articles-box, .articles-list, .article {width:90%; margin: 0 auto; margin-top:20px;}*/
+.articles-container {height:auto; width:80%; margin: 0 auto; margin-top:20px;}
+.articles-box {height: auto; width:100%; margin: 0 auto; margin-top:20px;}
+.articles-list {min-height: 400px; max-height: 700px; overflow-y:scroll; width:100%; margin: 0 auto; margin-top:20px;}
 
 .footer-page {
   margin-top:20px;padding-top:20px;background-color:#ee6e73;padding-bottom: 20px;
