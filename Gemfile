@@ -7,6 +7,8 @@ gem 'react-router-rails', '~>0.13.3.1'
 
 gem 'pg'
 
+gem 'twilio-ruby', '~> 3.12'
+
 # gem 'material-ui-rails'
 # gem 'requirejs-rails', '~> 0.9.9'
 
