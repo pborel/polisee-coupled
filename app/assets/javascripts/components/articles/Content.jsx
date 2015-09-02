@@ -7,14 +7,14 @@ var ArticleContent = React.createClass({
             <div className="card-content">
               <p>
                 <h5>Description:</h5>
-                <b>Official Title:</b>{this.props.data.official_title}
+                <b>Official Title: </b>{this.props.data.official_title}<br/>
                 <b>Sponsor:</b> {this.props.data.sponsor.title ? this.props.data.sponsor.title : null} {this.props.data.sponsor.first_name} {this.props.data.sponsor.last_name}<br/>
-                <b>Number of Cosponsors:</b> { this.props.data.cosponsors_count }<br/>
-                <b>Number of Withdrawals:</b> { this.props.data.withdrawn_cosponsors_count }<br/>
+                <b>Cosponsors:</b> { this.props.data.cosponsors_count }<br/>
+                <b>Withdrawals:</b> { this.props.data.withdrawn_cosponsors_count }<br/>
                 <hr/>
 
                 <h5>Status:</h5>
-                <b>Introduced on:</b> {this.props.data.introduced_on ? this.props.data.introduced_on : null}<br/>
+                <b>Introduced:</b> {this.props.data.introduced_on ? this.props.data.introduced_on : null}<br/>
                 <b>Last Action: </b> {this.props.data.last_version.version_name} on {this.props.data.last_version.issued_on}<br/>
                  <b>Active:</b> {this.props.data.history.active ? "True" : "False"}<br/>
                 {this.props.data.history.active ? "Awaiting Signature: True" + <br/> : null}
