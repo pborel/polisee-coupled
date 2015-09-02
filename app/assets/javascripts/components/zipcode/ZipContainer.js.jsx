@@ -16,7 +16,7 @@ var ZipContainer = React.createClass({
 		<form onSubmit={this.submitZipToServer}>
     		<div className="input-field" >
       			<input id="search" type="search" placeholder = "ZIP e.g. 90210" ref="zipcode"/>
-      			<label for="search"><i className="material-icons">search</i></label>
+      			<label forHTML="search"><i className="material-icons">search</i></label>
     		</div>
   		</form>
     )

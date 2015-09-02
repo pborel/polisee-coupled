@@ -6,13 +6,43 @@ var ArticleBox = React.createClass({
     };
   },
 
+  handleSearchSubmit: function(query) {
+    // var queryString = "(" + query + ")"
+    var regExp = new RegExp(query)
+    var bills = this.state.data
+    var newData = []
+    
+    for (var index in bills) {
+      if (bills[index].short_title === null) {
+        
+        if (bills[index].official_title.match(regExp)) {
+          newData.push(bills[index])
+        }
+      }
+      else {
+        if (bills[index].short_title.match(regExp)) {
+          
+          newData.push(bills[index])
+        }
+      }
+    }
+
+    if (newData.length > 0) {
+      this.setState({data: newData})
+    }
+  },
+
+
+
   loadArticlesFromServer: function(tab, link) {
+
     $.ajax({
       data: { tabName: tab },
       url: link,
       dataType: 'json',
       cache: false,
       success: function(data) {
+        debugger
         this.setState({data: data});
       }.bind(this),
       error: function(xhr, status, err) {
@@ -37,7 +67,7 @@ var ArticleBox = React.createClass({
   render: function() {
     return (
       <div className="debugger articles-box">
-        <SearchFilter />
+        <SearchFilter handleSearch={this.handleSearchSubmit}/>
         <Tabs parentElement={this} handleClick={this.updateListView} />
         <ArticleList data={this.state.data} favoritesUrl={this.props.favoritesUrl} />
         <hr />
