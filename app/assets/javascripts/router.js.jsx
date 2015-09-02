@@ -3,15 +3,15 @@ var Route = ReactRouter.Route,
     DefaultRoute = ReactRouter.DefaultRoute;
 
 this.AppRoutes = (
-  <Route name='app' path='/' handler={App}>
-    <DefaultRoute handler={Home} />
+  <Route name='app' handler={App}>
+    <Route name='home' path='/' handler={Home} />
 
     <Route name='team' path='/team' handler={TeamContainer} />
 
     <Link name='about' handler={About} />
   </Route>
 );
-    // <Route handler={Home} path='/' />
     // <Route name='bills' handler={ArticleContainer} path='/bills' />
     // <Route name='tour' handler={TourContainer} />
     // <Route name='representatives' handler={RepresentativeContainer} path='/legislators' />
+    // <DefaultRoute handler={Home} />
