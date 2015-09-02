@@ -3,14 +3,15 @@ var ArticleBox = React.createClass({
     return {
       currentTab: "index",
       data: [],
-      originalList: []
+      originalList: [],
+      filterComparison: []
     };
   },
 
-  // SEARCH FILTER AND SUBMIT METHODS
+  // SEARCH FILTER AND SUBMIT METHODS (lines 12 = 75)
   handleSearchSubmit: function(query) {
     if (query === "") {
-      this.handleEmpty(query)
+      this.handleEmptyQUery()
     }
     else {
       $.ajax({
@@ -24,7 +25,7 @@ var ArticleBox = React.createClass({
               this.setState({data: this.state.originalList})
             }
             else {
-              this.setState({data: data.results});
+              this.setState({data: data.results, filterComparison: data.results});
             }
         }.bind(this),
         error: function(xhr, status, err) {
@@ -36,15 +37,17 @@ var ArticleBox = React.createClass({
   },
 
   handleQueryChange: function(query) {
-    var regEx = new RegExp(query)
-    var bills = this.state.data
-    var newBills = []
-    for (var index in bills) {
-      this.searchFor(bills[index], regEx, newBills)
-    }
-    this.handleFound(newBills)
     if (query === "") {
-          this.handleEmpty(query)
+          this.handleEmptyQuery
+    }
+    else {
+      var regEx = new RegExp(query)
+      var bills = this.state.filterComparison
+      var newBills = []
+      for (var index in bills) {
+        this.searchFor(bills[index], regEx, newBills)
+      }
+      this.handleFound(newBills)
     }
   },
 
@@ -67,8 +70,8 @@ var ArticleBox = React.createClass({
     }
   },
 
-  handleEmpty: function (query) {
-      this.setState({data: this.state.originalList})
+  handleEmptyQuery: function () {
+      this.setState({data: this.state.filterComparison})
   },
 
 
@@ -83,7 +86,7 @@ var ArticleBox = React.createClass({
       cache: false,
       success: function(data) {
 
-        this.setState({data: data, originalList: data});
+        this.setState({data: data, originalList: data, filterComparison: data});
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
