@@ -1,5 +1,4 @@
 var SearchFilter = React.createClass({
-
   submitChange: function (event) {
     event.preventDefault()
     var searchInput = React.findDOMNode(this.refs.search).value
@@ -28,4 +27,3 @@ var SearchFilter = React.createClass({
     )
   }
 });
- // color="e3f2fd"

@@ -7,11 +7,11 @@ this.AppRoutes = (
     <Route name='home' path='/' handler={Home} />
 
     <Route name='team' path='/team' handler={TeamContainer} />
+    <Route name='tour' path='/tour' handler={TourContainer} />
 
-    <Link name='about' handler={About} />
   </Route>
 );
+    // <Link name='about' handler={About} />
     // <Route name='bills' handler={ArticleContainer} path='/bills' />
-    // <Route name='tour' handler={TourContainer} />
     // <Route name='representatives' handler={RepresentativeContainer} path='/legislators' />
     // <DefaultRoute handler={Home} />
