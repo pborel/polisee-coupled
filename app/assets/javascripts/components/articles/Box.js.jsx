@@ -11,7 +11,7 @@ var ArticleBox = React.createClass({
     var regExp = new RegExp(query)
     var bills = this.state.originalList
     var newData = []
-    
+
     for (var index in bills) {
       if (bills[index].short_title === null) {
         if (bills[index].official_title.match(regExp)) {
@@ -31,7 +31,7 @@ var ArticleBox = React.createClass({
   },
 
   handleSearchSubmit: function(query) {
-    
+
     $.ajax({
       url: '/bills/search',
       dataType: 'json',
@@ -56,7 +56,7 @@ var ArticleBox = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        
+
         this.setState({data: data, originalList: data});
       }.bind(this),
       error: function(xhr, status, err) {
@@ -73,7 +73,6 @@ var ArticleBox = React.createClass({
   },
 
   updateListView: function(tab, link) {
-    // console.log("hitting Box")
     this.setState({ currentTab: tab })
     this.loadArticlesFromServer(tab, link);
   },

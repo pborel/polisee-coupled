@@ -49,25 +49,6 @@ var Article = React.createClass({
     });
   },
 
-  // loadFavoritesFromServer: function() {
-  //   $.ajax({
-  //     url: this.props.favoritesUrl + "/index",
-  //     dataType: 'json',
-  //     cache: false,
-  //     success: function(data) {
-  //       this.setState({favorites: data});
-  //     }.bind(this),
-  //     error: function(xhr, status, err) {
-  //       console.error(this.props.favoritesUrl, status, err.toString());
-  //       console.error(this.state.data);
-  //     }.bind(this)
-  //   });
-  // },
-
-  // componentDidMount: function() {
-  //   this.loadFavoritesFromServer();
-  // },
-
   render: function() {
     return (
       <li>

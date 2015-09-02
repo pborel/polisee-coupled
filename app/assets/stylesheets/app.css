@@ -9,12 +9,10 @@ a, a:focus, a:active {outline: none;}
 
 /* BELOW IS CSS FOR ARTICLES*/
 /*.debugger {border: 1px solid red;}*/
-.articles-container, .articles-box, .articles-list, .article {width:90%; margin: 0 auto; margin-top:20px;}
-.articles-container {height:auto;}
-.articles-box {height: auto;}
-.articles-list {min-height: 400px; max-height: 600px; overflow-y:scroll;}
-
-
+/*.articles-container, .articles-box, .articles-list, .article {width:90%; margin: 0 auto; margin-top:20px;}*/
+.articles-container {height:auto; width:80%; margin: 0 auto; margin-top:20px;}
+.articles-box {height: auto; width:100%; margin: 0 auto; margin-top:20px;}
+.articles-list {min-height: 400px; max-height: 700px; overflow-y:scroll; width:100%; margin: 0 auto; margin-top:20px;}
 
 .footer-page {
   margin-top:20px;padding-top:20px;background-color:#ee6e73;padding-bottom: 20px;
@@ -82,9 +80,51 @@ a, a:focus, a:active {outline: none;}
 }
 
 .rep-follow-button {
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 .card-action {
 	margin: 0 auto;
 }
+
+
+
+.btn-new {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: -11px;
+    line-height: -11px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: none;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: blue;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+
+.tab:hover {
+    background-color: #e3f2fd ;
+    border-radius: 9px;
+    width: 120%;
+    height: 120%;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo{
+    width: 14em;
+    height: 7em;
+    margin: 0px;
+    padding: 0px;
+    top: -2.4em;
+}
+
+.margin-padding{
+    margin: 0px;
+    padding: 0px;
+}
+

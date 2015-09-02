@@ -12,7 +12,7 @@ var SearchFilter = React.createClass({
     this.props.handleSearch(searchInput)
   },
 
-  render: function(){
+  render: function() {
     return (
       <form onSubmit={this.submitQuery}>
           <div className="input-field">
