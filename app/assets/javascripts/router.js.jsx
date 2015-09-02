@@ -1,6 +1,6 @@
 var Route = ReactRouter.Route,
-    Link = ReactRouter.Link,
-    DefaultRoute = ReactRouter.DefaultRoute;
+    Link = ReactRouter.Link;
+    // DefaultRoute = ReactRouter.DefaultRoute;
 
 this.AppRoutes = (
   <Route name='app' handler={App}>
