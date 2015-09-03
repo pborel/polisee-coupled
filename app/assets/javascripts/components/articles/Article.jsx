@@ -32,11 +32,6 @@ var Article = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-<<<<<<< HEAD
-        // console.log(data)
-=======
-        console.log(data)
->>>>>>> origin/master
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.favoritesUrl, status, err.toString());
