@@ -21647,3 +21647,5 @@ FULL_DATA.each do |rep|
     )
   legislator.save
 end
+  Api.populate_secondary_info
+
