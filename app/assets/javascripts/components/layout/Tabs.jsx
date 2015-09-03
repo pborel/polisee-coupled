@@ -1,7 +1,9 @@
 var Tabs = React.createClass({
   handleClick: function(tab, link) {
-    // console.log("hitting tabs")
-    this.props.parentElement.updateListView(tab, link)
+    event.preventDefault()
+    console.log("hitting tabs")
+    console.log(tab)
+    this.props.handleClick(tab, link)
   },
 
   render: function() {

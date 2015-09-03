@@ -1,9 +1,10 @@
 var Article = React.createClass({
   getInitialState: function() {
-    return {
-      showContent: false,
-      favorite: false
-     }
+        return {showContent: false, favorite: this.props.favoriteStatus}
+  },
+
+  componentWillReceiveProps: function(newProps) {
+    this.setState({favorite: newProps.favoriteStatus})
   },
 
   toggleContent: function() {
@@ -11,22 +12,29 @@ var Article = React.createClass({
   },
 
   toggleFavorite: function() {
-    this.setState({ favorite: !this.state.favorite })
-    { !this.state.favorite ? this.addToFavorites() : this.removeFromFavorites() }
+    if(this.props.signedIn != true) {
+      var toastMessage = "You must be signed in to follow a bill."
+      this.toast(toastMessage)
+    } else {
+      this.setState({ favorite: !this.state.favorite })
+      { !this.state.favorite ? this.addToFavorites() : this.removeFromFavorites() }
+    }
+  },
+
+  toast: function(message) {
+    Materialize.toast('<span>' + message + '</span>', 3500)
   },
 
   addToFavorites: function() {
     $.ajax({
-      url: this.props.favoritesUrl + "/create",
+      url: "/favorites/create",
       data: { external_id: this.props.data.bill_id },
       dataType: 'json',
       cache: false,
       success: function(data) {
-        console.log("SUCCESS")
         console.log(data)
       }.bind(this),
       error: function(xhr, status, err) {
-        console.log("FAILURE")
         console.error(this.props.favoritesUrl, status, err.toString());
         console.error(this.state.data);
       }.bind(this)
@@ -35,7 +43,7 @@ var Article = React.createClass({
 
   removeFromFavorites: function() {
     $.ajax({
-      url: this.props.favoritesUrl + "/destroy",
+      url: "favorites/destroy",
       data: { external_id: this.props.data.bill_id },
       dataType: 'json',
       cache: false,
@@ -54,13 +62,14 @@ var Article = React.createClass({
       <li>
         <div className="collapsible-header article-head-container hoverable">
           <div className="article-head" onClick={this.toggleContent}>
-            {this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title}
+            { this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title }
           </div>
           <div className="favorite">
             { this.state.favorite ? <Favorited parentComponent={this} /> : <NotFavorited parentComponent={this} /> }
           </div>
-          </div>
-          { this.state.showContent ? <ArticleContent data={this.props.data} /> : null }
+        </div>
+
+        { this.state.showContent ? <ArticleContent data={this.props.data} /> : null }
       </li>
     );
   }
