@@ -1,8 +1,4 @@
 var NotFavorited = React.createClass({
-  // handleClick: function() {
-    // console.log("scary")
-  // },
-
   render: function() {
     return (
       <span onClick={this.props.parentComponent.toggleFavorite}>
@@ -11,4 +7,3 @@ var NotFavorited = React.createClass({
     )
   }
 })
-// + {this.props.isFavorite}
