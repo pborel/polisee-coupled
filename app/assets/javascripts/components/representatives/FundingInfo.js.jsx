@@ -6,7 +6,7 @@ var FundingInfo = React.createClass({
   },
 
   componentDidMount: function() {
-    var doughnutData = [
+    var pieData = [
         {
           value: 300,
           color:"#F7464A",
@@ -41,13 +41,8 @@ var FundingInfo = React.createClass({
       ];
 
       var ctx = React.findDOMNode(this.refs.chart).getContext("2d");
-      // window.onload = function(){
-        var doughnut = window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
-        console.log(doughnut)
-      // };
-    // var ctx = React.findDOMNode(this.refs.chart).getContext("2d");
-    // console.log(ctx)
-    // var info = window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
+      var pie = new Chart(ctx).Pie(pieData);
+      console.log(pie)
     // this.setState({stuff: info})
   },
 
@@ -56,7 +51,7 @@ var FundingInfo = React.createClass({
 
     return (
       <div>
-        <canvas ref="chart" id="chart-area" width="500" height="500" />
+        <canvas id="chart-area" ref="chart" min-width="300" min-height="300"/>
       </div>
     )
   }
