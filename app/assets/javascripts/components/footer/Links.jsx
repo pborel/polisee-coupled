@@ -6,9 +6,9 @@ var FooterLinks = React.createClass({
           <ul>
             <TeamLink />
             <a className="white-text text-lighten-3" href="https://github.com/pborel/polisee-coupled">Github</a> <br/>
-            <a className="white-text text-lighten-3" href="/tour">Take the Tour</a>
           </ul>
       </div>
     )
   }
 })
+            // <a className="white-text text-lighten-3" href="/tour">Take the Tour</a>

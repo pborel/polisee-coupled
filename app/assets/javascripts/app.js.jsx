@@ -59,11 +59,11 @@ var App = React.createClass({
   render: function() {
     return (
       <div>
-        <FundingInfo />
         <Menu signedIn={this.state.signedIn} parentComponent={this} />
-        <RouteHandler reps={this.state.representatives} />
+        <RouteHandler reps={this.state.representatives} signedIn={this.state.signedIn} />
         <FooterContainer />
       </div>
     );
   }
 });
+        // <FundingInfo />
