@@ -4,41 +4,46 @@ var ArticleBox = React.createClass({
       currentTab: "index",
       data: [],
       originalList: [],
-      filterComparison: []
+      filterComparison: [],
+      following: false
     };
   },
 
   // SEARCH FILTER AND SUBMIT METHODS (lines 12 = 75)
   handleSearchSubmit: function(query) {
     if (query === "") {
-      this.handleEmptyQUery()
+      this.handleEmptyQuery()
     }
     else {
-      $.ajax({
-        url: '/bills/search',
-        dataType: 'json',
-        data: {query: query},
-        cache: false,
-        success: function(data) {
-            if (data.count === 0) {
-              console.log("no data found")
-              this.setState({data: this.state.originalList})
-            }
-            else {
-              this.setState({data: data.results, filterComparison: data.results});
-            }
-        }.bind(this),
-        error: function(xhr, status, err) {
-          console.error('bills/search', status, err.toString());
-          console.error(this.state.data);
-        }.bind(this)
-      });
+      this.handleSearchQuerySubmit(query)
     }
+  },
+
+  handleSearchQuerySubmit: function(queryString) {
+    $.ajax({
+      url: '/bills/search',
+      dataType: 'json',
+      data: {query: queryString},
+      cache: false,
+      success: function(data) {
+          if (data.count === 0) {
+            console.log("no data found")
+            this.setState({data: this.state.originalList})
+          }
+          else {
+            this.setState({data: data.results, filterComparison: data.results});
+          }
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error('bills/search', status, err.toString());
+        console.error(this.state.data);
+      }.bind(this)
+    });
   },
 
   handleQueryChange: function(query) {
     if (query === "") {
-          this.handleEmptyQuery
+          this.handleEmptyQuery()
     }
     else {
       var regEx = new RegExp(query)
@@ -77,7 +82,7 @@ var ArticleBox = React.createClass({
 
 
   // INITIAL LOAD
-  loadArticlesFromServer: function(tab, link) {
+  loadArticlesFromServer: function(tab, link, followingStatus) {
 
     $.ajax({
       data: { tabName: tab },
@@ -85,8 +90,7 @@ var ArticleBox = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-
-        this.setState({data: data, originalList: data, filterComparison: data});
+        this.setState({currentTab: tab, data: data, originalList: data, filterComparison: data, following: followingStatus});
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
@@ -98,12 +102,16 @@ var ArticleBox = React.createClass({
   componentDidMount: function() {
     var tab = "index"
     var link = this.props.url
-    this.loadArticlesFromServer(tab, link);
+    this.loadArticlesFromServer(tab, link, this.state.following);
   },
 
   updateListView: function(tab, link) {
-    this.setState({ currentTab: tab })
-    this.loadArticlesFromServer(tab, link);
+    if (tab==="following") {
+      this.loadArticlesFromServer(tab, link, true);
+    }
+    else {
+      this.loadArticlesFromServer(tab, link, false);
+    }
   },
 
   render: function() {
@@ -111,8 +119,8 @@ var ArticleBox = React.createClass({
 
       <div className="debugger articles-box">
         <SearchFilter parentComponent={this}/>
-        <Tabs parentElement={this} handleClick={this.updateListView} />
-        <ArticleList data={this.state.data} favoritesUrl={this.props.favoritesUrl} />
+        <Tabs handleClick={this.updateListView} />
+        <ArticleList data={this.state.data} favoritesUrl={this.props.favoritesUrl} following={this.state.following}/>
       </div>
     )
   }

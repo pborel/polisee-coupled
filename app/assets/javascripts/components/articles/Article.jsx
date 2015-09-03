@@ -1,9 +1,10 @@
 var Article = React.createClass({
   getInitialState: function() {
-    return {
-      showContent: false,
-      favorite: false
-     }
+        return {showContent: false, favorite: this.props.favoriteStatus}
+  },
+
+  componentWillReceiveProps: function(newProps) {
+    this.setState({favorite: newProps.favoriteStatus})
   },
 
   toggleContent: function() {
@@ -17,7 +18,7 @@ var Article = React.createClass({
 
   addToFavorites: function() {
     $.ajax({
-      url: this.props.favoritesUrl + "/create",
+      url: "/favorites/create",
       data: { external_id: this.props.data.bill_id },
       dataType: 'json',
       cache: false,
@@ -35,7 +36,7 @@ var Article = React.createClass({
 
   removeFromFavorites: function() {
     $.ajax({
-      url: this.props.favoritesUrl + "/destroy",
+      url: "favorites/destroy",
       data: { external_id: this.props.data.bill_id },
       dataType: 'json',
       cache: false,
@@ -50,6 +51,7 @@ var Article = React.createClass({
   },
 
   render: function() {
+    console.log(this.state.favorite)
     return (
       <li>
         <div className="collapsible-header article-head-container hoverable">
