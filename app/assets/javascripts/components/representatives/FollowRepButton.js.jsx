@@ -11,7 +11,7 @@ var ButtonSpace = React.createClass({
 				<br/>
 				<a className="waves-effect waves-light white-text btn" onClick={this.props.parentComponent.toggleFundingInfo}><i className="material-icons left">cloud</i>Funding Info</a>
 				<br/>
-        { this.props.fundingInfoActive ? <FundingInfo data={this.props.data} /> : null }
+        { this.props.fundingInfoActive ? <FundingInfo donorData={this.props.donorData} /> : null }
         <br/>
 			</div>
 		)

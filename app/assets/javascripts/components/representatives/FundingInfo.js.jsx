@@ -1,58 +1,82 @@
 var FundingInfo = React.createClass({
-  getInitialState: function() {
-    return (
-      { data: "" }
-    )
-  },
-
   componentDidMount: function() {
     var doughnutData = [
         {
-          value: 300,
+          value: this.props.donorData[0].total_amount,
           color:"#F7464A",
           highlight: "#FF5A5E",
-          label: "Red"
+          label: this.props.donorData[0].name
         },
         {
-          value: 50,
+          value: this.props.donorData[1].total_amount,
           color: "#46BFBD",
           highlight: "#5AD3D1",
-          label: "Green"
+          label: this.props.donorData[1].name
         },
         {
-          value: 100,
+          value: this.props.donorData[2].total_amount,
           color: "#FDB45C",
           highlight: "#FFC870",
-          label: "Yellow"
+          label: this.props.donorData[2].name
         },
         {
-          value: 40,
+          value: this.props.donorData[3].total_amount,
           color: "#949FB1",
           highlight: "#A8B3C5",
-          label: "Grey"
+          label: this.props.donorData[3].name
         },
         {
-          value: 120,
+          value: this.props.donorData[4].total_amount,
           color: "#4D5360",
           highlight: "#616774",
-          label: "Dark Grey"
+          label: this.props.donorData[4].name
+        },
+        {
+          value: this.props.donorData[5].total_amount,
+          color:"#F7464A",
+          highlight: "#FF5A5E",
+          label: this.props.donorData[5].name
+        },
+        {
+          value: this.props.donorData[6].total_amount,
+          color: "#46BFBD",
+          highlight: "#5AD3D1",
+          label: this.props.donorData[6].name
+        },
+        {
+          value: this.props.donorData[7].total_amount,
+          color: "#FDB45C",
+          highlight: "#FFC870",
+          label: this.props.donorData[7].name
+        },
+        {
+          value: this.props.donorData[8].total_amount,
+          color: "#949FB1",
+          highlight: "#A8B3C5",
+          label: this.props.donorData[8].name
+        },
+        {
+          value: this.props.donorData[9].total_amount,
+          color: "#4D5360",
+          highlight: "#616774",
+          label: this.props.donorData[9].name
         }
 
       ];
 
       var ctx = React.findDOMNode(this.refs.chart).getContext("2d");
       var Doughnut = new Chart(ctx).Doughnut(doughnutData);
-    // this.setState({stuff: info})
   },
 
   render: function() {
     return (
       <div>
         <br/>
-        <canvas id="chart-area" ref="chart" min-width="300" min-height="300"/>
+        <canvas id="chart-area" ref="chart" max-width="300" max-height="300"/>
+        <br/>
+        <b>Total: </b> ${}
         <br/>
       </div>
     )
   }
 });
-        // <Chart1 data={this.state.stuff} />
