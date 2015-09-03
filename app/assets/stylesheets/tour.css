@@ -8,19 +8,22 @@
   margin: 0;
 }*/
 
-.slide-show {
-  /*background-color: gray;*/
+.slider .slides li {
+  opacity: 1;
+}
+
+/*.slide-show {
   padding: 0 20%;
   width: 100%;
   height: 100%;
-}
+}*/
 
-.slides li img .tour-image {
+/*.slides li img .tour-image {
   height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-color: transparent;
+  opacity: 1;
   padding: 0;
   margin: 0;
-}
+}*/
