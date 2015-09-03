@@ -5,7 +5,6 @@ var ArticleList = React.createClass({
   },
 
   buildArticle: function(article) {
-    console.log(this.props.following)
     if (this.props.following === true) {
       return <Article data={article} favoritesUrl={this.props.favoritesUrl} favoriteStatus={this.props.following}/>
     }
