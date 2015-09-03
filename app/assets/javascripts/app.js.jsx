@@ -60,7 +60,7 @@ var App = React.createClass({
     return (
       <div>
         <Menu signedIn={this.state.signedIn} parentComponent={this} />
-        <RouteHandler reps={this.state.representatives} />
+        <RouteHandler reps={this.state.representatives} signedIn={this.state.signedIn} />
         <FooterContainer />
       </div>
     );
