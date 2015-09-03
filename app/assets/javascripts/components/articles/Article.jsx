@@ -23,11 +23,9 @@ var Article = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        console.log("SUCCESS")
-        console.log(data)
+        // console.log(data)
       }.bind(this),
       error: function(xhr, status, err) {
-        console.log("FAILURE")
         console.error(this.props.favoritesUrl, status, err.toString());
         console.error(this.state.data);
       }.bind(this)
@@ -41,7 +39,7 @@ var Article = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        console.log(data)
+        // console.log(data)
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.favoritesUrl, status, err.toString());
@@ -51,7 +49,6 @@ var Article = React.createClass({
   },
 
   render: function() {
-    console.log(this.state.favorite)
     return (
       <li>
         <div className="collapsible-header article-head-container hoverable">
