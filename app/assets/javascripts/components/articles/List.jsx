@@ -5,7 +5,12 @@ var ArticleList = React.createClass({
   },
 
   buildArticle: function(article) {
-    return <Article data={article} favoritesUrl={this.props.favoritesUrl} />
+    if (this.props.following === true) {
+      return <Article data={article} favoritesUrl={this.props.favoritesUrl} favoriteStatus={this.props.following}/>
+    }
+    else {
+      return <Article data={article} favoritesUrl={this.props.favoritesUrl} favoriteStatus={this.props.following}/>
+    }
   },
 
   render: function() {

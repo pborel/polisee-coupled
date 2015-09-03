@@ -9,6 +9,10 @@ a, a:focus, a:active {outline: none;}
 .articles-box {height: auto; width:100%; margin: 0 auto; margin-top:20px;}
 .articles-list {min-height: 400px; max-height: 700px; overflow-y:scroll; width:100%; margin: 0 auto; margin-top:20px;}
 
+.containers {
+  padding: 10px 0;
+}
+
 .footer-page {
   margin-top:20px;padding-top:20px;background-color:#ee6e73;padding-bottom: 20px;
 }
@@ -68,7 +72,6 @@ a, a:focus, a:active {outline: none;}
 	margin: 15px;
 }
 
-
 .rep-image {
 	width: 418px;
 	height: 314px;
@@ -78,6 +81,7 @@ a, a:focus, a:active {outline: none;}
 	margin-left: 5%;
 	margin-right: 5%;
 }
+
 .card-action {
 	margin: 0 auto;
 }
@@ -125,8 +129,9 @@ a, a:focus, a:active {outline: none;}
     margin: 0px;
     padding: 0px;
 }
+
 .container-spacer {
-  padding-ottom: 79px;
+  padding-bottom: 79px;
 }
 
 /*.list-shadow{
