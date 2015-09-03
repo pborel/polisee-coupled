@@ -2,7 +2,7 @@ Team.create(name: "Emilio Corpus", position: "Front-end Developer | React.js Gur
 Team.create(name: "Peter Kim", position: "Front-end Developer | Design Guru", email: "petersungkim@gmail.com", linkedin_url: "https://www.linkedin.com/in/petersungkim", github_url: "https://github.com/d0ntg0m0ng", twitter_url: "https:twitter.com/peetear_kim", bio: "Programmer, Web developer, Dreamer. Full-stack engineer with experience creating professional websites with rails, react, and angular. Skilled at using html and css to make smooth and free flowing web pages. Living is learning and I do it with all the graceful falls, mundane minutes, and roaring triumphs.", image_url: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAVIAAAAJDI1ZWQ5NDJkLTM3MTQtNDNmZi1iNDQ5LWJhZGE1NjRiODdhMQ.jpg")
 Team.create(name: "Phil Borel", position: "Full-stack Developer | Integration Engineer", email: "philborel21@gmail.com", linkedin_url: "https://www.linkedin.com/in/philborel", github_url: "https://github.com/pborel", website_url: "http://www.philborel.me/", twitter_url: "https://twitter.com/PhilBorel", bio: "Life-long learner and junior software engineer with a background in computer science and project management. In his free time he works on person development projects and goes on dates with his wife. He has one daughter and another baby on the way. He loves working in teams and building beatiful applications that enhance the way people live their lives.", image_url: "http://s14.postimg.org/6q1139of5/philborel.jpg")
 Team.create(name: "Ryan Posthumus", position: "Back-End Developer | Rails Guru", email: "ryanposthumus19@gmail.com", linkedin_url: "https://www.linkedin.com/in/ryanposthumus", github_url: "https://github.com/posthum4", twitter_url: "https:twitter.com/rposty", bio: "Backend master & general purpose human.", image_url: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAKWAAAAJDY5NWYzZGVjLTgxZDUtNGYwYy1iOTRjLTdkMjgzOTA1NDIwMg.jpg")
-Team.create(name: "Michael Wong", position: "Full-stack Developer | Project Lead", email: "contact.michaelwong@gmail.com", linkedin_url: "https://www.linkedin.com/pub/michael-wong/b0/325/279", github_url: "https://github.com/mikey2XU", twitter_url: "https://twitter.com/myklwng", bio: "Full-stack engineer, Rails/React.js wrangler. Oh, I <3 coding!" image_url: "https://pbs.twimg.com/profile_images/521349582740271104/NLe1OtOs.jpeg")
+Team.create(name: "Michael Wong", position: "Full-stack Developer | Project Lead", email: "contact.michaelwong@gmail.com", linkedin_url: "https://www.linkedin.com/pub/michael-wong/b0/325/279", github_url: "https://github.com/mikey2XU", twitter_url: "https://twitter.com/myklwng", bio: "Full-stack engineer, Rails/React.js wrangler. Oh, I <3 coding!", image_url: "https://pbs.twimg.com/profile_images/521349582740271104/NLe1OtOs.jpeg")
 
 
 
@@ -21650,3 +21650,5 @@ FULL_DATA.each do |rep|
     )
   legislator.save
 end
+  Api.populate_secondary_info
+

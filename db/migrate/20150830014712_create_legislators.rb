@@ -38,6 +38,7 @@ class CreateLegislators < ActiveRecord::Migration
       t.string  :fec_ids
       t.timestamps null: false
     end
+
   end
 end
 
