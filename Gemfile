@@ -7,6 +7,8 @@ gem 'react-router-rails', '~>0.13.3.1'
 
 gem 'pg'
 
+gem 'twilio-ruby', '~> 3.12'
+
 # gem 'material-ui-rails'
 # gem 'requirejs-rails', '~> 0.9.9'
 
@@ -64,4 +66,4 @@ gem 'rails_12factor', group: :production
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-ruby "2.2.1"
+ruby "2.2.0"

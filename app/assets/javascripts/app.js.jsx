@@ -1,35 +1,10 @@
-var RouteHandler = ReactRouter.RouteHandler,
-  Link = ReactRouter.Link;
+var RouteHandler = ReactRouter.RouteHandler;
 
 var App = React.createClass({
   getInitialState: function() {
     return { signedIn: false,
-             zipCode: null }
-  },
-
-  // handleSigningLink: function() {
-    // signedIn = !signedIn;
-  // },
-
-  setZipCode: function(zipCode) {
-
-    $.ajax({
-      url: "/legislators",
-      dataType: 'json',
-      cache: false,
-      data: {zip: zipCode},
-      success: function(zip) {
-        console.log("Zip: " + zipCode)
-        this.setState({zipCode: zipCode});
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.log("Zip: ERROR")
-        console.error('/check', status, err.toString());
-        console.error(this.state.zip);
-      }.bind(this)
-    });
-  
-
+            representatives: []
+    }
   },
 
   checkSignedIn: function() {
@@ -47,15 +22,47 @@ var App = React.createClass({
     });
   },
 
+  setZipCode: function(zipCode) {
+    $.ajax({
+      url: "/legislators",
+      dataType: 'json',
+      cache: false,
+      data: {zip: zipCode},
+      success: function(reps) {
+        this.setState({representatives: reps});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error('/check', status, err.toString());
+        console.error(this.state.zip);
+      }.bind(this)
+    });
+  },
+
+  loadRepresentativesFromServer: function() {
+    $.ajax({
+      url: '/legislators',
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        this.setState({representatives: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
+
+  componentDidMount: function() {
+    this.loadRepresentativesFromServer();
+  },
+
   render: function() {
     return (
       <div>
         <Menu signedIn={this.state.signedIn} parentComponent={this} />
-        <RouteHandler />
+        <RouteHandler reps={this.state.representatives} />
         <FooterContainer />
       </div>
     );
   }
 });
-        // <ArticleContainer url="/bills" favoritesUrl="/favorites" />
-        // <RepresentativeContainer url="/legislators" />

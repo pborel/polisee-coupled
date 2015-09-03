@@ -5,14 +5,20 @@ var ArticleList = React.createClass({
   },
 
   buildArticle: function(article) {
-    return <Article data={article} favoritesUrl={this.props.favoritesUrl} />
+    console.log(this.props.following)
+    if (this.props.following === true) {
+      return <Article data={article} favoritesUrl={this.props.favoritesUrl} favoriteStatus={this.props.following}/>
+    }
+    else {
+      return <Article data={article} favoritesUrl={this.props.favoritesUrl} favoriteStatus={this.props.following}/>
+    }
   },
 
   render: function() {
     var articleNodes = this.buildArticles(this.props.data)
     return (
-      <div className="articles-list debugger">
-        <ul className="collapsible debugger">
+      <div className="articles-list full-list-shadow" >
+        <ul className= "collapsible hoverable collection list-shadow">
            {articleNodes}
         </ul>
       </div>

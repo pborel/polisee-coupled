@@ -3,22 +3,29 @@ class LegislatorsController < ApplicationController
   include Sunlight
 
   def index
-    p params
     if params[:zip]
-      
-      location_data = {zip: params[:zip]}
-      @legislators = legislators_at(location_data)
-    else
+      @legislators = legislators_at({zip: params[:zip]})
+    else cookies[:lat_lng]
       @lat_lng = cookies[:lat_lng].split("|")
-      location_data = {lat: @lat_lng[0], lng: @lat_lng[1]}
-      @legislators = legislators_at(location_data)
+      @legislators = legislators_at({lat: @lat_lng[0], lng: @lat_lng[1]})
     end
-    render json: @legislators
+      render json: @legislators
   end
 
   def show
-    @legislator = Legislator.find_by(bioguide_id: params[:id])
-    render json: @legislator
+    @legislator = Legislator.where(id: params[:id]).first
+    legislator_data = {info: @legislator,
+            cycle_details: @legislator.cycle_amounts}
+    render json: legislator_data
+  end
+
+  def donors
+    legislator = Legislator.find_by_id(params[:legislator_id])
+    client = transparancy_api
+    donor_data = JSON.parse((client.top_donors(legislator, "2014")).body)
+    sector_data = JSON.parse((client.top_sectors(legislator, "2014")).body)
+
+    render json: {donor_data: donor_data, sector_data: sector_data}
   end
 
 private
@@ -33,27 +40,31 @@ private
   end
 
   def rep_ids_at(location_data)
-    rep_data = sunlight_api_query_at(location_data)
-    ids = get_ids_from(rep_data)
+    rep_data = get_reps_by(location_data)
+    get_ids_from(rep_data)
   end
 
-  def sunlight_api_query_at(location_data)
-    client = create_sunlight_connection
+  def get_reps_by(location_data)
     if location_data[:zip]
-      local_reps_raw_data = client.local_legislators_in(location_data[:zip])
+      local_reps_raw_data = congress_api.local_legislators_in(location_data[:zip])
     else
-      local_reps_raw_data = client.local_legislators_at(location_data[:lat],location_data[:lng])
+      local_reps_raw_data = congress_api.local_legislators_at(location_data[:lat],location_data[:lng])
     end
   end
 
   def get_ids_from(rep_data)
     parsed_data = JSON.parse(rep_data.body)
-    ids = parsed_data['results'].map{|rep| rep['bioguide_id']}
+    parsed_data['results'].map{|rep| rep['bioguide_id']}
   end
 
-  def create_sunlight_connection
+  def congress_api
     Congress.new
   end
+
+  def transparancy_api
+    Transparancy.new
+  end
+
 
 end
 

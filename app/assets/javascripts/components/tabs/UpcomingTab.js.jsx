@@ -9,7 +9,7 @@ var UpcomingTab = React.createClass({
     render: function() {
       return(
         <li className="tab col s4">
-          <a href="#" onClick={this.handleClick} className="waves-effect waves-red btn-flat btn">Upcoming</a>
+          <a href="#" onClick={this.handleClick} className="hoverable waves-effect waves-blue btn-new ">Upcoming</a>
         </li>
       );
     }

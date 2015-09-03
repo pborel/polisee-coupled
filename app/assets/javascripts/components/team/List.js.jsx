@@ -11,7 +11,7 @@ var TeamList = React.createClass({
   render: function() {
     var memberNodes = this.buildMembers(this.props.data)
     return (
-      <div className="member-list">
+      <div className="member-list centered">
         {memberNodes}
       </div>
     );

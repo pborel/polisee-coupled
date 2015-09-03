@@ -3,8 +3,9 @@ String.prototype.capitalizeFirstLetter = function() {
 }
 
 var RepBio = React.createClass({
-	render: function(){
 
+
+	render: function() {
     //js logic for incomplete information
 		var party
 		var partyImage
@@ -25,23 +26,25 @@ var RepBio = React.createClass({
       } else {
         district = this.props.data.district
       }
+
+    var sponsor_info_array = this.props.data.cycle_details
+
 		return (
 			<div className="card-reveal">
 	      <span className="card-title grey-text text-darken-4">{this.props.data.title}. {this.props.data.first_name} {this.props.data.last_name} <i className="material-icons right">close</i></span>
-	      <p>
-				Party: {party} <br/>
-				State: {this.props.data.state_name} <br/>
-				Chamber: {this.props.data.chamber.capitalizeFirstLetter()} <br/>
-				Term Start: {this.props.data.term_start} <br/>
-				Term End: {this.props.data.term_end} <br/>
-				{this.props.data.district ? "District: " + this.props.data.district : null}
+        <hr/>
+	      <p className="card-info">
+  				<b>Party:</b> {party} <br/><br/>
+  				<b>State:</b> {this.props.data.state_name} <br/><br/>
+  				<b>Chamber:</b> {this.props.data.chamber.capitalizeFirstLetter()} <br/><br/>
+  				<b>Term Start:</b> {this.props.data.term_start} <br/><br/>
+  				<b>Term End:</b> {this.props.data.term_end} <br/><br/>
+          {this.props.data.bio}<br/>
   		  </p>
-        <TweetForm />
+
+        <TweetForm subject={"@" + this.props.data.twitter_id + " "}/>
       </div>
     )
   }
 })
-          // url: tweets_path, method: :post do |f| %>
-          //   <%= f.text_field :message %>
-          //   <%= f.submit "Send Tweet" %>
-
+// {this.props.data.district ? "District: " + this.props.data.district : null}

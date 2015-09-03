@@ -9,7 +9,7 @@ var IndexTab = React.createClass({
   render: function() {
     return(
       <li className="tab col s4">
-        <a href="#" onClick={this.handleClick} className="waves-effect waves-red btn-flat btn">Index</a>
+        <a href="#" onClick={this.handleClick} className="hoverable waves-effect waves-blue btn-new">Index</a>
       </li>
     );
   }

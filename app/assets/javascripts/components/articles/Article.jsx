@@ -1,9 +1,10 @@
 var Article = React.createClass({
   getInitialState: function() {
-    return {
-      showContent: false,
-      favorite: false
-     }
+        return {showContent: false, favorite: this.props.favoriteStatus}
+  },
+
+  componentWillReceiveProps: function(newProps) {
+    this.setState({favorite: newProps.favoriteStatus})
   },
 
   toggleContent: function() {
@@ -17,14 +18,16 @@ var Article = React.createClass({
 
   addToFavorites: function() {
     $.ajax({
-      url: this.props.favoritesUrl + "/create",
+      url: "/favorites/create",
       data: { external_id: this.props.data.bill_id },
       dataType: 'json',
       cache: false,
       success: function(data) {
+        console.log("SUCCESS")
         console.log(data)
       }.bind(this),
       error: function(xhr, status, err) {
+        console.log("FAILURE")
         console.error(this.props.favoritesUrl, status, err.toString());
         console.error(this.state.data);
       }.bind(this)
@@ -33,7 +36,7 @@ var Article = React.createClass({
 
   removeFromFavorites: function() {
     $.ajax({
-      url: this.props.favoritesUrl + "/destroy",
+      url: "favorites/destroy",
       data: { external_id: this.props.data.bill_id },
       dataType: 'json',
       cache: false,
@@ -47,35 +50,19 @@ var Article = React.createClass({
     });
   },
 
-  // loadFavoritesFromServer: function() {
-  //   $.ajax({
-  //     url: this.props.favoritesUrl + "/index",
-  //     dataType: 'json',
-  //     cache: false,
-  //     success: function(data) {
-  //       this.setState({favorites: data});
-  //     }.bind(this),
-  //     error: function(xhr, status, err) {
-  //       console.error(this.props.favoritesUrl, status, err.toString());
-  //       console.error(this.state.data);
-  //     }.bind(this)
-  //   });
-  // },
-
-  // componentDidMount: function() {
-  //   this.loadFavoritesFromServer();
-  // },
-
   render: function() {
+    console.log(this.state.favorite)
     return (
       <li>
-        <div className="collapsible-header" onClick={this.toggleContent}>
-          {this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title}
-
-          { this.state.favorite ? <Favorited parentComponent={this} /> : <NotFavorited parentComponent={this} /> }
-        </div>
-
-        { this.state.showContent ? <ArticleContent data={this.props.data} /> : null }
+        <div className="collapsible-header article-head-container hoverable">
+          <div className="article-head" onClick={this.toggleContent}>
+            {this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title}
+          </div>
+          <div className="favorite">
+            { this.state.favorite ? <Favorited parentComponent={this} /> : <NotFavorited parentComponent={this} /> }
+          </div>
+          </div>
+          { this.state.showContent ? <ArticleContent data={this.props.data} /> : null }
       </li>
     );
   }

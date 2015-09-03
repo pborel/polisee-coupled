@@ -11,10 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150901094345) do
+ActiveRecord::Schema.define(version: 20150901215559) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cycle_amounts", force: true do |t|
+    t.integer  "year"
+    t.float    "amount"
+    t.integer  "legislator_id"
+    t.integer  "count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "favorites", force: true do |t|
     t.integer  "user_id"
@@ -63,6 +72,9 @@ ActiveRecord::Schema.define(version: 20150901094345) do
     t.string   "fec_ids"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "transparancy_id"
+    t.text     "bio"
+    t.string   "bio_URL"
   end
 
   create_table "teams", force: true do |t|
@@ -73,6 +85,7 @@ ActiveRecord::Schema.define(version: 20150901094345) do
     t.string   "twitter_url"
     t.string   "website_url"
     t.string   "image_url"
+    t.string   "position"
     t.text     "bio"
     t.datetime "created_at"
     t.datetime "updated_at"
