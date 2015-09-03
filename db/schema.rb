@@ -85,6 +85,7 @@ ActiveRecord::Schema.define(version: 20150901215559) do
     t.string   "twitter_url"
     t.string   "website_url"
     t.string   "image_url"
+    t.string   "position"
     t.text     "bio"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -11,7 +11,7 @@ var Menu = React.createClass({
     if (this.props.signedIn) {
       var signingLink =
         <span id={this.props.signedIn}>
-            <a className=" valign-wrapper debugger1" vhref={'/signout'}><i className="debugger1 material-icons valign">input</i><span className="sign-in-out-margin-left">Sign Out</span></a>
+            <a className="valign-wrapper debugger1" href={'/signout'}><i className="debugger1 material-icons valign">input</i><span className="sign-in-out-margin-left">Sign Out</span></a>
         </span>;
     } else {
       var signingLink =

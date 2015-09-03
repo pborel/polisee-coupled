@@ -29,11 +29,9 @@ var App = React.createClass({
       cache: false,
       data: {zip: zipCode},
       success: function(reps) {
-        console.log("Zip: " + zipCode)
         this.setState({representatives: reps});
       }.bind(this),
       error: function(xhr, status, err) {
-        console.log("Zip: ERROR")
         console.error('/check', status, err.toString());
         console.error(this.state.zip);
       }.bind(this)

@@ -26,7 +26,7 @@ var TeamBox = React.createClass({
 
   render: function() {
     return (
-      <div className="team-box">
+      <div className="team-box centered">
         <TeamList data={this.state.data} />
       </div>
     )
