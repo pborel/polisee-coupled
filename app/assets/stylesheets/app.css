@@ -68,7 +68,6 @@ a, a:focus, a:active {outline: none;}
 	margin: 15px;
 }
 
-
 .rep-image {
 	width: 418px;
 	height: 314px;
@@ -78,6 +77,7 @@ a, a:focus, a:active {outline: none;}
 	margin-left: 5%;
 	margin-right: 5%;
 }
+
 .card-action {
 	margin: 0 auto;
 }

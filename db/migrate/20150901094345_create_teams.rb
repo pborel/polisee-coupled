@@ -8,6 +8,7 @@ class CreateTeams < ActiveRecord::Migration
       t.string  :twitter_url
       t.string  :website_url
       t.string  :image_url
+      t.string  :position
       t.text    :bio
 
       t.timestamps
