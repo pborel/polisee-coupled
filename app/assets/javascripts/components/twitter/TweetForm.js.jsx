@@ -5,10 +5,10 @@ var TweetForm = React.createClass({
 
   submit: function(e) {
     e.preventDefault()
-    if(this.props.signedIn != true) {
-      var tostMessage = "You must be signed in to send a tweet."
-      this.toast(tostMessage)
-    } else {
+    // if(this.props.signedIn != true) {
+      // var tostMessage = "You must be signed in to send a tweet."
+      // this.toast(tostMessage)
+    // } else {
 
       var tweet = {
         message: this.state.message
@@ -24,7 +24,7 @@ var TweetForm = React.createClass({
         }.bind(this),
         error: function(xhr, status, err) {
           this.clearForm()
-          this.toast()
+          this.toast("Tweet Sent!")
           console.error('/tweets', status, err.toString());
           console.error(this.state.message);
         }.bind(this)
@@ -34,7 +34,7 @@ var TweetForm = React.createClass({
           // add modal here
         // }.bind(this)
       });
-    }
+    // }
   },
 
   toast: function(message) {
