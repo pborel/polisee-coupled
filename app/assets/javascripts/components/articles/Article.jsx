@@ -63,6 +63,7 @@ var Article = React.createClass({
           <div className="article-head" onClick={this.toggleContent}>
             { this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title }
           </div>
+
           <div className="favorite">
             { this.state.favorite ? <Favorited parentComponent={this} /> : <NotFavorited parentComponent={this} /> }
           </div>
