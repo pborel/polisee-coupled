@@ -37,9 +37,10 @@ var RepBio = React.createClass({
   				<b>Term Start:</b> {this.props.data.term_start} <br/><br/>
   				<b>Term End:</b> {this.props.data.term_end} <br/><br/>
           {this.props.data.bio}<br/>
-  		  </p>
+          SignedIn: {this.props.signedIn}
+        </p>
 
-        <TweetForm signedIn={this.props.signedIn} subject={"@" + this.props.data.twitter_id + " "} />
+        <TweetForm subject={"@" + this.props.data.twitter_id + " "} />
       </div>
     )
   }

@@ -12,13 +12,13 @@ var Article = React.createClass({
   },
 
   toggleFavorite: function() {
-    if(this.props.signedIn != true) {
-      var toastMessage = "You must be signed in to follow a bill."
-      this.toast(toastMessage)
-    } else {
+    // if(this.props.signedIn != true) {
+      // var toastMessage = "You must be signed in to follow a bill."
+      // this.toast(toastMessage)
+    // } else {
       this.setState({ favorite: !this.state.favorite })
       { !this.state.favorite ? this.addToFavorites() : this.removeFromFavorites() }
-    }
+    // }
   },
 
   toast: function(message) {
