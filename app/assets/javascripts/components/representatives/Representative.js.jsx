@@ -8,7 +8,6 @@ var Representative = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        console.log(data.donor_data)
         this.setState({ donorData: data.donor_data })
       }.bind(this),
       error: function(xhr, status, err) {

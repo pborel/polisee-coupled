@@ -3,7 +3,7 @@ var Article = React.createClass({
     return {
       showContent: false,
       favorite: this.props.favoriteStatus,
-      signedIn: false
+      signedIn: this.checkSignedIn()
     }
   },
 
@@ -31,8 +31,6 @@ var Article = React.createClass({
   },
 
   toggleFavorite: function() {
-    this.checkSignedIn()
-
     if(this.state.signedIn != true) {
       var toastMessage = "You must be signed in to follow a bill."
       this.toast(toastMessage)

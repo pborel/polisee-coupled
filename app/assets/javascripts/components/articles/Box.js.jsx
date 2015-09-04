@@ -27,7 +27,6 @@ var ArticleBox = React.createClass({
       cache: false,
       success: function(data) {
           if (data.count === 0) {
-            console.log("no data found")
             this.setState({data: this.state.originalList})
           }
           else {

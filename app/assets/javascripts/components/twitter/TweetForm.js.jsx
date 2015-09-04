@@ -2,7 +2,7 @@ var TweetForm = React.createClass({
   getInitialState: function() {
     return {
       message: this.props.subject + "#polisee.io ",
-      signedIn: false
+      signedIn: this.checkSignedIn()
     }
   },
 
@@ -13,7 +13,6 @@ var TweetForm = React.createClass({
       cache: false,
       success: function(data) {
         this.setState({signedIn: data});
-        console.log(this.state.signedIn)
       }.bind(this),
       error: function(xhr, status, err) {
         console.error('/check', status, err.toString());
@@ -24,7 +23,6 @@ var TweetForm = React.createClass({
 
   submit: function(e) {
     e.preventDefault()
-    this.checkSignedIn()
 
     if(this.state.signedIn != true) {
       var tostMessage = "You must be signed in to send a tweet."

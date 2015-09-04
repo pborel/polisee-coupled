@@ -1,8 +1,6 @@
 var Tabs = React.createClass({
   handleClick: function(tab, link) {
     event.preventDefault()
-    console.log("hitting tabs")
-    console.log(tab)
     this.props.handleClick(tab, link)
   },
 
@@ -18,8 +16,3 @@ var Tabs = React.createClass({
     )
   }
 });
-            // <li className="tab col s3"><a className="active" href="#test1">Trending</a></li>
-            // <li className="tab col s3"><a href="#test2">Test 2</a></li>
-            // <li className="tab col s3"><a href="#test4">Hello</a></li>
-            // <Tab2 />
-            // <Tab3 />
