@@ -32,10 +32,6 @@ var ButtonSpace = React.createClass({
     this.setState({ latestFundingData: final })
 	},
 
-	// componentDidMount: function() {
-	// 	this.getCycleFundingData()
-	// },
-
 	render: function() {
 		console.log(this.state.latestFundingData)
 		return (
