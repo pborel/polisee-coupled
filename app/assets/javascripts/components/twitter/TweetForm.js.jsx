@@ -5,7 +5,7 @@ var TweetForm = React.createClass({
 
   submit: function(e) {
     e.preventDefault()
-    if(this.props.signedIn != true) {
+    if(this.props.signedIn !== true) {
       var tostMessage = "You must be signed in to send a tweet."
       this.toast(tostMessage)
     } else {

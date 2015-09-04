@@ -5,7 +5,7 @@ var RepresentativeContainer = React.createClass({
   render: function() {
     return (
       <div className="debugger rep-container container-spacer">
-        <RepresentativeBox reps={this.props.reps} />
+        <RepresentativeBox reps={this.props.reps} signedIn={this.props.signedIn} />
       </div>
     )
   }

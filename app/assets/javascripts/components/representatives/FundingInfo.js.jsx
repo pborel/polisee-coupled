@@ -61,7 +61,6 @@ var FundingInfo = React.createClass({
           highlight: "#616774",
           label: this.props.donorData[9].name
         }
-
       ];
 
       var ctx = React.findDOMNode(this.refs.chart).getContext("2d");
@@ -74,7 +73,7 @@ var FundingInfo = React.createClass({
         <br/>
         <canvas id="chart-area" ref="chart" max-width="300" max-height="300"/>
         <br/>
-        <b>Total: </b> ${}
+        <b>2014 Funding: </b> ${}
         <br/>
       </div>
     )
