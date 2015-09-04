@@ -18,7 +18,7 @@ var RepBio = React.createClass({
 			}
 
     var district
-      if (this.props.data.district == ""){
+      if (this.props.data.district == "") {
         district = "Not Available"
       } else {
         district = this.props.data.district
