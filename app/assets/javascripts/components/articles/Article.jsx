@@ -14,7 +14,6 @@ var Article = React.createClass({
       cache: false,
       success: function(data) {
         this.setState({signedIn: data});
-        console.log(this.state.signedIn)
       }.bind(this),
       error: function(xhr, status, err) {
         console.error('/check', status, err.toString());
