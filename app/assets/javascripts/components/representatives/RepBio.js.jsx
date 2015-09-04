@@ -3,10 +3,7 @@ String.prototype.capitalizeFirstLetter = function() {
 }
 
 var RepBio = React.createClass({
-
-
 	render: function() {
-    //js logic for incomplete information
 		var party
 		var partyImage
 			if (this.props.data.party == "D"){
@@ -21,7 +18,7 @@ var RepBio = React.createClass({
 			}
 
     var district
-      if (this.props.data.district == ""){
+      if (this.props.data.district == "") {
         district = "Not Available"
       } else {
         district = this.props.data.district
@@ -40,9 +37,10 @@ var RepBio = React.createClass({
   				<b>Term Start:</b> {this.props.data.term_start} <br/><br/>
   				<b>Term End:</b> {this.props.data.term_end} <br/><br/>
           {this.props.data.bio}<br/>
-  		  </p>
+          SignedIn: {this.props.signedIn}
+        </p>
 
-        <TweetForm subject={"@" + this.props.data.twitter_id + " "}/>
+        <TweetForm subject={"@" + this.props.data.twitter_id + " "} />
       </div>
     )
   }
