@@ -1,14 +1,33 @@
 var TweetForm = React.createClass({
   getInitialState: function() {
-    return({ message: this.props.subject + "#polisee.io " })
+    return {
+      message: this.props.subject + "#polisee.io ",
+      signedIn: this.checkSignedIn()
+    }
+  },
+
+  checkSignedIn: function() {
+    $.ajax({
+      url: '/check',
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        this.setState({signedIn: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error('/check', status, err.toString());
+        console.error(this.state.data);
+      }.bind(this)
+    });
   },
 
   submit: function(e) {
     e.preventDefault()
-    // if(this.props.signedIn != true) {
-      // var tostMessage = "You must be signed in to send a tweet."
-      // this.toast(tostMessage)
-    // } else {
+
+    if(this.state.signedIn != true) {
+      var tostMessage = "You must be signed in to send a tweet."
+      this.toast(tostMessage)
+    } else {
 
       var tweet = {
         message: this.state.message
@@ -28,13 +47,8 @@ var TweetForm = React.createClass({
           console.error('/tweets', status, err.toString());
           console.error(this.state.message);
         }.bind(this)
-        // done: function(data) {
-          // this.toast()
-          // this.clearForm()
-          // add modal here
-        // }.bind(this)
       });
-    // }
+    }
   },
 
   toast: function(message) {

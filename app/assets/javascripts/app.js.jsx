@@ -2,8 +2,9 @@ var RouteHandler = ReactRouter.RouteHandler;
 
 var App = React.createClass({
   getInitialState: function() {
-    return { signedIn: false,
-            representatives: []
+    return {
+      signedIn: false,
+      representatives: []
     }
   },
 
@@ -60,7 +61,7 @@ var App = React.createClass({
     return (
       <div>
         <Menu signedIn={this.state.signedIn} parentComponent={this} />
-        <RouteHandler reps={this.state.representatives} signedIn={this.state.signedIn} />
+        <RouteHandler reps={this.state.representatives} />
         <FooterContainer />
       </div>
     );

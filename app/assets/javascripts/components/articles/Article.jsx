@@ -1,6 +1,25 @@
 var Article = React.createClass({
   getInitialState: function() {
-        return {showContent: false, favorite: this.props.favoriteStatus}
+    return {
+      showContent: false,
+      favorite: this.props.favoriteStatus,
+      signedIn: this.checkSignedIn()
+    }
+  },
+
+  checkSignedIn: function() {
+    $.ajax({
+      url: '/check',
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        this.setState({signedIn: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error('/check', status, err.toString());
+        console.error(this.state.data);
+      }.bind(this)
+    });
   },
 
   componentWillReceiveProps: function(newProps) {
@@ -12,7 +31,7 @@ var Article = React.createClass({
   },
 
   toggleFavorite: function() {
-    if(this.props.signedIn != true) {
+    if(this.state.signedIn != true) {
       var toastMessage = "You must be signed in to follow a bill."
       this.toast(toastMessage)
     } else {
@@ -32,7 +51,6 @@ var Article = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        console.log(data)
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.favoritesUrl, status, err.toString());
@@ -48,7 +66,7 @@ var Article = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        console.log(data)
+        // console.log(data)
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.favoritesUrl, status, err.toString());
@@ -64,6 +82,7 @@ var Article = React.createClass({
           <div className="article-head" onClick={this.toggleContent}>
             { this.props.data.short_title ? this.props.data.short_title : this.props.data.official_title }
           </div>
+
           <div className="favorite">
             { this.state.favorite ? <Favorited parentComponent={this} /> : <NotFavorited parentComponent={this} /> }
           </div>

@@ -1,4 +1,7 @@
 var Home = React.createClass({
+  componentWillReceiveProps: function() {
+  },
+
   render: function() {
     return (
       <div id="home-view">
