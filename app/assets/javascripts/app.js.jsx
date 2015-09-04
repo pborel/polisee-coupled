@@ -2,8 +2,9 @@ var RouteHandler = ReactRouter.RouteHandler;
 
 var App = React.createClass({
   getInitialState: function() {
-    return { signedIn: false,
-            representatives: []
+    return {
+      signedIn: false,
+      representatives: []
     }
   },
 

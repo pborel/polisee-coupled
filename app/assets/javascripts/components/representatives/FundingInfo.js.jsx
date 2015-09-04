@@ -65,6 +65,8 @@ var FundingInfo = React.createClass({
 
       var ctx = React.findDOMNode(this.refs.chart).getContext("2d");
       var Doughnut = new Chart(ctx).Doughnut(doughnutData);
+
+      this.props.parentComponent.getCycleFundingData()
   },
 
   render: function() {
@@ -72,8 +74,8 @@ var FundingInfo = React.createClass({
       <div>
         <br/>
         <canvas id="chart-area" ref="chart" max-width="300" max-height="300"/>
-        <br/>
-        <b>2014 Funding: </b> ${}
+        <br/><br/>
+        <b>2014 Funding: </b> ${this.props.total}
         <br/>
       </div>
     )

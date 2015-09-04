@@ -1,5 +1,10 @@
 var Representative = React.createClass({
-  getInitialState: function() { return ({ donorData: "" }) },
+  getInitialState: function() {
+    return (
+      { donorData: "" },
+      { fundingInfoActive: false }
+    )
+  },
 
   getDonorInfo: function() {
     var repDonorsUrl = "/legislators/" + this.props.data.id + "/donors"
@@ -18,10 +23,6 @@ var Representative = React.createClass({
 
   componentDidMount: function() {
     this.getDonorInfo()
-  },
-
-  getInitialState: function() {
-    return ({ fundingInfoActive: false })
   },
 
   toggleFundingInfo: function() {

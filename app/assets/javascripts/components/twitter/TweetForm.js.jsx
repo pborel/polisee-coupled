@@ -47,11 +47,6 @@ var TweetForm = React.createClass({
           console.error('/tweets', status, err.toString());
           console.error(this.state.message);
         }.bind(this)
-        // done: function(data) {
-          // this.toast()
-          // this.clearForm()
-          // add modal here
-        // }.bind(this)
       });
     }
   },
