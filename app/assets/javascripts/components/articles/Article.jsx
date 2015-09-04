@@ -1,6 +1,26 @@
 var Article = React.createClass({
   getInitialState: function() {
-        return {showContent: false, favorite: this.props.favoriteStatus}
+    return {
+      showContent: false,
+      favorite: this.props.favoriteStatus,
+      signedIn: false
+    }
+  },
+
+  checkSignedIn: function() {
+    $.ajax({
+      url: '/check',
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        this.setState({signedIn: data});
+        console.log(this.state.signedIn)
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error('/check', status, err.toString());
+        console.error(this.state.data);
+      }.bind(this)
+    });
   },
 
   componentWillReceiveProps: function(newProps) {
@@ -12,13 +32,14 @@ var Article = React.createClass({
   },
 
   toggleFavorite: function() {
-    // if(this.props.signedIn != true) {
-      // var toastMessage = "You must be signed in to follow a bill."
-      // this.toast(toastMessage)
-    // } else {
+    this.checkSignedIn()
+    if(this.state.signedIn != true) {
+      var toastMessage = "You must be signed in to follow a bill."
+      this.toast(toastMessage)
+    } else {
       this.setState({ favorite: !this.state.favorite })
       { !this.state.favorite ? this.addToFavorites() : this.removeFromFavorites() }
-    // }
+    }
   },
 
   toast: function(message) {
