@@ -13,6 +13,10 @@ a, a:focus, a:active {outline: none;}
   padding: 10px 0;
 }
 
+.icons-buffer {
+  padding: 10px;
+}
+
 .footer-page {
   margin-top:20px;padding-top:20px;background-color:#ee6e73;padding-bottom: 20px;
 }
