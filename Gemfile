@@ -7,6 +7,9 @@ gem 'react-router-rails', '~>0.13.3.1'
 
 gem 'pg'
 
+gem 'puma'
+gem 'heroku-deflater', :group => :production
+
 gem 'twilio-ruby', '~> 3.12'
 
 # gem 'material-ui-rails'
