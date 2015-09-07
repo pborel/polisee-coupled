@@ -5,12 +5,10 @@ var Route = ReactRouter.Route,
 this.AppRoutes = (
   <Route name='app' handler={App}>
     <Route name='home' path='/' handler={Home} />
-
-    <Route name='team' path='/team' handler={TeamContainer} />
-
-    <Link name='about' handler={About} />
+    <Route name='about' path='/about' handler={TeamContainer} />
   </Route>
 );
+    // <Link name='about' handler={About} />
     // <Route name='bills' handler={ArticleContainer} path='/bills' />
     // <Route name='tour' handler={TourContainer} />
     // <Route name='representatives' handler={RepresentativeContainer} path='/legislators' />
