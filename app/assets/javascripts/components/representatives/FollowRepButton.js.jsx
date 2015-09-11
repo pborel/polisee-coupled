@@ -33,7 +33,6 @@ var ButtonSpace = React.createClass({
 	},
 
 	render: function() {
-		console.log(this.state.latestFundingData)
 		return (
 			<div className="card-action debugger">
 				<a href={this.props.tweet_link}className="waves-effect btn-flat-large rep-follow-button"> <img src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/twitter-48.png" title="Twitter" width="48" /> </a>

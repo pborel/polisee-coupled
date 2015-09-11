@@ -15,7 +15,6 @@ var ArticleContent = React.createClass({
 
                 <h5>Status:</h5>
                 <b>Introduced:</b> {this.props.data.introduced_on ? this.props.data.introduced_on : null}<br/>
-                <b>Last Action: </b> {this.props.data.last_version.version_name} on {this.props.data.last_version.issued_on}<br/>
                  <b>Active:</b> {this.props.data.history.active ? "True" : "False"}<br/>
                 {this.props.data.history.active ? "Awaiting Signature: True" + <br/> : null}
                 <b>Enacted:</b> {this.props.data.history.enacted ? "True," : "False"}<br/>
@@ -38,3 +37,4 @@ var ArticleContent = React.createClass({
 String.prototype.capitalizeFirstLetter = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
+                // <b>Last Action: </b> {this.props.data.last_version.version_name} on {this.props.data.last_action_at}<br/>
