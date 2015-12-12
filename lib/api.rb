@@ -11,37 +11,37 @@ module Api
     end
   end
 
-  def self.populate_secondary_info
-    self.query_for_transparancy_id
-    self.query_for_entity_overview
-    self.remove_p_tags
-  end
+  # def self.populate_secondary_info
+    # self.query_for_transparancy_id
+    # self.query_for_entity_overview
+    # self.remove_p_tags
+  # end
 
 # private
 
-  def self.query_for_transparancy_id
-    sunlight_client = Transparancy.new
-    legislators =  Legislator.where(transparancy_id: [nil,""])
-    legislators.each do |legislator|
-      response = (sunlight_client.transparancy_id(legislator.bioguide_id)).response.body
-      parsed_response = JSON.parse(response)
-      if parsed_response.length > 0
-        id = parsed_response[0]["id"]
-        legislator.update(transparancy_id: id)
-      end
-    end
-  end
+  # def self.query_for_transparancy_id
+  #   sunlight_client = Transparancy.new
+  #   legislators =  Legislator.where(transparancy_id: [nil,""])
+  #   legislators.each do |legislator|
+  #     response = (sunlight_client.transparancy_id(legislator.bioguide_id)).response.body
+  #     parsed_response = JSON.parse(response)
+  #     if parsed_response.length > 0
+  #       id = parsed_response[0]["id"]
+  #       legislator.update(transparancy_id: id)
+  #     end
+  #   end
+  # end
 
-  def self.query_for_entity_overview
-    sunlight_client = Transparancy.new
-    legislators = Legislator.where.not(transparancy_id: [nil,""])
-    legislators.each do |legislator|
-      response = (sunlight_client.entity_overview(legislator)).response.body
-      data = JSON.parse(response)
-      self.add_bio_fields_to_legislator(legislator, data)
-      self.add_cycle_details(legislator, data)
-    end
-  end
+  # def self.query_for_entity_overview
+  #   sunlight_client = Transparancy.new
+  #   legislators = Legislator.where.not(transparancy_id: [nil,""])
+  #   legislators.each do |legislator|
+  #     response = (sunlight_client.entity_overview(legislator)).response.body
+  #     data = JSON.parse(response)
+  #     self.add_bio_fields_to_legislator(legislator, data)
+  #     self.add_cycle_details(legislator, data)
+  #   end
+  # end
 
 
   def self.query_sunlight_data
