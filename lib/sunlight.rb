@@ -8,11 +8,15 @@ module Sunlight
     end
 
     def headers
-      {"X-APIKEY" => token}
+      {"X-APIKEY" => sunlight_token}
     end
 
-    def token
+    def sunlight_token
       ENV['SUNLIGHT_KEY']
+    end
+
+    def open_secrets_token
+      ENV['OPENSECRETS_KEY']
     end
 
   end
@@ -68,10 +72,10 @@ module Sunlight
   end
 
   class Opensecrets < Base
-    # base_uri 'http://www.opensecrets.org/api/'
+    base_uri 'http://www.opensecrets.org/api/'
 
     def legislators
-      HTTParty.get("http://www.opensecrets.org/api/?method=getLegislators&id=MI&apikey=2fb53176b3b43b71c93af6d27886bc8b")
+      HTTParty.get("http://www.opensecrets.org/api/?method=getLegislators&id=MI&apikey=#{open_secrets_token}")
       # self.class.get( query: {  apikey: "2fb53176b3b43b71c93af6d27886bc8b",
                                 # method: "getLegislators",
                                 # id:     "MI" } )
@@ -79,7 +83,7 @@ module Sunlight
 
     # def opensecrets_id(bioguide_id)
     #   self.class.get( "/entities/id_lookup.json",
-    #                     query:  {apikey: token,
+    #                     query:  {apikey: open_secrets_token,
     #                             bioguide_id: bioguide_id})
     # end
     #
@@ -87,7 +91,7 @@ module Sunlight
     #   url = "/aggregates/pol/#{legislator.opensecrets_id}/contributors.json"
     #   p url
     #   self.class.get( url,
-    #                   query:  {apikey: token,
+    #                   query:  {apikey: open_secrets_token,
     #                           cycle: year,
     #                           limit: 10})
     # end
@@ -95,7 +99,7 @@ module Sunlight
     # def top_sectors(legislator, year)
     #   url = "/aggregates/pol/#{legislator.opensecrets_id}/contributors/sectors.json"
     #   self.class.get( url,
-    #                   query:  {apikey: token,
+    #                   query:  {apikey: open_secrets_token,
     #                           cycle: year,
     #                           limit: 15})
     # end
@@ -103,7 +107,7 @@ module Sunlight
     # def entity_overview(legislator)
     #   url = "/entities/#{legislator.opensecrets_id}.json"
     #   self.class.get(url,
-    #                 query: {apikey: token})
+    #                 query: {apikey: open_secrets_token})
     # end
 
   end
