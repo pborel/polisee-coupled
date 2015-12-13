@@ -67,42 +67,45 @@ module Sunlight
 
   end
 
-  # class Transparancy < Base
-  #   base_uri 'http://transparencydata.com/api/1.0'
+  class Opensecrets < Base
+    # base_uri 'http://www.opensecrets.org/api/'
 
-  #   def transparancy_id(bioguide_id)
-  #       self.class.get( "/entities/id_lookup.json",
-  #                       query:  {apikey: token,
-  #                               bioguide_id: bioguide_id})
-  #   end
+    def legislators
+      HTTParty.get("http://www.opensecrets.org/api/?method=getLegislators&id=MI&apikey=2fb53176b3b43b71c93af6d27886bc8b")
+      # self.class.get( query: {  apikey: "2fb53176b3b43b71c93af6d27886bc8b",
+                                # method: "getLegislators",
+                                # id:     "MI" } )
+    end
 
-  #   def top_donors(legislator, year)
-  #     url = "/aggregates/pol/#{legislator.transparancy_id}/contributors.json"
-  #     p url
-  #     self.class.get( url,
-  #                     query:  {apikey: token,
-  #                             cycle: year,
-  #                             limit: 10})
-  #   end
+    # def opensecrets_id(bioguide_id)
+    #   self.class.get( "/entities/id_lookup.json",
+    #                     query:  {apikey: token,
+    #                             bioguide_id: bioguide_id})
+    # end
+    #
+    # def top_donors(legislator, year)
+    #   url = "/aggregates/pol/#{legislator.opensecrets_id}/contributors.json"
+    #   p url
+    #   self.class.get( url,
+    #                   query:  {apikey: token,
+    #                           cycle: year,
+    #                           limit: 10})
+    # end
+    #
+    # def top_sectors(legislator, year)
+    #   url = "/aggregates/pol/#{legislator.opensecrets_id}/contributors/sectors.json"
+    #   self.class.get( url,
+    #                   query:  {apikey: token,
+    #                           cycle: year,
+    #                           limit: 15})
+    # end
+    #
+    # def entity_overview(legislator)
+    #   url = "/entities/#{legislator.opensecrets_id}.json"
+    #   self.class.get(url,
+    #                 query: {apikey: token})
+    # end
 
-  #   def top_sectors(legislator, year)
-  #     url = "/aggregates/pol/#{legislator.transparancy_id}/contributors/sectors.json"
-  #     self.class.get( url,
-  #                     query:  {apikey: token,
-  #                             cycle: year,
-  #                             limit: 15})
-  #   end
-
-
-
-  #   def entity_overview(legislator)
-  #     url = "/entities/#{legislator.transparancy_id}.json"
-  #     self.class.get(url,
-  #                   query: {apikey: token})
-  #   end
-
-
-  # end
-
+  end
 
 end

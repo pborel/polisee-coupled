@@ -21,7 +21,7 @@ class LegislatorsController < ApplicationController
 
   def donors
     legislator = Legislator.find_by_id(params[:legislator_id])
-    client = transparancy_api
+    client = opensecrets_api
     donor_data = JSON.parse((client.top_donors(legislator, "2014")).body)
     sector_data = JSON.parse((client.top_sectors(legislator, "2014")).body)
 
@@ -61,10 +61,9 @@ private
     Congress.new
   end
 
-  def transparancy_api
-    Transparancy.new
+  def opensecrets_api
+    opensecrets.new
   end
 
 
 end
-

@@ -1,5 +1,5 @@
-class AddTransparancyIdToLegislators < ActiveRecord::Migration
+class AddopensecretsIdToLegislators < ActiveRecord::Migration
   def change
-    add_column :legislators, :transparancy_id, :string
+    add_column :legislators, :opensecrets_id, :string
   end
 end

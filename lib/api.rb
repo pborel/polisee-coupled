@@ -11,30 +11,31 @@ module Api
     end
   end
 
-  # def self.populate_secondary_info
-    # self.query_for_transparancy_id
+  def self.populate_secondary_info
+    sunlight_client = Opensecrets.new
+    p sunlight_client.legislators
+    # self.query_for_opensecrets_id
     # self.query_for_entity_overview
     # self.remove_p_tags
-  # end
+  end
 
-# private
-
-  # def self.query_for_transparancy_id
-  #   sunlight_client = Transparancy.new
-  #   legislators =  Legislator.where(transparancy_id: [nil,""])
-  #   legislators.each do |legislator|
-  #     response = (sunlight_client.transparancy_id(legislator.bioguide_id)).response.body
-  #     parsed_response = JSON.parse(response)
-  #     if parsed_response.length > 0
-  #       id = parsed_response[0]["id"]
-  #       legislator.update(transparancy_id: id)
-  #     end
-  #   end
-  # end
+private
+  def self.query_for_opensecrets_id
+    sunlight_client = opensecrets.new
+    legislators =  Legislator.where(opensecrets_id: [nil,""])
+    legislators.each do |legislator|
+      response = (sunlight_client.opensecrets_id(legislator.bioguide_id)).response.body
+      parsed_response = JSON.parse(response)
+      if parsed_response.length > 0
+        id = parsed_response[0]["id"]
+        legislator.update(opensecrets_id: id)
+      end
+    end
+  end
 
   # def self.query_for_entity_overview
-  #   sunlight_client = Transparancy.new
-  #   legislators = Legislator.where.not(transparancy_id: [nil,""])
+  #   sunlight_client = opensecrets.new
+  #   legislators = Legislator.where.not(opensecrets_id: [nil,""])
   #   legislators.each do |legislator|
   #     response = (sunlight_client.entity_overview(legislator)).response.body
   #     data = JSON.parse(response)

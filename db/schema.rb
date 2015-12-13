@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 20150901215559) do
     t.string   "fec_ids"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.string   "transparancy_id"
+    t.string   "opensecrets_id"
     t.text     "bio"
     t.string   "bio_URL"
   end
